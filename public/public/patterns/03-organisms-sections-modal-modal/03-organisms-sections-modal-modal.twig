@@ -1,0 +1,38 @@
+{% set classes = [
+  'jcc-modal',
+  modal.background_variant ? 'jcc-modal--' ~ modal.background_variant,
+  modal.size_variant ? 'jcc-modal--' ~ modal.size_variant,
+]|merge(modal.classes|default([''])) %}
+
+<button class="jcc-modal__trigger {{ modal.parent_component_class }}" data-a11y-dialog-show="{{ modal.id }}">
+  {{ modal.button_label ?? 'Read more'|t }}
+</button>
+
+<div class="{{ classes|join(' ')|trim }}"{% if modal.id %} id="{{ modal.id }}"{% endif %}>
+  <div class="jcc-modal__backdrop" tabindex="-1" data-a11y-dialog-hide="jcc-modal"></div>
+
+  {# @todo: aria-labelledby usage is incorrect, headergroup data is not
+  available, and this will fail WCAG because of id="jcc-dialog-window". Not sure
+  if we need this id here, will need to follow up. #}
+  <dialog class="jcc-modal__dialog js-dialog-window" id="jcc-dialog-window" aria-labelledby="{{ headergroup.title }}" title="{{ headergroup.title }}">
+    <button class="jcc-modal__close-button usa-button--unstyled" type="button" data-a11y-dialog-hide="{{ modal.id }}" aria-label="{{ 'Close this dialog window'|t }}">
+      {% include '@atoms/icons/icon.twig' with {
+        icon: {
+          name: "close",
+          title: "Close"|t,
+          decorative: false,
+        }
+      } %}
+    </button>
+
+    <div class="jcc-modal__content">
+      {{ modal.content }}
+    </div>
+
+    <footer class="jcc-modal__footer">
+      <button class="usa-button" type="button" data-a11y-dialog-hide="{{ modal.id }}" aria-label="{{ 'Close this dialog window'|t }}">
+        {{ 'Done'|t }}
+      </button>
+    </footer>
+  </dialog>
+</div>

@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1580199330" media="all" />
+		<link rel="stylesheet" href="../../css/styles.css?1580199330" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1580199330" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1580199330" media="all" />
+		<!-- End Pattern Lab -->
+
+	</head>
+	<body class="">
+    <div style="width:0;height:0;position:absolute;overflow:hidden;">
+      <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="i-error" viewBox="0 0 24 24">
+<title>error</title>
+<path d="M12.984 12.984v-6h-1.969v6h1.969zM12.984 17.016v-2.016h-1.969v2.016h1.969zM12 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93-7.055-2.93-2.93-7.055 2.93-7.055 7.055-2.93z"></path>
+</symbol>
+<symbol id="i-warning" viewBox="0 0 24 24">
+<title>warning</title>
+<path d="M12.984 14.016v-4.031h-1.969v4.031h1.969zM12.984 18v-2.016h-1.969v2.016h1.969zM0.984 21l11.016-18.984 11.016 18.984h-22.031z"></path>
+</symbol>
+<symbol id="i-email" viewBox="0 0 24 24">
+<title>email</title>
+<path d="M20.016 8.016v-2.016l-8.016 5.016-8.016-5.016v2.016l8.016 4.969zM20.016 3.984q0.797 0 1.383 0.609t0.586 1.406v12q0 0.797-0.586 1.406t-1.383 0.609h-16.031q-0.797 0-1.383-0.609t-0.586-1.406v-12q0-0.797 0.586-1.406t1.383-0.609h16.031z"></path>
+</symbol>
+<symbol id="i-location" viewBox="0 0 24 24">
+<title>location</title>
+<path d="M12 11.484q1.031 0 1.758-0.727t0.727-1.758-0.727-1.758-1.758-0.727-1.758 0.727-0.727 1.758 0.727 1.758 1.758 0.727zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z"></path>
+</symbol>
+<symbol id="i-message" viewBox="0 0 24 24">
+<title>message</title>
+<path d="M18 8.016v-2.016h-12v2.016h12zM18 11.016v-2.016h-12v2.016h12zM18 14.016v-2.016h-12v2.016h12zM20.016 2.016q0.797 0 1.383 0.586t0.586 1.383v12q0 0.797-0.586 1.406t-1.383 0.609h-14.016l-3.984 3.984v-18q0-0.797 0.586-1.383t1.383-0.586h16.031z"></path>
+</symbol>
+<symbol id="i-mobile" viewBox="0 0 24 24">
+<title>mobile</title>
+<path d="M17.016 18.984v-13.969h-10.031v13.969h10.031zM17.016 1.031q0.797 0 1.383 0.586t0.586 1.383v18q0 0.797-0.586 1.406t-1.383 0.609h-10.031q-0.797 0-1.383-0.609t-0.586-1.406v-18q0-0.797 0.586-1.406t1.383-0.609z"></path>
+</symbol>
+<symbol id="i-key" viewBox="0 0 24 24">
+<title>key</title>
+<path d="M6.984 14.016q0.797 0 1.406-0.609t0.609-1.406-0.609-1.406-1.406-0.609-1.383 0.609-0.586 1.406 0.586 1.406 1.383 0.609zM12.656 9.984h10.359v4.031h-2.016v3.984h-3.984v-3.984h-4.359q-0.609 1.641-2.273 2.813t-3.398 1.172q-2.484 0-4.242-1.758t-1.758-4.242 1.758-4.242 4.242-1.758q1.734 0 3.398 1.172t2.273 2.813z"></path>
+</symbol>
+<symbol id="i-light" viewBox="0 0 24 24">
+<title>light</title>
+<path d="M12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 3.516-3 5.719v2.297q0 0.422-0.281 0.703t-0.703 0.281h-6q-0.422 0-0.703-0.281t-0.281-0.703v-2.297q-3-2.063-3-5.719 0-2.906 2.039-4.945t4.945-2.039zM9 21v-0.984h6v0.984q0 0.422-0.281 0.703t-0.703 0.281h-4.031q-0.422 0-0.703-0.281t-0.281-0.703z"></path>
+</symbol>
+<symbol id="i-add" viewBox="0 0 24 24">
+<title>add</title>
+<path d="M18.984 12.984h-6v6h-1.969v-6h-6v-1.969h6v-6h1.969v6h6v1.969z"></path>
+</symbol>
+<symbol id="i-add_circle" viewBox="0 0 24 24">
+<title>add_circle</title>
+<path d="M17.016 12.984v-1.969h-4.031v-4.031h-1.969v4.031h-4.031v1.969h4.031v4.031h1.969v-4.031h4.031zM12 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93-7.055-2.93-2.93-7.055 2.93-7.055 7.055-2.93z"></path>
+</symbol>
+<symbol id="i-close" viewBox="0 0 24 24">
+<title>close</title>
+<path d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"></path>
+</symbol>
+<symbol id="i-edit" viewBox="0 0 24 24">
+<title>edit</title>
+<path d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828q0.281-0.281 0.703-0.281t0.703 0.281l2.344 2.344q0.281 0.281 0.281 0.703t-0.281 0.703zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z"></path>
+</symbol>
+<symbol id="i-flag" viewBox="0 0 24 24">
+<title>flag</title>
+<path d="M14.391 6h5.625v9.984h-7.031l-0.375-1.969h-5.625v6.984h-1.969v-17.016h9z"></path>
+</symbol>
+<symbol id="i-remove" viewBox="0 0 24 24">
+<title>remove</title>
+<path d="M18.984 12.984h-13.969v-1.969h13.969v1.969z"></path>
+</symbol>
+<symbol id="i-remove_circle" viewBox="0 0 24 24">
+<title>remove_circle</title>
+<path d="M17.016 12.984v-1.969h-10.031v1.969h10.031zM12 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93-7.055-2.93-2.93-7.055 2.93-7.055 7.055-2.93z"></path>
+</symbol>
+<symbol id="i-reply" viewBox="0 0 24 24">
+<title>reply</title>
+<path d="M9.984 9q4.875 0.703 7.523 3.727t3.492 7.289q-3.609-5.109-11.016-5.109v4.078l-6.984-6.984 6.984-6.984v3.984z"></path>
+</symbol>
+<symbol id="i-send" viewBox="0 0 24 24">
+<title>send</title>
+<path d="M2.016 21v-6.984l15-2.016-15-2.016v-6.984l21 9z"></path>
+</symbol>
+<symbol id="i-person_check" viewBox="0 0 24 24">
+<title>person_check</title>
+<path d="M15.469 20.484l-3.469-3.469 1.406-1.406 2.063 2.063 5.109-5.156 1.406 1.406zM11.016 12q-1.641 0-2.836-1.172t-1.195-2.813 1.195-2.836 2.836-1.195 2.813 1.195 1.172 2.836-1.172 2.813-2.813 1.172zM9 17.016l3 3h-9v-2.016q0-1.781 2.742-2.883t5.273-1.102q0.703 0 0.984 0.047z"></path>
+</symbol>
+<symbol id="i-vote" viewBox="0 0 24 24">
+<title>vote</title>
+<path d="M12.75 2.297q0.281-0.281 0.703-0.281 0.516 0 0.703 0.281l4.969 4.969q0.281 0.281 0.281 0.703t-0.281 0.703l-6.375 6.328q-0.281 0.281-0.703 0.281t-0.703-0.281l-4.969-4.922q-0.281-0.281-0.281-0.703t0.281-0.703zM17.016 7.969l-3.563-3.563-4.922 4.969 3.516 3.516zM18 12.984l3 3v4.031q0 0.844-0.586 1.406t-1.43 0.563h-14.016q-0.797 0-1.383-0.586t-0.586-1.383v-4.031l3-3h0.844l1.969 2.016h-2.016l-1.781 2.016h13.969l-1.734-2.016h-1.922l1.969-2.016h0.703z"></path>
+</symbol>
+<symbol id="i-alarm" viewBox="0 0 24 24">
+<title>alarm</title>
+<path d="M12 20.016q2.906 0 4.945-2.063t2.039-4.969-2.039-4.945-4.945-2.039-4.945 2.039-2.039 4.945 2.039 4.969 4.945 2.063zM12 3.984q3.75 0 6.375 2.625t2.625 6.375-2.625 6.375-6.375 2.625-6.375-2.625-2.625-6.375 2.625-6.375 6.375-2.625zM12.516 8.016v5.297l3.984 2.391-0.797 1.219-4.688-2.906v-6h1.5zM7.922 3.422l-4.641 3.797-1.266-1.5 4.594-3.797zM21.984 5.719l-1.266 1.5-4.641-3.938 1.313-1.5z"></path>
+</symbol>
+<symbol id="i-attach_file" viewBox="0 0 24 24">
+<title>attach_file</title>
+<path d="M16.5 6h1.5v11.484q0 2.297-1.594 3.914t-3.891 1.617-3.914-1.617-1.617-3.914v-12.469q0-1.641 1.195-2.836t2.836-1.195 2.813 1.195 1.172 2.836v10.5q0 1.031-0.727 1.758t-1.758 0.727-1.781-0.727-0.75-1.758v-9.516h1.5v9.516q0 0.422 0.305 0.703t0.727 0.281 0.703-0.281 0.281-0.703v-10.5q0-1.031-0.727-1.781t-1.758-0.75-1.781 0.75-0.75 1.781v12.469q0 1.641 1.195 2.836t2.836 1.195 2.813-1.195 1.172-2.836v-11.484z"></path>
+</symbol>
+<symbol id="i-file" viewBox="0 0 24 24">
+<title>file</title>
+<path d="M12.984 9h5.531l-5.531-5.484v5.484zM6 2.016h8.016l6 6v12q0 0.797-0.609 1.383t-1.406 0.586h-12q-0.797 0-1.406-0.586t-0.609-1.383l0.047-16.031q0-0.797 0.586-1.383t1.383-0.586z"></path>
+</symbol>
+<symbol id="i-file_download" viewBox="0 0 24 24">
+<title>file_download</title>
+<path d="M5.016 18h13.969v2.016h-13.969v-2.016zM18.984 9l-6.984 6.984-6.984-6.984h3.984v-6h6v6h3.984z"></path>
+</symbol>
+<symbol id="i-folder" viewBox="0 0 24 24">
+<title>folder</title>
+<path d="M9.984 3.984l2.016 2.016h8.016q0.797 0 1.383 0.609t0.586 1.406v9.984q0 0.797-0.586 1.406t-1.383 0.609h-16.031q-0.797 0-1.383-0.609t-0.586-1.406v-12q0-0.797 0.586-1.406t1.383-0.609h6z"></path>
+</symbol>
+<symbol id="i-laptop" viewBox="0 0 24 24">
+<title>laptop</title>
+<path d="M3.984 6v9.984h16.031v-9.984h-16.031zM20.016 18h3.984v2.016h-24v-2.016h3.984q-0.797 0-1.383-0.609t-0.586-1.406v-9.984q0-0.797 0.586-1.406t1.383-0.609h16.031q0.797 0 1.383 0.609t0.586 1.406v9.984q0 0.797-0.586 1.406t-1.383 0.609z"></path>
+</symbol>
+<symbol id="i-mouse" viewBox="0 0 24 24">
+<title>mouse</title>
+<path d="M11.016 1.078v7.922h-7.031q0-3.047 2.039-5.297t4.992-2.625zM3.984 15v-3.984h16.031v3.984q0 3.281-2.367 5.648t-5.648 2.367-5.648-2.367-2.367-5.648zM12.984 1.078q2.953 0.375 4.992 2.625t2.039 5.297h-7.031v-7.922z"></path>
+</symbol>
+<symbol id="i-camera" viewBox="0 0 24 24">
+<title>camera</title>
+<path d="M12 17.016q2.063 0 3.539-1.477t1.477-3.539-1.477-3.539-3.539-1.477-3.539 1.477-1.477 3.539 1.477 3.539 3.539 1.477zM9 2.016h6l1.828 1.969h3.188q0.797 0 1.383 0.609t0.586 1.406v12q0 0.797-0.586 1.406t-1.383 0.609h-16.031q-0.797 0-1.383-0.609t-0.586-1.406v-12q0-0.797 0.586-1.406t1.383-0.609h3.188zM8.813 12q0-1.313 0.938-2.25t2.25-0.938 2.25 0.938 0.938 2.25-0.938 2.25-2.25 0.938-2.25-0.938-0.938-2.25z"></path>
+</symbol>
+<symbol id="i-chevron_left" viewBox="0 0 24 24">
+<title>chevron_left</title>
+<path d="M15.422 7.406l-4.594 4.594 4.594 4.594-1.406 1.406-6-6 6-6z"></path>
+</symbol>
+<symbol id="i-chevron_right" viewBox="0 0 24 24">
+<title>chevron_right</title>
+<path d="M9.984 6l6 6-6 6-1.406-1.406 4.594-4.594-4.594-4.594z"></path>
+</symbol>
+<symbol id="i-car" viewBox="0 0 24 24">
+<title>car</title>
+<path d="M5.016 11.016h13.969l-1.5-4.5h-10.969zM17.484 15.984q0.609 0 1.055-0.445t0.445-1.055-0.445-1.055-1.055-0.445-1.055 0.445-0.445 1.055 0.445 1.055 1.055 0.445zM6.516 15.984q0.609 0 1.055-0.445t0.445-1.055-0.445-1.055-1.055-0.445-1.055 0.445-0.445 1.055 0.445 1.055 1.055 0.445zM18.938 6l2.063 6v8.016q0 0.422-0.281 0.703t-0.703 0.281h-1.031q-0.422 0-0.703-0.281t-0.281-0.703v-1.031h-12v1.031q0 0.422-0.281 0.703t-0.703 0.281h-1.031q-0.422 0-0.703-0.281t-0.281-0.703v-8.016l2.063-6q0.281-0.984 1.453-0.984h10.969q1.172 0 1.453 0.984z"></path>
+</symbol>
+<symbol id="i-subway" viewBox="0 0 24 24">
+<title>subway</title>
+<path d="M18 11.016v-5.016h-5.016v5.016h5.016zM16.5 17.016q0.656 0 1.078-0.445t0.422-1.055-0.422-1.055-1.078-0.445-1.078 0.445-0.422 1.055 0.422 1.055 1.078 0.445zM11.016 11.016v-5.016h-5.016v5.016h5.016zM7.5 17.016q0.656 0 1.078-0.445t0.422-1.055-0.422-1.055-1.078-0.445-1.078 0.445-0.422 1.055 0.422 1.055 1.078 0.445zM12 2.016q3.891 0 5.953 0.797t2.063 3.188v9.516q0 1.453-1.031 2.461t-2.484 1.008l1.5 1.5v0.516h-12v-0.516l1.5-1.5q-1.453 0-2.484-1.008t-1.031-2.461v-9.516q0-2.391 2.063-3.188t5.953-0.797z"></path>
+</symbol>
+<symbol id="i-railway" viewBox="0 0 24 24">
+<title>railway</title>
+<path d="M18 9.984v-4.969h-12v4.969h12zM12 17.016q0.797 0 1.406-0.609t0.609-1.406-0.609-1.406-1.406-0.609-1.406 0.609-0.609 1.406 0.609 1.406 1.406 0.609zM3.984 15.516v-10.5q0-2.391 2.063-3.211t5.953-0.82 5.953 0.82 2.063 3.211v10.5q0 1.453-1.031 2.461t-2.484 1.008l1.5 1.5v0.516h-12v-0.516l1.5-1.5q-1.453 0-2.484-1.008t-1.031-2.461z"></path>
+</symbol>
+<symbol id="i-walk" viewBox="0 0 24 24">
+<title>walk</title>
+<path d="M9.797 8.906l-2.813 14.109h2.109l1.828-8.016 2.063 2.016v6h2.016v-7.5l-2.109-2.016 0.609-3q2.156 2.484 5.484 2.484v-1.969q-2.906 0-4.266-2.438l-1.031-1.594q-0.703-0.984-1.688-0.984-0.141 0-0.398 0.047t-0.398 0.047l-5.203 2.203v4.688h2.016v-3.375l1.781-0.703zM13.5 5.484q-0.797 0-1.406-0.586t-0.609-1.383 0.609-1.406 1.406-0.609 1.406 0.609 0.609 1.406-0.609 1.383-1.406 0.586z"></path>
+</symbol>
+<symbol id="i-taxi" viewBox="0 0 24 24">
+<title>taxi</title>
+<path d="M5.016 11.016h13.969l-1.5-4.5h-10.969zM17.484 15.984q0.609 0 1.055-0.445t0.445-1.055-0.445-1.055-1.055-0.445-1.055 0.445-0.445 1.055 0.445 1.055 1.055 0.445zM6.516 15.984q0.609 0 1.055-0.445t0.445-1.055-0.445-1.055-1.055-0.445-1.055 0.445-0.445 1.055 0.445 1.055 1.055 0.445zM18.938 6l2.063 6v8.016q0 0.422-0.281 0.703t-0.703 0.281h-1.031q-0.422 0-0.703-0.281t-0.281-0.703v-1.031h-12v1.031q0 0.422-0.281 0.703t-0.703 0.281h-1.031q-0.422 0-0.703-0.281t-0.281-0.703v-8.016l2.063-6q0.281-0.984 1.453-0.984h2.484v-2.016h6v2.016h2.484q1.172 0 1.453 0.984z"></path>
+</symbol>
+<symbol id="i-train" viewBox="0 0 24 24">
+<title>train</title>
+<path d="M16.5 17.016q0.656 0 1.078-0.445t0.422-1.055-0.422-1.055-1.078-0.445-1.078 0.445-0.422 1.055 0.422 1.055 1.078 0.445zM12.984 9.984h5.016v-3.984h-5.016v3.984zM11.016 9.984v-3.984h-5.016v3.984h5.016zM7.5 17.016q0.656 0 1.078-0.445t0.422-1.055-0.422-1.055-1.078-0.445-1.078 0.445-0.422 1.055 0.422 1.055 1.078 0.445zM12 2.016q3.891 0 5.953 0.797t2.063 3.188v9.516q0 1.453-1.031 2.461t-2.484 1.008l1.5 1.5v0.516h-2.016l-1.969-2.016h-3.797l-1.969 2.016h-2.25v-0.516l1.5-1.5q-1.453 0-2.484-1.008t-1.031-2.461v-9.516q0-1.266 0.656-2.109t1.898-1.219 2.484-0.516 2.977-0.141z"></path>
+</symbol>
+<symbol id="i-tram" viewBox="0 0 24 24">
+<title>tram</title>
+<path d="M17.016 14.016v-5.016h-10.031v5.016h10.031zM12 18.516q0.656 0 1.078-0.445t0.422-1.055-0.422-1.055-1.078-0.445-1.078 0.445-0.422 1.055 0.422 1.055 1.078 0.445zM18.984 16.922q0 1.313-0.68 2.203t-1.898 0.891h0.094l1.5 1.5v0.469h-2.016l-1.969-1.969h-3.797l-1.969 1.969h-2.25v-0.469l1.594-1.594q-1.078-0.234-1.828-1.078t-0.75-1.922v-8.438q0-1.922 1.594-2.648t4.359-0.82l0.797-1.5h-4.781v-1.5h10.031v1.5h-3.281l-0.75 1.5q2.953 0.094 4.477 0.797t1.523 2.672v8.438z"></path>
+</symbol>
+<symbol id="i-expand_less" viewBox="0 0 24 24">
+<title>expand_less</title>
+<path d="M12 8.016l6 6-1.406 1.406-4.594-4.594-4.594 4.594-1.406-1.406z"></path>
+</symbol>
+<symbol id="i-expand_more" viewBox="0 0 24 24">
+<title>expand_more</title>
+<path d="M16.594 8.578l1.406 1.406-6 6-6-6 1.406-1.406 4.594 4.594z"></path>
+</symbol>
+<symbol id="i-menu" viewBox="0 0 24 24">
+<title>menu</title>
+<path d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z"></path>
+</symbol>
+<symbol id="i-exclude" viewBox="0 0 24 24">
+<title>exclude</title>
+<path d="M12 20.016q3.281 0 5.648-2.367t2.367-5.648q0-2.672-1.734-4.922l-11.203 11.203q2.25 1.734 4.922 1.734zM3.984 12q0 2.672 1.734 4.922l11.203-11.203q-2.25-1.734-4.922-1.734-3.281 0-5.648 2.367t-2.367 5.648zM12 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93-7.055-2.93-2.93-7.055 2.93-7.055 7.055-2.93z"></path>
+</symbol>
+<symbol id="i-event" viewBox="0 0 24 24">
+<title>event</title>
+<path d="M14.016 14.016v1.969h-7.031v-1.969h7.031zM18.984 18.984v-10.969h-13.969v10.969h13.969zM18.984 3q0.797 0 1.406 0.609t0.609 1.406v13.969q0 0.797-0.609 1.406t-1.406 0.609h-13.969q-0.844 0-1.43-0.586t-0.586-1.43v-13.969q0-0.797 0.586-1.406t1.43-0.609h0.984v-2.016h2.016v2.016h7.969v-2.016h2.016v2.016h0.984zM17.016 9.984v2.016h-10.031v-2.016h10.031z"></path>
+</symbol>
+<symbol id="i-couple" viewBox="0 0 24 24">
+<title>couple</title>
+<path d="M16.5 6q-0.844 0-1.43-0.586t-0.586-1.43 0.586-1.406 1.43-0.563 1.43 0.563 0.586 1.406-0.586 1.43-1.43 0.586zM7.5 6q-0.844 0-1.43-0.586t-0.586-1.43 0.586-1.406 1.43-0.563 1.43 0.563 0.586 1.406-0.586 1.43-1.43 0.586zM18 21.984h-3v-6h-3l2.531-7.594q0.188-0.563 0.75-0.984t1.172-0.422h0.094q0.609 0 1.172 0.422t0.75 0.984l2.531 7.594h-3v6zM5.484 21.984v-7.5h-1.5v-5.484q0-0.797 0.609-1.406t1.406-0.609h3q0.797 0 1.406 0.609t0.609 1.406v5.484h-1.5v7.5h-4.031z"></path>
+</symbol>
+<symbol id="i-city" viewBox="0 0 24 24">
+<title>city</title>
+<path d="M18.984 15v-2.016h-1.969v2.016h1.969zM18.984 18.984v-1.969h-1.969v1.969h1.969zM12.984 6.984v-1.969h-1.969v1.969h1.969zM12.984 11.016v-2.016h-1.969v2.016h1.969zM12.984 15v-2.016h-1.969v2.016h1.969zM12.984 18.984v-1.969h-1.969v1.969h1.969zM6.984 11.016v-2.016h-1.969v2.016h1.969zM6.984 15v-2.016h-1.969v2.016h1.969zM6.984 18.984v-1.969h-1.969v1.969h1.969zM15 11.016h6v9.984h-18v-14.016h6v-1.969l3-3 3 3v6z"></path>
+</symbol>
+<symbol id="i-notification" viewBox="0 0 24 24">
+<title>notification</title>
+<path d="M18 15.984l2.016 2.016v0.984h-16.031v-0.984l2.016-2.016v-4.969q0-2.344 1.195-4.078t3.305-2.25v-0.703q0-0.609 0.422-1.055t1.078-0.445 1.078 0.445 0.422 1.055v0.703q2.109 0.516 3.305 2.25t1.195 4.078v4.969zM12 21.984q-0.844 0-1.43-0.563t-0.586-1.406h4.031q0 0.797-0.609 1.383t-1.406 0.586z"></path>
+</symbol>
+<symbol id="i-person" viewBox="0 0 24 24">
+<title>person</title>
+<path d="M12 14.016q2.531 0 5.273 1.102t2.742 2.883v2.016h-16.031v-2.016q0-1.781 2.742-2.883t5.273-1.102zM12 12q-1.641 0-2.813-1.172t-1.172-2.813 1.172-2.836 2.813-1.195 2.813 1.195 1.172 2.836-1.172 2.813-2.813 1.172z"></path>
+</symbol>
+<symbol id="i-globe" viewBox="0 0 24 24">
+<title>globe</title>
+<path d="M17.906 17.391q2.109-2.25 2.109-5.391 0-2.484-1.383-4.5t-3.633-2.906v0.422q0 0.797-0.609 1.383t-1.406 0.586h-1.969v2.016q0 0.422-0.305 0.703t-0.727 0.281h-1.969v2.016h6q0.422 0 0.703 0.281t0.281 0.703v3h0.984q1.406 0 1.922 1.406zM11.016 19.922v-1.922q-0.797 0-1.406-0.609t-0.609-1.406v-0.984l-4.781-4.781q-0.234 0.938-0.234 1.781 0 3.047 2.039 5.297t4.992 2.625zM12 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93-7.055-2.93-2.93-7.055 2.93-7.055 7.055-2.93z"></path>
+</symbol>
+<symbol id="i-thumb_down" viewBox="0 0 24 24">
+<title>thumb_down</title>
+<path d="M2.156 11.109l2.672-6.141q0.609-0.984 1.734-0.984h8.109q0.984 0 1.664 0.68t0.68 1.664v7.828q0 0.844-0.609 1.453l-6.422 6.375-0.422-0.469q-0.563-0.563-0.891-1.219-0.141-0.328-0.094-0.656l0.938-4.641h-5.531q-0.797 0-1.383-0.609t-0.586-1.406v-1.078q0-0.469 0.141-0.797zM21.984 3.984v11.016h-1.969q-0.422 0-0.727-0.281t-0.305-0.703v-9q0-0.422 0.305-0.727t0.727-0.305h1.969z"></path>
+</symbol>
+<symbol id="i-thumb_up" viewBox="0 0 24 24">
+<title>thumb_up</title>
+<path d="M21.844 12.891l-2.672 6.141q-0.609 0.984-1.734 0.984h-8.109q-0.938 0-1.641-0.703t-0.703-1.641v-7.828q0-0.844 0.609-1.453l6.422-6.375 0.422 0.469q0.563 0.563 0.891 1.219 0.141 0.328 0.094 0.656l-0.938 4.641h5.531q0.797 0 1.383 0.609t0.586 1.406v1.078q0 0.422-0.141 0.797zM2.016 20.016v-11.016h1.969q0.422 0 0.727 0.281t0.305 0.703v9q0 0.422-0.305 0.727t-0.727 0.305h-1.969z"></path>
+</symbol>
+<symbol id="i-bookmark" viewBox="0 0 24 24">
+<title>bookmark</title>
+<path d="M17.016 3q0.797 0 1.383 0.609t0.586 1.406v15.984l-6.984-3-6.984 3v-15.984q0-0.797 0.586-1.406t1.383-0.609h10.031z"></path>
+</symbol>
+<symbol id="i-delete" viewBox="0 0 24 24">
+<title>delete</title>
+<path d="M18.984 3.984v2.016h-13.969v-2.016h3.469l1.031-0.984h4.969l1.031 0.984h3.469zM6 18.984v-12h12v12q0 0.797-0.609 1.406t-1.406 0.609h-7.969q-0.797 0-1.406-0.609t-0.609-1.406z"></path>
+</symbol>
+<symbol id="i-done" viewBox="0 0 24 24">
+<title>done</title>
+<path d="M9 16.219l10.594-10.641 1.406 1.406-12 12-5.578-5.578 1.359-1.406z"></path>
+</symbol>
+<symbol id="i-home" viewBox="0 0 24 24">
+<title>home</title>
+<path d="M9.984 20.016h-4.969v-8.016h-3l9.984-9 9.984 9h-3v8.016h-4.969v-6h-4.031v6z"></path>
+</symbol>
+<symbol id="i-info" viewBox="0 0 24 24">
+<title>info</title>
+<path d="M12.984 9v-2.016h-1.969v2.016h1.969zM12.984 17.016v-6h-1.969v6h1.969zM12 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93-7.055-2.93-2.93-7.055 2.93-7.055 7.055-2.93z"></path>
+</symbol>
+<symbol id="i-search" viewBox="0 0 24 24">
+<title>search</title>
+<path d="M9.516 14.016q1.875 0 3.188-1.313t1.313-3.188-1.313-3.188-3.188-1.313-3.188 1.313-1.313 3.188 1.313 3.188 3.188 1.313zM15.516 14.016l4.969 4.969-1.5 1.5-4.969-4.969v-0.797l-0.281-0.281q-1.781 1.547-4.219 1.547-2.719 0-4.617-1.875t-1.898-4.594 1.898-4.617 4.617-1.898 4.594 1.898 1.875 4.617q0 0.984-0.469 2.227t-1.078 1.992l0.281 0.281h0.797z"></path>
+</symbol>
+<symbol id="i-accessible" viewBox="0 0 24 24">
+<title>accessible</title>
+<path d="M12.844 18h2.063q-0.328 1.641-1.781 2.813t-3.141 1.172q-2.063 0-3.516-1.453t-1.453-3.516q0-1.688 1.172-3.141t2.813-1.781v2.063q-0.891 0.328-1.453 1.102t-0.563 1.758q0 1.219 0.891 2.109t2.109 0.891q0.984 0 1.758-0.563t1.102-1.453zM9.984 9.094q0-1.125 0.984-1.781t2.016-0.047h0.047v0.047q0.328 0.141 0.609 0.422l1.313 1.453q1.688 1.828 4.031 1.828v1.969q-2.625 0-4.969-1.922v3.422h3q0.797 0 1.383 0.609t0.586 1.406v5.484h-1.969v-4.969h-5.016q-0.797 0-1.406-0.609t-0.609-1.406v-5.906zM9.984 3.984q0-0.844 0.586-1.406t1.43-0.563 1.43 0.563 0.586 1.406-0.586 1.43-1.43 0.586-1.43-0.586-0.586-1.43z"></path>
+</symbol>
+<symbol id="i-hand" viewBox="0 0 24 24">
+<title>hand</title>
+<path d="M23.016 5.484v14.531q0 1.641-1.195 2.813t-2.836 1.172h-7.266q-1.688 0-2.859-1.172l-7.875-8.016q1.266-1.219 1.313-1.219 0.328-0.281 0.797-0.281 0.328 0 0.609 0.141l4.313 2.438v-11.906q0-0.609 0.445-1.055t1.055-0.445 1.055 0.445 0.445 1.055v7.031h0.984v-9.516q0-0.656 0.422-1.078t1.078-0.422 1.078 0.422 0.422 1.078v9.516h0.984v-8.531q0-0.609 0.445-1.055t1.055-0.445 1.055 0.445 0.445 1.055v8.531h1.031v-5.531q0-0.609 0.445-1.055t1.055-0.445 1.055 0.445 0.445 1.055z"></path>
+</symbol>
+<symbol id="i-phone" viewBox="0 0 24 24">
+<title>phone</title>
+<path d="M17.391 10.781l-2.203-2.203q-0.422-0.422-0.234-1.031 0.563-1.688 0.563-3.563 0-0.422 0.281-0.703t0.703-0.281h3.516q0.422 0 0.703 0.281t0.281 0.703q0 7.031-4.992 12.023t-12.023 4.992q-0.422 0-0.703-0.281t-0.281-0.703v-3.516q0-0.422 0.281-0.703t0.703-0.281q1.875 0 3.563-0.563 0.563-0.234 1.031 0.234l2.203 2.203q4.359-2.25 6.609-6.609z"></path>
+</symbol>
+<symbol id="i-people" viewBox="0 0 24 24">
+<title>people</title>
+<path d="M9 12.984q1.5 0 3.281 0.422t3.258 1.406 1.477 2.203v3h-16.031v-3q0-1.219 1.477-2.203t3.258-1.406 3.281-0.422zM15 12q-0.609 0-1.313-0.234 1.313-1.547 1.313-3.75 0-0.891-0.375-2.016t-0.938-1.781q0.703-0.234 1.313-0.234 1.641 0 2.813 1.195t1.172 2.836-1.172 2.813-2.813 1.172zM5.016 8.016q0-1.641 1.172-2.836t2.813-1.195 2.813 1.195 1.172 2.836-1.172 2.813-2.813 1.172-2.813-1.172-1.172-2.813zM16.688 13.125q2.484 0.375 4.406 1.383t1.922 2.508v3h-4.031v-3q0-2.297-2.297-3.891z"></path>
+</symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24">
+<title>briefcase</title>
+<path d="M14.016 6.984v-1.969h-4.031v1.969h4.031zM20.016 6.984q0.797 0 1.383 0.609t0.586 1.406v3q0 0.797-0.586 1.406t-1.383 0.609h-6v-2.016h-4.031v2.016h-6q-0.844 0-1.406-0.586t-0.563-1.43v-3q0-0.797 0.586-1.406t1.383-0.609h3.984v-1.969l2.016-2.016h3.984l2.016 2.016v1.969h4.031zM9.984 15.984h4.031v-0.984h6.984v3.984q0 0.844-0.586 1.43t-1.43 0.586h-13.969q-0.844 0-1.43-0.586t-0.586-1.43v-3.984h6.984v0.984z"></path>
+</symbol>
+</defs>
+</svg>
+    </div>
+
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="sg-main" role="main">
+  <!-- Patterns -->
+  <div id="sg-patterns">
+                  <div id="viewall-pages-judgment" class="sg-subtype">
+  <h2>
+    <a href="../../patterns/05-pages-judgment/index.html" class="patternLink" data-patternpartial="viewall-pages-judgment">
+      judgment
+    </a>
+  </h2>
+  
+  <div class="sg-pattern-body">
+    
+  </div>
+</div>                        <div id="pages-judgment" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/05-pages-judgment-judgment/05-pages-judgment-judgment.html" class="patternLink" data-patternpartial="pages-judgment" title="Link to Pattern">
+        judgment
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="pages-judgment" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-judgment" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-judgment"></div>
+    
+  <div class="sg-pattern-example">
+    <header class="jcc-header">
+  <div class="jcc-header__container">
+    <div class="jcc-header__logo">
+         <div class="jcc-logo">
+    
+      <img src="../../images/jcc-logo.svg" alt="Logo" />
+    </div>
+    </div>
+    <div id="js-header_menu--mobile"></div>
+<div class="jcc-header_menu--desktop slicknav_menu slicknav_menu--desktop">
+	<ul id="slick-menu" class="jcc-header_nav slicknav_nav">
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link One</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Two</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Three</a>
+	    </li>
+	  	</ul>
+</div>
+  </div>
+</header>
+      
+
+
+<div class="jcc-hero jcc-hero--has-two-columns-threequarter">
+  <div class="jcc-hero__container">
+    
+    <div class="jcc-hero__content">
+              <nav class="jcc-breadcrumbs-nav">
+  <ul class="jcc-breadcrumbs">
+            <li class="jcc-breadcrumb__item">
+      
+            <span aria-current="location">Debt Collection</span>
+      
+    </li>
+            <li class="jcc-breadcrumb__item">
+      
+            <span aria-current="location">Wage Garnishment</span>
+      
+    </li>
+      </ul>
+</nav>
+      
+      <div class="jcc-hero__columns">
+        <div class="jcc-hero__column-left">
+          <h1 class="jcc-hero__title">After a Judgment in a Debt Collection Case</h1>
+
+                      <div class="jcc-hero__lead">If a judgment is entered against you, it is only the first step the debt collector must go through in seeking to collect a judgment. If you face a collection on a judgment, remember:</div>
+          
+                  </div>
+
+                  <div class="jcc-hero__column-right">
+             <ul> <li>You will not go to jail for having a judgment against you.</li> <li>If you receive a <a href="/patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html">wage garnishment</a> or <a href="/patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-bank-levy.html">bank levy</a>, you have only days to take action.</li> <li>There are ways you can control the repayment of the judgment.</li> </ul>
+          </div>
+              </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="jcc-switchboard jcc-switchboard--has-background-color--dark--primary">
+  <div class="jcc-switchboard__container">
+    
+  <header class="jcc-header-group">
+          <p class="jcc-header-group__brow">Next Steps</p>
+    
+          <h2 class="jcc-header-group__title">What can we help you with today?</h2>
+    
+    
+      </header>
+
+    <div class="jcc-switchboard__content">
+              <ul class="jcc-switchboard__tiles">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Wage Garnishment</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html">Someone took money from my paycheck</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Lien Against Property</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-lien-against-property/05-pages-judgment-judgment-lien-against-property.html">I was told I can’t sell my property</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Bank Levy</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-bank-levy/05-pages-judgment-judgment-bank-levy.html">Someone tried to take money from my bank account</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+      
+              <ul class="jcc-switchboard__tiles jcc-switchboard__tiles-secondary">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">General Information</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-general-information/05-pages-judgment-judgment-general-information.html">I want to find out more about Debt Collection</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Negotiating a Settlement</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-negotiating-a-settlement/05-pages-judgment-judgment-negotiating-a-settlement.html">I want to talk with someone and work something out</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Pay in Installments</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-pay-in-installments/05-pages-judgment-judgment-pay-in-installments.html">I don’t have all the money but can pay over time</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+          </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-pages-judgment" class="sg-pattern-data">
+    {"lineage":[{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-hero","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-tab-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-postcard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-text-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-steps","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-card","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-timeline","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-switchboard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"judgment"},"patternDesc":"","patternExtension":"twig","patternName":"judgment","patternPartial":"pages-judgment","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->                        <div id="pages-judgment-bank-levy" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/05-pages-judgment-judgment-bank-levy/05-pages-judgment-judgment-bank-levy.html" class="patternLink" data-patternpartial="pages-judgment-bank-levy" title="Link to Pattern">
+        judgment bank levy
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="pages-judgment-bank-levy" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-judgment-bank-levy" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-judgment-bank-levy"></div>
+    
+  <div class="sg-pattern-example">
+    <header class="jcc-header">
+  <div class="jcc-header__container">
+    <div class="jcc-header__logo">
+         <div class="jcc-logo">
+    
+      <img src="../../images/jcc-logo.svg" alt="Logo" />
+    </div>
+    </div>
+    <div id="js-header_menu--mobile"></div>
+<div class="jcc-header_menu--desktop slicknav_menu slicknav_menu--desktop">
+	<ul id="slick-menu" class="jcc-header_nav slicknav_nav">
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link One</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Two</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Three</a>
+	    </li>
+	  	</ul>
+</div>
+  </div>
+</header>
+    
+
+
+<div class="jcc-hero jcc-hero--has-two-columns-threequarter">
+  <div class="jcc-hero__container">
+    
+    <div class="jcc-hero__content">
+              <nav class="jcc-breadcrumbs-nav">
+  <ul class="jcc-breadcrumbs">
+            <li class="jcc-breadcrumb__item">
+      
+            <a href="../../patterns/05-pages-judgment-judgment/05-pages-judgment-judgment.html">Debt Collection</a>
+      
+    </li>
+            <li class="jcc-breadcrumb__item">
+      
+            <span aria-current="location">Bank Levy</span>
+      
+    </li>
+      </ul>
+</nav>
+      
+      <div class="jcc-hero__columns">
+        <div class="jcc-hero__column-left">
+          <h1 class="jcc-hero__title">Bank Levy</h1>
+
+                      <div class="jcc-hero__lead">A bank levy is when the debt collector directs the sheriff to take the money in your bank account or items in a safe deposit box.</div>
+          
+                  </div>
+
+              </div>
+    </div>
+  </div>
+</div>
+
+      
+
+  <div class="jcc-tab-section jcc-tab-section--has-background-color--transparent tabbed">
+
+    <div class="jcc-tab-section__container">
+              
+  <header class="jcc-header-group">
+    
+          <h2 class="jcc-header-group__title">What did the bank notice say?</h2>
+    
+    
+      </header>
+      
+      <ul>
+                            <li>
+            <a href="#section19569212961">The bank levied my account</a>
+          </li>
+                            <li>
+            <a href="#section19569212962">The bank attempted but did not levy my account</a>
+          </li>
+              </ul>
+    </div>
+
+          <section id="section19569212961">
+        
+<div class="jcc-text-section jcc-text-section--has-background-color--light--secondary jcc-text-section--has-two-columns-threequarter">
+  <div class="jcc-text-section__container">
+    
+  <header class="jcc-header-group">
+    
+          <h2 class="jcc-header-group__title">Filing a claim of exemption for bank levy</h2>
+    
+    
+      </header>
+
+          <div class="jcc-text-section__content">
+        <div class="jcc-text-section__column-left">
+           <p class="jcc-lead">The amount taken will be up to the amount of the judgment plus interest. The levy is not continuous; it only takes the money in the account at the time of the levy. Funds deposited after the levy are not taken. You may be able to get some or all of the money levied depending on the source of the funds deposited into the account or your financial situation.</p> <p>If your bank account is levied, you must act quickly! You have only ten days from the date of the levy to file a claim of exemption (plus five days if the notice was sent by mail) with the sheriff performing the levy.</p>
+        </div>
+
+                  <div class="jcc-text-section__column-right">
+            <div class="margin-bottom-4">
+
+  <div class="jcc-read-more  jcc-read-more--block">
+    <button class="jcc-read-more__trigger usa-button usa-button--unstyled" data-a11y-toggle="read-more-block">
+      What is a judgment
+        <svg class="icon icon-expand_more" role="img" title="Expand"><use xlink:href="#i-expand_more"></use></svg>    </button>
+    <div class="jcc-read-more__content" id="read-more-block">
+      If your bank account is levied, you must act quickly! You have only ten days from the date of the levy to file a claim of exempltion (plus five days if the notice was sent be mail) with the sheriff performing the levy.
+    </div>
+  </div>
+</div><div class="margin-bottom-4">
+
+<div class="jcc-list-block">
+      <h2 class="jcc-list-block__title">Relevant Files</h2>
+  
+  
+<div class="jcc-link-list jcc-link-list--files">
+  <ul class="jcc-link-list__list">
+                <li class="jcc-link-list__item">
+                  
+          <span class="jcc-link-list__icon">
+              <svg class="icon icon-file" role="img" title="File"><use xlink:href="#i-file"></use></svg>          </span>
+        
+        This item is mapped from list block (Enforcement of Judgement)
+
+        (<a download href="#">Form EJ-160</a>)
+      </li>
+                <li class="jcc-link-list__item">
+                  
+          <span class="jcc-link-list__icon">
+              <svg class="icon icon-file" role="img" title="File"><use xlink:href="#i-file"></use></svg>          </span>
+        
+        Financial Statement
+
+        (<a download href="#">Form EJ-165</a>)
+      </li>
+      </ul>
+</div>
+</div>
+</div>
+          </div>
+              </div>
+      </div>
+</div>
+
+  <div class="jcc-steps-section jcc-steps-section--has-background-color--transparent">
+    <div class="jcc-steps-section__container">
+
+      
+  <header class="jcc-header-group">
+    
+          <h2 class="jcc-header-group__title">Steps to pay in installments</h2>
+    
+    
+      </header>
+
+      <ul class="jcc-steps">
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Prepare the claim of exemption</h3>
+  
+      <div class="jcc-step__excerpt"><p>Prepare a Claim of Exemption (form WG-006) and Financial Statement (form WG-007)</p></div>
+  
+      <div class="jcc-step__read-more">
+              
+
+  <div class="jcc-read-more">
+    <button class="jcc-read-more__trigger usa-button usa-button--unstyled" data-a11y-toggle="bl-steps-toggle-1">
+      read more
+        <svg class="icon icon-expand_more" role="img" title="Expand"><use xlink:href="#i-expand_more"></use></svg>    </button>
+    <div class="jcc-read-more__content" id="bl-steps-toggle-1">
+      Read more content
+    </div>
+  </div>
+
+          </div>
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">File the claim of exemption</h3>
+  
+      <div class="jcc-step__excerpt"><p>File the original plus one copy with the sheriff shown on the Notice of Levy (form EJ-150) form within 10 days (15 days if the Notice of Levy was served by mail)</p></div>
+  
+      <div class="jcc-step__read-more">
+              
+
+  <div class="jcc-read-more">
+    <button class="jcc-read-more__trigger usa-button usa-button--unstyled" data-a11y-toggle="bl-steps-toggle-2">
+      read more
+        <svg class="icon icon-expand_more" role="img" title="Expand"><use xlink:href="#i-expand_more"></use></svg>    </button>
+    <div class="jcc-read-more__content" id="bl-steps-toggle-2">
+      Read more content
+    </div>
+  </div>
+
+          </div>
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Wait to see if the claim of exemption is opposed</h3>
+  
+      <div class="jcc-step__excerpt"><p>File the original plus one copy with the sheriff shown on the Order to Withhold Wages within 10 days (15 if the Order to Withhold Wages was served by mail).</p></div>
+  
+      <div class="jcc-step__read-more">
+              
+
+  <div class="jcc-read-more">
+    <button class="jcc-read-more__trigger usa-button usa-button--unstyled" data-a11y-toggle="bl-steps-toggle-3">
+      read more
+        <svg class="icon icon-expand_more" role="img" title="Expand"><use xlink:href="#i-expand_more"></use></svg>    </button>
+    <div class="jcc-read-more__content" id="bl-steps-toggle-3">
+      Read more content
+    </div>
+  </div>
+
+          </div>
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Reply to the opposition, if any</h3>
+  
+      <div class="jcc-step__excerpt"><p>Serve and file your reply, if any with the court</p></div>
+  
+      <div class="jcc-step__read-more">
+              
+
+  <div class="jcc-read-more">
+    <button class="jcc-read-more__trigger usa-button usa-button--unstyled" data-a11y-toggle="bl-steps-toggle-4">
+      read more
+        <svg class="icon icon-expand_more" role="img" title="Expand"><use xlink:href="#i-expand_more"></use></svg>    </button>
+    <div class="jcc-read-more__content" id="bl-steps-toggle-4">
+      Read more content
+    </div>
+  </div>
+
+          </div>
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Attend the hearing, if any</h3>
+  
+      <div class="jcc-step__excerpt"><p>Gather your evidence. Check tentative rulings the court day before if your court uses them.</p></div>
+  
+      <div class="jcc-step__read-more">
+              
+
+  <div class="jcc-read-more">
+    <button class="jcc-read-more__trigger usa-button usa-button--unstyled" data-a11y-toggle="bl-steps-toggle-5">
+      read more
+        <svg class="icon icon-expand_more" role="img" title="Expand"><use xlink:href="#i-expand_more"></use></svg>    </button>
+    <div class="jcc-read-more__content" id="bl-steps-toggle-5">
+      Read more content
+    </div>
+  </div>
+
+          </div>
+  </div>
+          </li>
+              </ul>
+    </div>
+  </div>
+
+      </section>
+          <section id="section19569212962">
+        
+<div class="jcc-text-section jcc-text-section--has-background-color--light--secondary jcc-text-section--has-two-columns-threequarter">
+  <div class="jcc-text-section__container">
+    
+  <header class="jcc-header-group">
+    
+          <h2 class="jcc-header-group__title">Direct-deposit federal benefit accounts</h2>
+    
+    
+      </header>
+
+          <div class="jcc-text-section__content">
+        <div class="jcc-text-section__column-left">
+           <p class="jcc-lead">You likely received this notice because your bank account is a Social Security direct-deposit account.</p> <p>Federal benefits are exempt from a bank levy, and in recent years federal regulations have required banks to look at whether an account is receiving federal benefits before levying any funds. If an account is a deposit account for federal benefits the bank then looks at the total amount of benefits deposited in the two months prior to the levy. If the balance in the account is less than the two months of benefits, the bank does not levy the account, and sends a notice of this to the account holder. If the account balance exceeded the levy amounts, then only the amount over these two months of benefits would be taken.</p> <p>As long as your account balance is less than two months of the federal benefits being deposited into it, your account will remain safe from garnishment.</p>
+        </div>
+
+                  <div class="jcc-text-section__column-right">
+            <div class="margin-bottom-4">
+
+  <div class="jcc-read-more  jcc-read-more--block">
+    <button class="jcc-read-more__trigger usa-button usa-button--unstyled" data-a11y-toggle="bl-read-more-toggle-2">
+      What is a judgment
+        <svg class="icon icon-expand_more" role="img" title="Expand"><use xlink:href="#i-expand_more"></use></svg>    </button>
+    <div class="jcc-read-more__content" id="bl-read-more-toggle-2">
+      If your bank account is levied, you must act quickly! You have only ten days from the date of the levy to file a claim of exempltion (plus five days if the notice was sent be mail) with the sheriff performing the levy.
+    </div>
+  </div>
+</div><div class="margin-bottom-4">
+
+<div class="jcc-list-block">
+      <h2 class="jcc-list-block__title">Relevant Files</h2>
+  
+  
+<div class="jcc-link-list jcc-link-list--files">
+  <ul class="jcc-link-list__list">
+                <li class="jcc-link-list__item">
+                  
+          <span class="jcc-link-list__icon">
+              <svg class="icon icon-file" role="img" title="File"><use xlink:href="#i-file"></use></svg>          </span>
+        
+        This item is mapped from list block (Enforcement of Judgement)
+
+        (<a download href="#">Form EJ-160</a>)
+      </li>
+                <li class="jcc-link-list__item">
+                  
+          <span class="jcc-link-list__icon">
+              <svg class="icon icon-file" role="img" title="File"><use xlink:href="#i-file"></use></svg>          </span>
+        
+        Financial Statement
+
+        (<a download href="#">Form EJ-165</a>)
+      </li>
+      </ul>
+</div>
+</div>
+</div>
+          </div>
+              </div>
+      </div>
+</div>
+
+      </section>
+      </div>
+
+  
+
+<div class="jcc-switchboard jcc-switchboard--has-background-color--dark--primary">
+  <div class="jcc-switchboard__container">
+    
+  <header class="jcc-header-group">
+          <p class="jcc-header-group__brow">Next Steps</p>
+    
+          <h2 class="jcc-header-group__title">What can we help you with today?</h2>
+    
+    
+      </header>
+
+    <div class="jcc-switchboard__content">
+              <ul class="jcc-switchboard__tiles">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Wage Garnishment</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html">Someone took money from my paycheck</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Lien Against Property</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-lien-against-property/05-pages-judgment-judgment-lien-against-property.html">I was told I can’t sell my property</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Bank Levy</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-bank-levy/05-pages-judgment-judgment-bank-levy.html">Someone tried to take money from my bank account</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+      
+              <ul class="jcc-switchboard__tiles jcc-switchboard__tiles-secondary">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">General Information</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-general-information/05-pages-judgment-judgment-general-information.html">I want to find out more about Debt Collection</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Negotiating a Settlement</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-negotiating-a-settlement/05-pages-judgment-judgment-negotiating-a-settlement.html">I want to talk with someone and work something out</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Pay in Installments</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-pay-in-installments/05-pages-judgment-judgment-pay-in-installments.html">I don’t have all the money but can pay over time</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+          </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-pages-judgment-bank-levy" class="sg-pattern-data">
+    {"lineage":[{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-hero","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-tab-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-postcard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-text-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-steps","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-card","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-timeline","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-switchboard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"judgment"},"patternDesc":"","patternExtension":"twig","patternName":"judgment bank levy","patternPartial":"pages-judgment-bank-levy","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->                        <div id="pages-judgment-general-information" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/05-pages-judgment-judgment-general-information/05-pages-judgment-judgment-general-information.html" class="patternLink" data-patternpartial="pages-judgment-general-information" title="Link to Pattern">
+        judgment general information
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="pages-judgment-general-information" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-judgment-general-information" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-judgment-general-information"></div>
+    
+  <div class="sg-pattern-example">
+    <header class="jcc-header">
+  <div class="jcc-header__container">
+    <div class="jcc-header__logo">
+         <div class="jcc-logo">
+    
+      <img src="../../images/jcc-logo.svg" alt="Logo" />
+    </div>
+    </div>
+    <div id="js-header_menu--mobile"></div>
+<div class="jcc-header_menu--desktop slicknav_menu slicknav_menu--desktop">
+	<ul id="slick-menu" class="jcc-header_nav slicknav_nav">
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link One</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Two</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Three</a>
+	    </li>
+	  	</ul>
+</div>
+  </div>
+</header>
+      
+
+
+<div class="jcc-hero jcc-hero--has-two-columns-threequarter">
+  <div class="jcc-hero__container">
+    
+    <div class="jcc-hero__content">
+              <nav class="jcc-breadcrumbs-nav">
+  <ul class="jcc-breadcrumbs">
+            <li class="jcc-breadcrumb__item">
+      
+            <a href="../../patterns/05-pages-judgment-judgment/05-pages-judgment-judgment.html">Debt Collection</a>
+      
+    </li>
+            <li class="jcc-breadcrumb__item">
+      
+            <span aria-current="location">General Information</span>
+      
+    </li>
+      </ul>
+</nav>
+      
+      <div class="jcc-hero__columns">
+        <div class="jcc-hero__column-left">
+          <h1 class="jcc-hero__title">General information about judgments, collection, and your options</h1>
+
+                      <div class="jcc-hero__lead">A judgment is an order stating that you owe the debt collector the amount on the judgment.</div>
+          
+                  </div>
+
+                  <div class="jcc-hero__column-right">
+             <ul> <li>You would owe the full amount right away unless the judge ordered a payment plan (or you are filing an appeal).</li> <li>The court does not take any steps to collect a judgment on its own. It is up to you to pay the judgment, or the debt collector to collect the judgment.</li> <li>As long as the judgment is unpaid, it will gather interest at 10% per year. The sooner a judgment is paid, the less interest you will have to pay on top of the judgment.</li> </ul>
+          </div>
+              </div>
+    </div>
+  </div>
+</div>
+
+      
+<div class="jcc-text-section jcc-text-section--has-background-color--transparent jcc-text-section--has-two-columns-threequarter">
+  <div class="jcc-text-section__container">
+    
+
+          <div class="jcc-text-section__content">
+        <div class="jcc-text-section__column-left">
+          <h3>Why did I receive a judgment?</h3> <p class="jcc-lead">You received a judgment because the court decided against you in a court case. This could have happened in one of a few ways:</p> <h4>By default</h4> <p>Because you didn't respond to the lawsuit.</p> <p>At the beginning of a case, the defendant is supposed to serve you with a few documents including a Summons and Complaint. This means that someone is supposed to hand you or someone in your home or work with a copy of these documents. If they hand it to someone else, a copy is supposed to be mailed to you. This starts your time to respond to the lawsuit. Normally, you have 30 days to respond. If you do not, the other side may request "default" and ask the court to decide the case without you.</p><ul class="jcc-list-group">
+            <li>
+        <p><strong>I didn't understand I needed to file a response.</strong></p>
+        <p>If you act quickly, you may be eligible to "set aside" the default judgment, or you might be able to negotiate a settlement with the debt collector.</p>
+      </li>
+                <li>
+        <p><strong>I didn't know there was a court case.</strong></p>
+        <p>Depending on the reasons, you may be eligible to "set aside" the default judgment, or you might be able to negotiate a settlement with the debt collector.</p>
+      </li>
+            </ul>
+<h4>After trial</h4> <p>After each side appears in court to present their case.</p> <h4>After a motion for summary judgment or judgment on the pleadings</h4> <p>After the debt collector files a motion to decide the case without trial.</p>
+        </div>
+
+                  <div class="jcc-text-section__column-right">
+            <div class="margin-bottom-4">
+
+  <div class="jcc-read-more  jcc-read-more--block">
+    <button class="jcc-read-more__trigger usa-button usa-button--unstyled" data-a11y-toggle="read-more-block">
+      What is a judgment
+        <svg class="icon icon-expand_more" role="img" title="Expand"><use xlink:href="#i-expand_more"></use></svg>    </button>
+    <div class="jcc-read-more__content" id="read-more-block">
+      If your bank account is levied, you must act quickly! You have only ten days from the date of the levy to file a claim of exempltion (plus five days if the notice was sent be mail) with the sheriff performing the levy.
+    </div>
+  </div>
+</div>
+          </div>
+              </div>
+      </div>
+</div>
+
+        
+<div class="jcc-text-section jcc-text-section--has-background-color--light--secondary jcc-text-section--has-two-columns-half">
+  <div class="jcc-text-section__container">
+    
+
+          <div class="jcc-text-section__content">
+        <div class="jcc-text-section__column-left">
+           <h3>What can happen next</h3> <p>In collection cases, it is common for a debt collector to try to collect by:</p><ul class="jcc-list-group">
+            <li>
+        <p><strong>Wage garnishment</strong></p>
+        <p>Taking up to 25% of after-tax wages</p>
+      </li>
+                <li>
+        <p><strong>Lien against real property</strong></p>
+        <p>Making it so you cannot sell, re-finance, or buy land without paying</p>
+      </li>
+                <li>
+        <p><strong>Bank levy</strong></p>
+        <p>Taking the money from a bank account or emptying a safe-deposit box</p>
+      </li>
+      </ul>
+<p>You have the opportunity to defend against each type of collection. You may also negotiate a settlement with the debt collector, or in a limited civil case (under $25,000) file a motion to pay judgment in installments.</p>
+        </div>
+
+                  <div class="jcc-text-section__column-right">
+             <h3>How can I protect my money or things from collection?</h3> <p>When a debt collector tries to collect, you may attempt to defend your money or property from collection. Other than negotiating a settlement, these defenses do not reduce a judgment, or stop interest from being added to the judgment.</p><ul class="jcc-list-group">
+            <li>
+        <p><strong>Wage garnishment</strong></p>
+        <p>Claim of exemption (Wage Garnishment)</p>
+      </li>
+                <li>
+        <p><strong>Lien against real property</strong></p>
+        <p>Pay the judgment, negotiate a settlement</p>
+      </li>
+                <li>
+        <p><strong>Bank levy</strong></p>
+        <p>Claim of exemption (Bank Levy)</p>
+      </li>
+      </ul>
+
+          </div>
+              </div>
+      </div>
+</div>
+
+  
+
+<div class="jcc-switchboard jcc-switchboard--has-background-color--dark--primary">
+  <div class="jcc-switchboard__container">
+    
+  <header class="jcc-header-group">
+          <p class="jcc-header-group__brow">Next Steps</p>
+    
+          <h2 class="jcc-header-group__title">What can we help you with today?</h2>
+    
+    
+      </header>
+
+    <div class="jcc-switchboard__content">
+              <ul class="jcc-switchboard__tiles">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Wage Garnishment</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html">Someone took money from my paycheck</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Lien Against Property</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-lien-against-property/05-pages-judgment-judgment-lien-against-property.html">I was told I can’t sell my property</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Bank Levy</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-bank-levy/05-pages-judgment-judgment-bank-levy.html">Someone tried to take money from my bank account</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+      
+              <ul class="jcc-switchboard__tiles jcc-switchboard__tiles-secondary">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">General Information</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-general-information/05-pages-judgment-judgment-general-information.html">I want to find out more about Debt Collection</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Negotiating a Settlement</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-negotiating-a-settlement/05-pages-judgment-judgment-negotiating-a-settlement.html">I want to talk with someone and work something out</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Pay in Installments</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-pay-in-installments/05-pages-judgment-judgment-pay-in-installments.html">I don’t have all the money but can pay over time</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+          </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-pages-judgment-general-information" class="sg-pattern-data">
+    {"lineage":[{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-hero","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-tab-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-postcard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-text-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-steps","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-card","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-timeline","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-switchboard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"judgment"},"patternDesc":"","patternExtension":"twig","patternName":"judgment general information","patternPartial":"pages-judgment-general-information","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->                        <div id="pages-judgment-lien-against-property" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/05-pages-judgment-judgment-lien-against-property/05-pages-judgment-judgment-lien-against-property.html" class="patternLink" data-patternpartial="pages-judgment-lien-against-property" title="Link to Pattern">
+        judgment lien against property
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="pages-judgment-lien-against-property" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-judgment-lien-against-property" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-judgment-lien-against-property"></div>
+    
+  <div class="sg-pattern-example">
+    <header class="jcc-header">
+  <div class="jcc-header__container">
+    <div class="jcc-header__logo">
+         <div class="jcc-logo">
+    
+      <img src="../../images/jcc-logo.svg" alt="Logo" />
+    </div>
+    </div>
+    <div id="js-header_menu--mobile"></div>
+<div class="jcc-header_menu--desktop slicknav_menu slicknav_menu--desktop">
+	<ul id="slick-menu" class="jcc-header_nav slicknav_nav">
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link One</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Two</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Three</a>
+	    </li>
+	  	</ul>
+</div>
+  </div>
+</header>
+    
+
+
+<div class="jcc-hero jcc-hero--has-two-columns-threequarter">
+  <div class="jcc-hero__container">
+    
+    <div class="jcc-hero__content">
+              <nav class="jcc-breadcrumbs-nav">
+  <ul class="jcc-breadcrumbs">
+            <li class="jcc-breadcrumb__item">
+      
+            <a href="../../patterns/05-pages-judgment-judgment/05-pages-judgment-judgment.html">Debt Collection</a>
+      
+    </li>
+            <li class="jcc-breadcrumb__item">
+      
+            <span aria-current="location">Lien Against Property</span>
+      
+    </li>
+      </ul>
+</nav>
+      
+      <div class="jcc-hero__columns">
+        <div class="jcc-hero__column-left">
+          <h1 class="jcc-hero__title">Liens against real property</h1>
+
+                      <div class="jcc-hero__lead">A lien is the result of the judgment being recorded with the Clerk Recorder for the county.</div>
+          
+                  </div>
+
+              </div>
+    </div>
+  </div>
+</div>
+
+      
+<div class="jcc-text-section jcc-text-section--has-background-color--transparent jcc-text-section--has-two-columns-threequarter">
+  <div class="jcc-text-section__container">
+    
+
+          <div class="jcc-text-section__content">
+        <div class="jcc-text-section__column-left">
+           <p class="jcc-lead">This lien will prevent you from buying, selling, or refinancing any land until the lien is cleared. Liens are on a county-by-county basis, so having a lien in one county does not affect your property in another.</p> <p>To clear the lien, you must either pay the judgment in full or negotiate a settlement with the debt collector.</p>
+        </div>
+
+              </div>
+      </div>
+</div>
+
+  
+
+<div class="jcc-switchboard jcc-switchboard--has-background-color--dark--primary">
+  <div class="jcc-switchboard__container">
+    
+  <header class="jcc-header-group">
+          <p class="jcc-header-group__brow">Next Steps</p>
+    
+          <h2 class="jcc-header-group__title">What can we help you with today?</h2>
+    
+    
+      </header>
+
+    <div class="jcc-switchboard__content">
+              <ul class="jcc-switchboard__tiles">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Wage Garnishment</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html">Someone took money from my paycheck</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Lien Against Property</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-lien-against-property/05-pages-judgment-judgment-lien-against-property.html">I was told I can’t sell my property</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Bank Levy</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-bank-levy/05-pages-judgment-judgment-bank-levy.html">Someone tried to take money from my bank account</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+      
+              <ul class="jcc-switchboard__tiles jcc-switchboard__tiles-secondary">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">General Information</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-general-information/05-pages-judgment-judgment-general-information.html">I want to find out more about Debt Collection</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Negotiating a Settlement</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-negotiating-a-settlement/05-pages-judgment-judgment-negotiating-a-settlement.html">I want to talk with someone and work something out</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Pay in Installments</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-pay-in-installments/05-pages-judgment-judgment-pay-in-installments.html">I don’t have all the money but can pay over time</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+          </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-pages-judgment-lien-against-property" class="sg-pattern-data">
+    {"lineage":[{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-hero","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-tab-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-postcard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-text-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-steps","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-card","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-timeline","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-switchboard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"judgment"},"patternDesc":"","patternExtension":"twig","patternName":"judgment lien against property","patternPartial":"pages-judgment-lien-against-property","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->                        <div id="pages-judgment-negotiating-a-settlement" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/05-pages-judgment-judgment-negotiating-a-settlement/05-pages-judgment-judgment-negotiating-a-settlement.html" class="patternLink" data-patternpartial="pages-judgment-negotiating-a-settlement" title="Link to Pattern">
+        judgment negotiating a settlement
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="pages-judgment-negotiating-a-settlement" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-judgment-negotiating-a-settlement" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-judgment-negotiating-a-settlement"></div>
+    
+  <div class="sg-pattern-example">
+    <header class="jcc-header">
+  <div class="jcc-header__container">
+    <div class="jcc-header__logo">
+         <div class="jcc-logo">
+    
+      <img src="../../images/jcc-logo.svg" alt="Logo" />
+    </div>
+    </div>
+    <div id="js-header_menu--mobile"></div>
+<div class="jcc-header_menu--desktop slicknav_menu slicknav_menu--desktop">
+	<ul id="slick-menu" class="jcc-header_nav slicknav_nav">
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link One</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Two</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Three</a>
+	    </li>
+	  	</ul>
+</div>
+  </div>
+</header>
+    
+
+
+<div class="jcc-hero jcc-hero--has-two-columns-threequarter">
+  <div class="jcc-hero__container">
+    
+    <div class="jcc-hero__content">
+              <nav class="jcc-breadcrumbs-nav">
+  <ul class="jcc-breadcrumbs">
+            <li class="jcc-breadcrumb__item">
+      
+            <a href="../../patterns/05-pages-judgment-judgment/05-pages-judgment-judgment.html">Debt Collection</a>
+      
+    </li>
+            <li class="jcc-breadcrumb__item">
+      
+            <span aria-current="location">Negotiating a Settlement</span>
+      
+    </li>
+      </ul>
+</nav>
+      
+      <div class="jcc-hero__columns">
+        <div class="jcc-hero__column-left">
+          <h1 class="jcc-hero__title">Negotiating a Settlement</h1>
+
+                      <div class="jcc-hero__lead">At any time you and the debt collector may agree to settle the judgment. Any settlement that you and the debt collector can agree to is a valid settlement.</div>
+          
+                  </div>
+
+              </div>
+    </div>
+  </div>
+</div>
+
+      
+<div class="jcc-text-section jcc-text-section--has-background-color--transparent jcc-text-section--has-two-columns-threequarter">
+  <div class="jcc-text-section__container">
+    
+
+          <div class="jcc-text-section__content">
+        <div class="jcc-text-section__column-left">
+           <h3>Common types of settlements include:</h3> <ul> <li>A lump sum payment of less than the full amount to settle the entire judgment</li> <li>A partial lump sum payment, plus monthly payments until a set amount is paid</li> <li>Monthly payments with or without any discount to the judgment or even</li> <li>Dismissal of the case/judgment</li> </ul> <h3>Benefits of settlement</h3> <p>Settlements allow you to take control of the judgment and set its terms. Settlements are often successful because each party has agreed to it, and is therefore more willing to do what is agreed.</p> <p>Ideally, a settlement should allow you to leave in a better position than if you did nothing. For you, that may be paying less, or paying on more favorable terms. To the debt collector, this could be collecting sooner rather than later, and with less effort.</p>
+        </div>
+
+              </div>
+      </div>
+</div>
+
+        
+<div class="jcc-timeline-section jcc-timeline-section--has-background-color--light--primary">
+  <div class="jcc-timeline-section__container">
+
+          
+  <header class="jcc-header-group">
+    
+          <h2 class="jcc-header-group__title">Steps of Negotiation</h2>
+    
+    
+      </header>
+    
+    <div class="jcc-timeline__wrapper">
+      <ul class="jcc-timeline slider" aria-label="timeline" tabindex="0">
+                  <li>
+            
+<div class="jcc-timeline-item jcc-timeline-item--has-icon">
+      <div class="jcc-timeline-item__media">
+      
+      <img src="../../images/graphics/file.svg" alt="Alt text" />
+      </div>
+  
+  <h3 class="jcc-timeline-item__title">Create a settlement strategy</h3>
+  <div class="jcc-timeline-item__excerpt"> <ul> <li>Unordered list item one.</li> <li>Unordered list item two, <a href="#">unordered list item two</a>, <strong>bold</strong> text, <em>italic text</em>, and <strong><em>bold italics</em></strong>.</li> <li>Unordered list item three.</li> </ul></div>
+
+                  <a href="#" class="jcc-timeline-item__trigger">Strategy Details</a>
+
+      </div>
+          </li>
+                  <li>
+            
+<div class="jcc-timeline-item jcc-timeline-item--has-icon">
+      <div class="jcc-timeline-item__media">
+      
+      <img src="../../images/graphics/person.svg" alt="Alt text" />
+      </div>
+  
+  <h3 class="jcc-timeline-item__title">Decide how to negotiate</h3>
+  <div class="jcc-timeline-item__excerpt"><p>Decide how you wish to negotiate. Common choices are verbally, usually by phone, or in writing.</p></div>
+
+            
+<button class="jcc-modal__trigger " data-a11y-dialog-show="ns-timeline-full-modal-2">
+  Negotiation Details 2
+</button>
+
+<div class="jcc-modal" id="ns-timeline-full-modal-2">
+  <div class="jcc-modal__backdrop" tabindex="-1" data-a11y-dialog-hide="jcc-modal"></div>
+
+    <dialog class="jcc-modal__dialog js-dialog-window" id="jcc-dialog-window" aria-labelledby="What can we help you with today?" title="What can we help you with today?">
+    <button class="jcc-modal__close-button usa-button--unstyled" type="button" data-a11y-dialog-hide="ns-timeline-full-modal-2" aria-label="Close this dialog window">
+        <svg class="icon icon-close" role="img" title="Close"><use xlink:href="#i-close"></use></svg>    </button>
+
+    <div class="jcc-modal__content">
+      <p>Negotiation Details 2... Modal content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nemo omnis similique quod quis consectetur quo! Provident ad, consequuntur quibusdam odit saepe ullam veniam error voluptatem ut maxime totam, voluptatum.</p>
+    </div>
+
+    <footer class="jcc-modal__footer">
+      <button class="usa-button" type="button" data-a11y-dialog-hide="ns-timeline-full-modal-2" aria-label="Close this dialog window">
+        Done
+      </button>
+    </footer>
+  </dialog>
+</div>
+      </div>
+          </li>
+                  <li>
+            
+<div class="jcc-timeline-item jcc-timeline-item--has-icon">
+      <div class="jcc-timeline-item__media">
+      
+      <img src="../../images/graphics/home.svg" alt="Alt text" />
+      </div>
+  
+  <h3 class="jcc-timeline-item__title">Reach an agreement</h3>
+  <div class="jcc-timeline-item__excerpt"><p>Always confirm the terms of an agreement in writing. Often a settlement will be put into a written settlement agreement. If the debt collector prepares the settlement agreement, read it very carefully, and be sure that you understand and agree to any terms in the settlement before you sign. You are allowed to consult an attorney before signing any settlement agreement.</p></div>
+
+  </div>
+          </li>
+                  <li>
+            
+<div class="jcc-timeline-item jcc-timeline-item--has-icon">
+      <div class="jcc-timeline-item__media">
+      
+      <img src="../../images/graphics/person.svg" alt="Alt text" />
+      </div>
+  
+  <h3 class="jcc-timeline-item__title">Decide how to negotiate</h3>
+  <div class="jcc-timeline-item__excerpt"><p>Decide how you wish to negotiate. Common choices are verbally, usually by phone, or in writing.</p></div>
+
+            
+<button class="jcc-modal__trigger " data-a11y-dialog-show="ns-timeline-full-modal-3">
+  Negotiation Details 3
+</button>
+
+<div class="jcc-modal" id="ns-timeline-full-modal-3">
+  <div class="jcc-modal__backdrop" tabindex="-1" data-a11y-dialog-hide="jcc-modal"></div>
+
+    <dialog class="jcc-modal__dialog js-dialog-window" id="jcc-dialog-window" aria-labelledby="What can we help you with today?" title="What can we help you with today?">
+    <button class="jcc-modal__close-button usa-button--unstyled" type="button" data-a11y-dialog-hide="ns-timeline-full-modal-3" aria-label="Close this dialog window">
+        <svg class="icon icon-close" role="img" title="Close"><use xlink:href="#i-close"></use></svg>    </button>
+
+    <div class="jcc-modal__content">
+      <p>Negotiation Details 3... Modal content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nemo omnis similique quod quis consectetur quo! Provident ad, consequuntur quibusdam odit saepe ullam veniam error voluptatem ut maxime totam, voluptatum.</p>
+    </div>
+
+    <footer class="jcc-modal__footer">
+      <button class="usa-button" type="button" data-a11y-dialog-hide="ns-timeline-full-modal-3" aria-label="Close this dialog window">
+        Done
+      </button>
+    </footer>
+  </dialog>
+</div>
+      </div>
+          </li>
+                  <li>
+            
+<div class="jcc-timeline-item jcc-timeline-item--has-icon">
+      <div class="jcc-timeline-item__media">
+      
+      <img src="../../images/graphics/home.svg" alt="Alt text" />
+      </div>
+  
+  <h3 class="jcc-timeline-item__title">Reach an agreement</h3>
+  <div class="jcc-timeline-item__excerpt"><p>Always confirm the terms of an agreement in writing. Often a settlement will be put into a written settlement agreement. If the debt collector prepares the settlement agreement, read it very carefully, and be sure that you understand and agree to any terms in the settlement before you sign. You are allowed to consult an attorney before signing any settlement agreement.</p></div>
+
+  </div>
+          </li>
+              </ul>
+
+            <button class="jcc-timeline__scroller--left">
+        <span class="jcc-timeline__label">Scroll Left</span>
+        <span class="jcc-timeline__scroller-icon">
+            <svg class="icon icon-chevron_left" role="img" title="Left"><use xlink:href="#i-chevron_left"></use></svg>        </span>
+      </button>
+
+      <button class="jcc-timeline__scroller--right is-active">
+        <span class="jcc-timeline__label">Scroll Right</span>
+        <span class="jcc-timeline__scroller-icon">
+            <svg class="icon icon-chevron_right" role="img" title="Right"><use xlink:href="#i-chevron_right"></use></svg>        </span>
+      </button>
+    </div>
+
+  </div>
+</div>
+  
+
+<div class="jcc-switchboard jcc-switchboard--has-background-color--dark--primary">
+  <div class="jcc-switchboard__container">
+    
+  <header class="jcc-header-group">
+          <p class="jcc-header-group__brow">Next Steps</p>
+    
+          <h2 class="jcc-header-group__title">What can we help you with today?</h2>
+    
+    
+      </header>
+
+    <div class="jcc-switchboard__content">
+              <ul class="jcc-switchboard__tiles">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Wage Garnishment</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html">Someone took money from my paycheck</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Lien Against Property</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-lien-against-property/05-pages-judgment-judgment-lien-against-property.html">I was told I can’t sell my property</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Bank Levy</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-bank-levy/05-pages-judgment-judgment-bank-levy.html">Someone tried to take money from my bank account</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+      
+              <ul class="jcc-switchboard__tiles jcc-switchboard__tiles-secondary">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">General Information</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-general-information/05-pages-judgment-judgment-general-information.html">I want to find out more about Debt Collection</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Negotiating a Settlement</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-negotiating-a-settlement/05-pages-judgment-judgment-negotiating-a-settlement.html">I want to talk with someone and work something out</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Pay in Installments</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-pay-in-installments/05-pages-judgment-judgment-pay-in-installments.html">I don’t have all the money but can pay over time</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+          </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-pages-judgment-negotiating-a-settlement" class="sg-pattern-data">
+    {"lineage":[{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-hero","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-tab-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-postcard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-text-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-steps","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-card","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-timeline","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-switchboard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"judgment"},"patternDesc":"","patternExtension":"twig","patternName":"judgment negotiating a settlement","patternPartial":"pages-judgment-negotiating-a-settlement","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->                        <div id="pages-judgment-pay-in-installments" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/05-pages-judgment-judgment-pay-in-installments/05-pages-judgment-judgment-pay-in-installments.html" class="patternLink" data-patternpartial="pages-judgment-pay-in-installments" title="Link to Pattern">
+        judgment pay in installments
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="pages-judgment-pay-in-installments" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-judgment-pay-in-installments" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-judgment-pay-in-installments"></div>
+    
+  <div class="sg-pattern-example">
+    <header class="jcc-header">
+  <div class="jcc-header__container">
+    <div class="jcc-header__logo">
+         <div class="jcc-logo">
+    
+      <img src="../../images/jcc-logo.svg" alt="Logo" />
+    </div>
+    </div>
+    <div id="js-header_menu--mobile"></div>
+<div class="jcc-header_menu--desktop slicknav_menu slicknav_menu--desktop">
+	<ul id="slick-menu" class="jcc-header_nav slicknav_nav">
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link One</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Two</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Three</a>
+	    </li>
+	  	</ul>
+</div>
+  </div>
+</header>
+    
+
+
+<div class="jcc-hero jcc-hero--has-two-columns-threequarter">
+  <div class="jcc-hero__container">
+    
+    <div class="jcc-hero__content">
+              <nav class="jcc-breadcrumbs-nav">
+  <ul class="jcc-breadcrumbs">
+            <li class="jcc-breadcrumb__item">
+      
+            <a href="../../patterns/05-pages-judgment-judgment/05-pages-judgment-judgment.html">Debt Collection</a>
+      
+    </li>
+            <li class="jcc-breadcrumb__item">
+      
+            <span aria-current="location">Wage Garnishment</span>
+      
+    </li>
+      </ul>
+</nav>
+      
+      <div class="jcc-hero__columns">
+        <div class="jcc-hero__column-left">
+          <h1 class="jcc-hero__title">Motion to pay judgment in installments</h1>
+
+                      <div class="jcc-hero__lead">In limited cases (cases where under $25,000 is claimed), you have the opportunity to ask the court to order that the judgment be paid in monthly installments based upon your ability to pay.</div>
+          
+                  </div>
+
+              </div>
+    </div>
+  </div>
+</div>
+
+      
+  <div class="jcc-steps-section jcc-steps-section--has-background-color--transparent">
+    <div class="jcc-steps-section__container">
+
+      
+
+      <ul class="jcc-steps">
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Prepare the Motion to Pay Judgment in Installments</h3>
+  
+      <div class="jcc-step__excerpt">Follow the instructions or use the guided interview to pay the judgment in installments</div>
+  
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">File the Motion to Pay Judgment in Installments with the court</h3>
+  
+      <div class="jcc-step__excerpt">File the original plus three copies of the Motion to Pay Judgment in Installments with the court, following local procedure</div>
+  
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Wait for opposition</h3>
+  
+      <div class="jcc-step__excerpt">If opposed, the opposing party will serve an opposition at least 9 court days before the hearing</div>
+  
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Reply to opposition, if any</h3>
+  
+      <div class="jcc-step__excerpt">If opposed, reply to the opposition up to 5 court days before the hearing</div>
+  
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Attend the hearing</h3>
+  
+      <div class="jcc-step__excerpt">Gather your evidence. Check tentative rulings the court day before if your court uses them.</div>
+  
+  </div>
+          </li>
+              </ul>
+    </div>
+  </div>
+
+  
+
+<div class="jcc-switchboard jcc-switchboard--has-background-color--dark--primary">
+  <div class="jcc-switchboard__container">
+    
+  <header class="jcc-header-group">
+          <p class="jcc-header-group__brow">Next Steps</p>
+    
+          <h2 class="jcc-header-group__title">What can we help you with today?</h2>
+    
+    
+      </header>
+
+    <div class="jcc-switchboard__content">
+              <ul class="jcc-switchboard__tiles">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Wage Garnishment</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html">Someone took money from my paycheck</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Lien Against Property</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-lien-against-property/05-pages-judgment-judgment-lien-against-property.html">I was told I can’t sell my property</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Bank Levy</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-bank-levy/05-pages-judgment-judgment-bank-levy.html">Someone tried to take money from my bank account</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+      
+              <ul class="jcc-switchboard__tiles jcc-switchboard__tiles-secondary">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">General Information</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-general-information/05-pages-judgment-judgment-general-information.html">I want to find out more about Debt Collection</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Negotiating a Settlement</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-negotiating-a-settlement/05-pages-judgment-judgment-negotiating-a-settlement.html">I want to talk with someone and work something out</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Pay in Installments</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-pay-in-installments/05-pages-judgment-judgment-pay-in-installments.html">I don’t have all the money but can pay over time</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+          </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-pages-judgment-pay-in-installments" class="sg-pattern-data">
+    {"lineage":[{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-hero","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-tab-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-postcard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-text-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-steps","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-card","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-timeline","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-switchboard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"judgment"},"patternDesc":"","patternExtension":"twig","patternName":"judgment pay in installments","patternPartial":"pages-judgment-pay-in-installments","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->                        <div id="pages-judgment-wage-garnishment" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html" class="patternLink" data-patternpartial="pages-judgment-wage-garnishment" title="Link to Pattern">
+        judgment wage garnishment
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="pages-judgment-wage-garnishment" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-judgment-wage-garnishment" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-judgment-wage-garnishment"></div>
+    
+  <div class="sg-pattern-example">
+    <header class="jcc-header">
+  <div class="jcc-header__container">
+    <div class="jcc-header__logo">
+         <div class="jcc-logo">
+    
+      <img src="../../images/jcc-logo.svg" alt="Logo" />
+    </div>
+    </div>
+    <div id="js-header_menu--mobile"></div>
+<div class="jcc-header_menu--desktop slicknav_menu slicknav_menu--desktop">
+	<ul id="slick-menu" class="jcc-header_nav slicknav_nav">
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link One</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Two</a>
+	    </li>
+	        <li class="jcc-header_nav__item slicknav_nav__item">
+	      <a href="#">Link Three</a>
+	    </li>
+	  	</ul>
+</div>
+  </div>
+</header>
+      
+
+
+<div class="jcc-hero jcc-hero--has-two-columns-threequarter">
+  <div class="jcc-hero__container">
+    
+    <div class="jcc-hero__content">
+              <nav class="jcc-breadcrumbs-nav">
+  <ul class="jcc-breadcrumbs">
+            <li class="jcc-breadcrumb__item">
+      
+            <a href="../../patterns/05-pages-judgment-judgment/05-pages-judgment-judgment.html">Debt Collection</a>
+      
+    </li>
+            <li class="jcc-breadcrumb__item">
+      
+            <span aria-current="location">Wage Garnishment</span>
+      
+    </li>
+      </ul>
+</nav>
+      
+      <div class="jcc-hero__columns">
+        <div class="jcc-hero__column-left">
+          <h1 class="jcc-hero__title">Filing a claim of exemption for wage garnishment</h1>
+
+                      <div class="jcc-hero__lead">A wage garnishment is one of the most common ways to collect a judgment.</div>
+          
+                  </div>
+
+                  <div class="jcc-hero__column-right">
+             <ul> <li>You will not go to jail for having a judgment against you.</li> <li>If you receive a <a href="/patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html">wage garnishment</a> or <a href="/patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-bank-levy.html">bank levy</a>, you have only days to take action.</li> <li>There are ways you can control the repayment of the judgment.</li> </ul>
+          </div>
+              </div>
+    </div>
+  </div>
+</div>
+
+      
+<div class="jcc-text-section jcc-text-section--has-background-color--transparent jcc-text-section--has-two-columns-threequarter">
+  <div class="jcc-text-section__container">
+    
+
+          <div class="jcc-text-section__content">
+        <div class="jcc-text-section__column-left">
+           <p class="jcc-lead">If your wages are garnished, the debt collector can take up to 25% of your after-tax wages. If your income is low or near minimum wage, the amount taken may be less than 25%. Unfortunately, some employers miscalculate the amount below 25%.</p> <p class="jcc-lead">By law, your employer cannot fire you or take other action against you for a single wage garnishment.</p> <p>If you are unable to afford the amount to be garnished from wages, a claim of exemption may reduce or stop the withholding. Act quickly! If you file within ten days you might be able to prevent the garnishment from starting. Even if the garnishment starts, file as early as possible, since the sheriff will hold onto funds levied after filing the claim of exemption. Once the garnishment starts and funds are transferred to the debt collector, it is almost impossible to get them back.</p>
+        </div>
+
+                  <div class="jcc-text-section__column-right">
+            <div class="margin-bottom-4">
+
+  <div class="jcc-read-more  jcc-read-more--block">
+    <button class="jcc-read-more__trigger usa-button usa-button--unstyled" data-a11y-toggle="read-more-block">
+      What is a judgment
+        <svg class="icon icon-expand_more" role="img" title="Expand"><use xlink:href="#i-expand_more"></use></svg>    </button>
+    <div class="jcc-read-more__content" id="read-more-block">
+      If your bank account is levied, you must act quickly! You have only ten days from the date of the levy to file a claim of exempltion (plus five days if the notice was sent be mail) with the sheriff performing the levy.
+    </div>
+  </div>
+</div><div class="margin-bottom-4">
+
+<div class="jcc-list-block">
+      <h2 class="jcc-list-block__title">Relevant Files</h2>
+  
+  
+<div class="jcc-link-list jcc-link-list--files">
+  <ul class="jcc-link-list__list">
+                <li class="jcc-link-list__item">
+                  
+          <span class="jcc-link-list__icon">
+              <svg class="icon icon-file" role="img" title="File"><use xlink:href="#i-file"></use></svg>          </span>
+        
+        This item is mapped from list block (Enforcement of Judgement)
+
+        (<a download href="#">Form EJ-160</a>)
+      </li>
+                <li class="jcc-link-list__item">
+                  
+          <span class="jcc-link-list__icon">
+              <svg class="icon icon-file" role="img" title="File"><use xlink:href="#i-file"></use></svg>          </span>
+        
+        Financial Statement
+
+        (<a download href="#">Form EJ-165</a>)
+      </li>
+      </ul>
+</div>
+</div>
+</div>
+          </div>
+              </div>
+      </div>
+</div>
+
+        
+  <div class="jcc-steps-section jcc-steps-section--has-background-color--transparent">
+    <div class="jcc-steps-section__container">
+
+      
+
+      <ul class="jcc-steps">
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Prepare the claim of exemption</h3>
+  
+      <div class="jcc-step__excerpt">Prepare a Claim of Exemption (form WG-006) and Financial Statement (form WG-007)</div>
+  
+      <div class="jcc-step__read-more">
+          </div>
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">File the claim of exemption</h3>
+  
+      <div class="jcc-step__excerpt">File the original plus one copy with the sheriff shown on the Order to Withhold Wages within 10 days (15 if the Order to Withhold Wages was served by mail)</div>
+  
+      <div class="jcc-step__read-more">
+          </div>
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Wait to see if the claim of exemption is opposed</h3>
+  
+      <div class="jcc-step__excerpt">File the original plus one copy with the sheriff shown on the Order to Withhold Wages within 10 days (15 if the Order to Withhold Wages was served by mail).</div>
+  
+      <div class="jcc-step__read-more">
+          </div>
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Reply to the opposition, if any</h3>
+  
+      <div class="jcc-step__excerpt">Serve and file your reply, if any with the court</div>
+  
+      <div class="jcc-step__read-more">
+          </div>
+  </div>
+          </li>
+                  <li class="jcc-step__item">
+            
+<div class="jcc-step">
+      <h3 class="jcc-step__title">Attend the hearing, if any</h3>
+  
+      <div class="jcc-step__excerpt">Gather your evidence. Check tentative rulings the court day before if your court uses them.</div>
+  
+      <div class="jcc-step__read-more">
+          </div>
+  </div>
+          </li>
+              </ul>
+    </div>
+  </div>
+
+        
+<div class="jcc-text-section jcc-text-section--has-background-color--transparent jcc-text-section--has-two-columns-threequarter">
+  <div class="jcc-text-section__container">
+    
+
+          <div class="jcc-text-section__content">
+        <div class="jcc-text-section__column-left">
+          <p>In addition to your claim of exemption, you may be able to negotiate a settlement of your judgment. If the judgment was entered because you did not file an Answer in the case, you may be able to file a motion to set aside the judgment if you did not know about the case, the documents starting the case were never served, or you didn’t file an Answer due to inadvertence, mistake, or excusable neglect.</p>
+        </div>
+
+              </div>
+      </div>
+</div>
+
+  
+
+<div class="jcc-switchboard jcc-switchboard--has-background-color--dark--primary">
+  <div class="jcc-switchboard__container">
+    
+  <header class="jcc-header-group">
+          <p class="jcc-header-group__brow">Next Steps</p>
+    
+          <h2 class="jcc-header-group__title">What can we help you with today?</h2>
+    
+    
+      </header>
+
+    <div class="jcc-switchboard__content">
+              <ul class="jcc-switchboard__tiles">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Wage Garnishment</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-wage-garnishment/05-pages-judgment-judgment-wage-garnishment.html">Someone took money from my paycheck</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Lien Against Property</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-lien-against-property/05-pages-judgment-judgment-lien-against-property.html">I was told I can’t sell my property</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Bank Levy</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-bank-levy/05-pages-judgment-judgment-bank-levy.html">Someone tried to take money from my bank account</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+      
+              <ul class="jcc-switchboard__tiles jcc-switchboard__tiles-secondary">
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">General Information</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-general-information/05-pages-judgment-judgment-general-information.html">I want to find out more about Debt Collection</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Negotiating a Settlement</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-negotiating-a-settlement/05-pages-judgment-judgment-negotiating-a-settlement.html">I want to talk with someone and work something out</a>
+    </h3>
+  </div>
+            </li>
+                      <li class="jcc-switchboard__tile">
+              
+<div class="jcc-tile">
+      <p class="jcc-tile__brow">Pay in Installments</p>
+  
+      <h3 class="jcc-tile__title">
+      <a href="../../patterns/05-pages-judgment-judgment-pay-in-installments/05-pages-judgment-judgment-pay-in-installments.html">I don’t have all the money but can pay over time</a>
+    </h3>
+  </div>
+            </li>
+                  </ul>
+          </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-pages-judgment-wage-garnishment" class="sg-pattern-data">
+    {"lineage":[{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-hero","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-tab-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-postcard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-text-section","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-steps","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"molecules-card","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-timeline","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"},{"lineagePattern":"organisms-switchboard","lineagePath":"..\/..\/patterns\/05-pages-judgment-judgment\/05-pages-judgment-judgment.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"judgment"},"patternDesc":"","patternExtension":"twig","patternName":"judgment wage garnishment","patternPartial":"pages-judgment-wage-garnishment","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->            </div> <!--end #sg-patterns-->
+</div><!--end .sg-main-->
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"patternPartial":"viewall-pages-judgment"}
+</script>
+
+<script>
+  /*!
+  * scriptLoader - v0.1
+  *
+  * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+  * Licensed under the MIT license
+  *
+  */
+  
+  var scriptLoader = {
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1580199330">
+  (function() {
+    if (self != top) {
+      var cb = '1580199330';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1580199330">
+  (function() {
+    if (self != top) {
+      var cb = '1580199330';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+	<script src="../../js/scripts.js?1580199330" type="text/javascript"></script>
+	</body>
+</html>

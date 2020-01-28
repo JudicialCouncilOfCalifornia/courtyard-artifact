@@ -1,0 +1,34 @@
+{% set classes = [
+  'jcc-switchboard',
+  'jcc-switchboard--' ~ switchboard.background_variant|default('has-background-color--transparent'),
+]|merge(switchboard.classes|default([''])) %}
+
+<div class="{{ classes|join(' ')|trim }}"{% if switchboard.id %} id="{{ switchboard.id }}"{% endif %}>
+  <div class="jcc-switchboard__container">
+    {% include '@molecules/text/header-group/header-group.twig' with {
+      headergroup: switchboard.headergroup
+    } %}
+
+    <div class="jcc-switchboard__content">
+      {% if switchboard.items.primary %}
+        <ul class="jcc-switchboard__tiles">
+          {% for tile in switchboard.items.primary %}
+            <li class="jcc-switchboard__tile">
+              {% include '@molecules/blocks/tile/tile.twig' with { tile: tile } %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if switchboard.items.secondary %}
+        <ul class="jcc-switchboard__tiles jcc-switchboard__tiles-secondary">
+          {% for tile in switchboard.items.secondary %}
+            <li class="jcc-switchboard__tile">
+              {% include '@molecules/blocks/tile/tile.twig' with { tile: tile } %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</div>
