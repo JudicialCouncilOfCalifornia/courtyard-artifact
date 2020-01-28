@@ -12,6 +12,6 @@
     "minimum-stability": "dev",
     "require": {},
     "scripts": {
-        "artifact-sync": "rsync -KPar --delete --force courtyard/public public"
+        "artifact-sync": "rsync -KPar --delete --force courtyard/public ."
     }
 }
