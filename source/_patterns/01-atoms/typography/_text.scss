@@ -1,0 +1,157 @@
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  @include u-margin(0);
+  @include u-padding(0);
+}
+
+a {
+  @include u-text("blue-cool-50v");
+
+  &:hover {
+    @include u-text("cyan-40v");
+  }
+
+  &:active,
+  &:focus {
+    @include u-text("blue-cool-40v");
+  }
+
+  &:visited {
+    @include u-text("blue-cool-50v");
+  }
+}
+
+.sr-only {
+  @include sr-only();
+}
+
+.usa-prose {
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > p,
+  > ul li {
+    @include u-measure(6);
+  }
+
+  > ul li {
+    @include u-margin-bottom(1.5);
+  }
+
+  .jcc-title--serif,
+  .jcc-subtitle--serif,
+  .jcc-card__title,
+  .jcc-header-group__title {
+    @include u-text(normal);
+  }
+
+  h1,
+  h2,
+  h3 {
+    @include u-text(normal);
+  }
+
+  h4,
+  h5,
+  h6 {
+    @include u-font-family(sans);
+    @include u-text(bold);
+  }
+
+  h6 {
+    text-transform: none;
+  }
+}
+
+.h-dash {
+  @include has-dash();
+}
+
+.jcc-title {
+  @include u-text(primary-dark);
+  @include has-dash();
+  @include u-margin-bottom(3);
+}
+
+.jcc-lead {
+  @include responsive-lead();
+  @include u-margin-bottom(2);
+  @include u-line-height(body, 3);
+}
+
+.t-responsive-lead {
+  @include responsive-lead();
+}
+
+.t-intro {
+  @include t-intro();
+}
+
+.t-copy {
+  @include t-copy();
+}
+
+.t-small {
+  @include t-small();
+}
+
+.usa-hint {
+  @include u-text(gray-50);
+}

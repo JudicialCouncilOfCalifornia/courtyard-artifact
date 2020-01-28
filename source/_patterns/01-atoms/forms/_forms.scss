@@ -1,0 +1,6 @@
+.usa-select,
+.usa-range,
+.usa-input,
+.usa-textarea {
+  @include u-border(2px);
+}

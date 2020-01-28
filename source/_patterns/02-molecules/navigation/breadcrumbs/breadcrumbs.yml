@@ -1,0 +1,6 @@
+breadcrumbs:
+  - url: "#"
+    label: "Debt Collection"
+    url_attributes: ""
+  - label: "Pay in Installments"
+    url_attributes: ""

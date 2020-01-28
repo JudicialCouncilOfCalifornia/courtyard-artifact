@@ -1,0 +1,19 @@
+.jcc-card__title {
+  @include responsive-h5($responsive-font-family: "heading");
+  @include u-margin-y(1.5);
+  @include u-text(normal);
+}
+
+.jcc-card--has-icon {
+  display: flex;
+  position: relative;
+
+  .jcc-card__media {
+    @include media-icon();
+    @include u-margin-right(3);
+  }
+}
+
+.jcc-card__excerpt {
+  @extend .usa-prose;
+}

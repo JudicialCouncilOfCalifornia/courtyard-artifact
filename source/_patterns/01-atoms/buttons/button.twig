@@ -1,0 +1,10 @@
+{% set attributes = button.attributes ? button.attributes : create_attribute() %}
+
+{% set classes = [
+  'usa-button',
+  'usa-button--' ~ button.style|default('primary'),
+]|merge(button.classes|default([''])) %}
+
+<button {{attributes.addClass(classes) }}>
+  {{- button.text -}}
+</button>

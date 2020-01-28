@@ -1,0 +1,36 @@
+.jcc-tile {
+  @include u-radius(lg);
+  @include u-border(1px, primary-vivid);
+  @include u-padding(3);
+  @include u-text(base-darkest);
+  @include u-shadow(2);
+  @include u-position(relative);
+  @include u-text(left);
+}
+
+.jcc-tile__brow {
+  @include u-margin-bottom(1.5);
+}
+
+.jcc-tile__title {
+  @include responsive-h5($responsive-font-family: heading);
+  @include u-line-height("heading", 3);
+
+  a {
+    @include u-text(primary-dark);
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      @include u-position(absolute);
+      @include u-left(0);
+      @include u-top(0);
+      @include u-right(0);
+      @include u-bottom(0);
+    }
+  }
+}
+
+.jcc-tile.is-secondary {
+  @include u-bg(base-lightest);
+}

@@ -1,0 +1,70 @@
+.jcc-switchboard {
+  @include section-wrapper;
+  @include u-padding-bottom(8);
+
+  .jcc-header-group {
+    @include u-padding-bottom(4);
+  }
+
+  .jcc-header-group__title {
+    @include u-text(primary-dark);
+    @include has-dash();
+  }
+}
+
+.jcc-switchboard--has-background-color--light,
+.jcc-switchboard--has-background-color--dark,
+.jcc-switchboard--has-background-color--light--primary,
+.jcc-switchboard--has-background-color--dark--primary {
+  @include u-padding-top(8, "!important");
+  @include u-padding-bottom(8);
+
+  @media print {
+    @include u-padding-y(4);
+  }
+}
+
+.jcc-switchboard--has-background-color--light,
+.jcc-switchboard--has-background-color--light--primary {
+  @include light-background($light-background-color: primary-lighter);
+}
+
+.jcc-switchboard--has-background-color--dark,
+.jcc-switchboard--has-background-color--dark--primary {
+  @include dark-background();
+  @include u-border-top(accent-warm-dark);
+  @include u-border-top("05");
+}
+
+.jcc-switchboard__container {
+  @include section-container;
+}
+
+.jcc-switchboard__tiles {
+  @include add-list-reset;
+  @include at-media(desktop) {
+    @include grid-row;
+    @include grid-gap;
+  }
+
+  .jcc-tile {
+    @include u-border(1px, base-light);
+    @include u-bg("white");
+    @include u-height(full);
+  }
+}
+
+.jcc-switchboard__tiles--secondary {
+  .jcc-tile {
+    @include u-border(1px, base-light);
+    @include u-bg(base-lightest);
+  }
+}
+
+.jcc-switchboard__tile {
+  @include u-margin-bottom(2);
+
+  @include at-media(desktop) {
+    @include grid-col(4);
+  }
+}
