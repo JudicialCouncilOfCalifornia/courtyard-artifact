@@ -1,0 +1,12 @@
+diff --git a/gulpfile.js b/gulpfile.js
+index 747eba1..b4fbb1b 100644
+--- a/gulpfile.js
++++ b/gulpfile.js
+@@ -237,7 +237,6 @@ const serve = cb => {
+ };
+ 
+ const build = gulp.series(
+-  plPhp,
+   copyUswdsFonts,
+   copyUswdsImages,
+   copyIconSprite,

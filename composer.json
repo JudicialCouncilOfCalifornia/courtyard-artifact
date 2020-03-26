@@ -12,6 +12,6 @@
     "minimum-stability": "dev",
     "require": {},
     "scripts": {
-        "artifact-sync": "rsync -KPar --delete --force courtyard/public . && rsync -KPar --delete --force courtyard/source/_patterns ./source/"
+        "artifact-sync": "rsync -KPar --delete --force courtyard/public . && rsync -KPar --delete --force courtyard/source/_patterns ./source/ && rsync -KPar --delete --force courtyard/node_modules/uswds/src/stylesheets/core ./source/uswds/"
     }
 }

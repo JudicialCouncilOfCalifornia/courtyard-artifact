@@ -19,13 +19,16 @@ services:
 
 tooling:
   clone:
-    description: Clone Courtyard to build an artifact, or for development. `lando clone`
+    description: Clone Courtyard to build an artifact, or for development. `lando clone [branch]`
     service: appserver
-    cmd: cd /app && git clone git@github.com:Exygy/courtyard.git
+    cmd:
+      - cd /app && git clone git@github.com:Exygy/courtyard.git && true
+      - cd courtyard && git checkout
   artifact:
     description: (Re)build the artifact.
     cmd:
       - appserver: composer install -d /app/courtyard/
+      - appserver: composer run generate -d /app/courtyard
       - node-cli: npm install --prefix /app/courtyard/ && npm run build --prefix /app/courtyard/
       - appserver: composer run artifact-sync -d /app
   patch:
