@@ -21,7 +21,6 @@ tooling:
     description: (Re)build the artifact.
     cmd:
       - appserver: composer install -d /app/courtyard/
-      - appserver: composer run generate -d /app/courtyard
       - appserver: npm install --prefix /app/courtyard/ && npm run build --prefix /app/courtyard/
       - appserver: composer run artifact-sync -d /app
   sync:
