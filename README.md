@@ -17,9 +17,6 @@ clone:
 artifact:
   description: (Re)build the artifact.
   ...
-patch:
-  description: Apply patches from /patches to couryard.
-  ...
 sync:
   description: Sync built assets to artifact.
   ...
@@ -32,8 +29,7 @@ sync:
  - `clone [this repo]`
  - `cd [this repo directory]`
  - `lando start`
- - `lando clone -b [branch to checkout]` - At this time, `development` branch gives the best results. Please update this if that changes.
- - `lando patch` - will apply patches from `/patches`. This currently fixes the Courtyard composer.json and gulpfile.js files to allow installation with separate docker containers for PHP and Nodejs.
+ - `lando clone [branch to checkout]` - At this time, `development` branch gives the best results. Please update this if that changes.
  - `lando artifact` - will install and build the pattern library as well as sync it to the `/public` directory of this artifact.
 
 See [Courtyard's Composer Install Wizard Docs](https://github.com/Exygy/courtyard#composer-install-wizard) for the answers to the prompts during install.
@@ -49,5 +45,5 @@ See the [Courtyard Repository](https://github.com/Exygy/courtyard) for additiona
  - Push master and tag to Github
  - Packagist should be updated automatically.
 
-Your artifact can now be installed via `composer require <vendor tbd>/courtyard-artifact`.
+Your artifact can now be installed via `composer require judicialcouncil/courtyard-artifact`.
 

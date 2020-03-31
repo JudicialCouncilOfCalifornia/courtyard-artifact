@@ -5,37 +5,30 @@ config:
   php: 7.3
 
 services:
-  # Theme.
-  node-cli:
-    type: compose
-    services:
-      image: node:13
-      # Required. See Below
-      command: docker-php-entrypoint apache2-foreground
-      ports:
-        - 3000:3000
-      volumes:
-        - .:/app
-
+  appserver:
+    build_as_root:
+      - apt-get install gcc g++ make
+      - curl -sL https://deb.nodesource.com/setup_13.x | bash
+      - apt-get install -y nodejs
+      - apt-get install -y npm
+      - nodejs -v
 tooling:
   clone:
     description: Clone Courtyard to build an artifact, or for development. `lando clone [branch]`
     service: appserver
-    cmd:
-      - cd /app && git clone git@github.com:Exygy/courtyard.git && true
-      - cd courtyard && git checkout
+    cmd: scripts/clone.sh
   artifact:
     description: (Re)build the artifact.
     cmd:
       - appserver: composer install -d /app/courtyard/
       - appserver: composer run generate -d /app/courtyard
-      - node-cli: npm install --prefix /app/courtyard/ && npm run build --prefix /app/courtyard/
+      - appserver: npm install --prefix /app/courtyard/ && npm run build --prefix /app/courtyard/
       - appserver: composer run artifact-sync -d /app
-  patch:
-    description: Apply patches from /patches to couryard.
-    service: appserver
-    cmd: cd /app/courtyard && git apply ../patches/*
   sync:
     description: Sync built assets to artifact.
     service: appserver
     cmd: composer run artifact-sync -d /app
+  node:
+    service: appserver
+  npm:
+    service: appserver
