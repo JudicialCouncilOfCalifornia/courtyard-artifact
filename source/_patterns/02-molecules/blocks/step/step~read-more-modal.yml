@@ -4,4 +4,5 @@ step:
     modal:
       button_label: "Read more in Modal"
       id: "step-modal-1"
-      content: "<a> link</a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia corporis, sed culpa, nam earum repellat nemo dolor, alias doloribus cupiditate aliquid. Dolores nobis perferendis molestias atque autem placeat quam ipsum.</p>"
+      content: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia corporis, sed culpa, nam earum repellat nemo dolor, alias doloribus cupiditate aliquid. Dolores nobis perferendis molestias atque autem placeat quam ipsum.</p>"
+

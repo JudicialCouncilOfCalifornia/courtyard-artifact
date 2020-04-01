@@ -19,17 +19,12 @@ const initControls = slider => {
     .siblings(".jcc-timeline__scroller--left")
     .hide();
   $(slider).on("afterChange", (e, slick, direction) => {
-    const sliderPerView = Math.ceil(slick.listWidth / slick.slideWidth);
     if (direction === 0) {
       $(e.currentTarget)
         .siblings(".jcc-timeline__scroller--left")
         .hide();
-      if (slick.slideCount > sliderPerView) {
-        $(e.currentTarget)
-          .siblings(".jcc-timeline__scroller--right")
-          .show();
-      }
     } else {
+      const sliderPerView = Math.ceil(slick.listWidth / slick.slideWidth);
       if (sliderPerView + direction === slick.slideCount) {
         $(e.currentTarget)
           .siblings(".jcc-timeline__scroller--right")
@@ -54,7 +49,7 @@ const settings = slider => {
     prevArrow: $(slider).siblings(".jcc-timeline__scroller--left"),
     responsive: [
       {
-        breakpoint: 880,
+        breakpoint: 800,
         arrows: true,
         settings: {
           slidesToShow: 4,
@@ -62,7 +57,7 @@ const settings = slider => {
         }
       },
       {
-        breakpoint: 880,
+        breakpoint: 640,
         settings: "unslick"
       }
     ]
