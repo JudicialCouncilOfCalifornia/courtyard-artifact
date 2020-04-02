@@ -30,6 +30,7 @@ sync:
  - `cd [this repo directory]`
  - `lando start`
  - `lando clone [branch to checkout]` - At this time, `development` branch gives the best results. Please update this if that changes.
+   - `lando clone tags/[tag to checkout]
  - `lando artifact` - will install and build the pattern library as well as sync it to the `/public` directory of this artifact.
 
 See [Courtyard's Composer Install Wizard Docs](https://github.com/Exygy/courtyard#composer-install-wizard) for the answers to the prompts during install.

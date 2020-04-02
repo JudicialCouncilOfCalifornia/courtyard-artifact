@@ -6,4 +6,5 @@ if [[ ! -d /app/courtyard ]] ; then
 fi
 
 cd /app/courtyard
+git fetch --all 
 git checkout $1
