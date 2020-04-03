@@ -22,15 +22,8 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
-    - name: Azure Login
-      uses: Azure/login@v1
+    - uses: bacongobbler/azure-blob-storage-upload@v1.0.0
       with:
-        # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-    - name: Publish app
-      uses: Azure/cli@v1.0.0
-      with:
-        azcliversion: latest
-        inlineScript: |
-          az storage blob upload-batch -s $GITHUB_WORKSPACE/public -d \$web --account-name ${{ secrets.STORAGE_ACCOUNT_NAME }}
+        source_dir: public
+        container_name: $web
+        connection_string: ${{ secrets.ConnectionString }}
