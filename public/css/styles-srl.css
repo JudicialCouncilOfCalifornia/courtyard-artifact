@@ -28579,6 +28579,17 @@ a:visited {
   padding-bottom: 0 ;
 }
 
+.jcc-link-list--list_icons {
+  padding-left: 3rem ;
+}
+
+.jcc-link-list--list_icons .jcc-link-list__list {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .jcc-link-list {
   padding-left: 0 ;
   padding-right: 0 ;
