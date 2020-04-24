@@ -28960,6 +28960,29 @@ a:visited {
   padding-bottom: 0 ;
 }
 
+.jcc_link-list-simple-multicolumn {
+  margin-left: auto ;
+  margin-right: auto ;
+  max-width: 64rem ;
+  padding-left: 1rem ;
+  padding-right: 1rem ;
+}
+
+.jcc_link-list-simple-multicolumn .jcc_link-list-simple-multicolumn__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  -ms-flex-wrap: wrap ;
+      flex-wrap: wrap ;
+}
+
+.jcc_link-list-simple-multicolumn .jcc_link-list-simple-multicolumn__row .jcc-link-list__list {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto ;
+          flex: 0 0 auto ;
+  width: 50% ;
+}
+
 .jcc-link-list--list_icons {
   padding-left: 1.5rem ;
 }
@@ -63396,6 +63419,10 @@ div[class^="jcc-"] + .jcc-text-section-aside__container .jcc-text-section-aside 
   .jcc-hero__column-left {
     margin-bottom: 0 ;
     max-width: 75%;
+  }
+  .jcc_link-list-simple-multicolumn {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
   }
   .jcc-list-block {
     max-width: 60ex ;
