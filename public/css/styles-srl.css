@@ -28980,7 +28980,7 @@ a:visited {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto ;
           flex: 0 0 auto ;
-  width: 50% ;
+  width: 100% ;
 }
 
 .jcc-link-list--list_icons {
@@ -53157,6 +53157,12 @@ div[class^="jcc-"] + .jcc-text-section-aside__container .jcc-text-section-aside 
   .jcc-hero__title {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 3.48rem;
+  }
+  .jcc_link-list-simple-multicolumn .jcc_link-list-simple-multicolumn__row .jcc-link-list__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto ;
+            flex: 0 0 auto ;
+    width: 50% ;
   }
   .jcc-postcard__tag {
     display: block ;
