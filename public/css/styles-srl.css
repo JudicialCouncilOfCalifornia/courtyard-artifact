@@ -28530,6 +28530,11 @@ a:visited {
   margin-top: 0 ;
   padding: 0 ;
   line-height: 1 ;
+  display: none;
+}
+
+.jcc-alert.active {
+  display: block;
 }
 
 .jcc-alert__body.usa-alert--no-icon {
