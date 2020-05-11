@@ -33570,6 +33570,45 @@ a:visited {
   font-style: italic ;
 }
 
+.jcc-card.person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  position: relative ;
+  margin-bottom: 0.5rem ;
+}
+
+.jcc-card.person .jcc-card__media {
+  height: 7.5rem ;
+  width: 7.5rem ;
+  min-width: 7.5rem ;
+  position: relative ;
+  margin-top: 1rem ;
+  margin-right: 1rem ;
+}
+
+.jcc-card.person .jcc-card__media img {
+  z-index: 2;
+  position: relative ;
+  height: 7.5rem ;
+  width: 7.5rem ;
+}
+
+.jcc-card.person h1.jcc-card__title {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 2.24rem;
+}
+
+.jcc-card.person h2.jcc-card__title {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 1.99rem;
+}
+
+.jcc-card.person h3.jcc-card__title {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 1.74rem;
+}
+
 .jcc-card__brow {
   margin-bottom: 0.75rem ;
 }
@@ -33943,6 +33982,10 @@ a:visited {
 .jcc-hero--has-background-color--dark .jcc-hero__title,
 .jcc-hero--has-background-color--dark .jcc-breadcrumb__item {
   color: white ;
+}
+
+.jcc-hero--has-background-color--none {
+  background-color: white ;
 }
 
 .jcc-hero__container {
@@ -37671,12 +37714,22 @@ div[class^="jcc-"] + .jcc-text-section-aside__container .jcc-text-section-aside 
   padding-top: 0  !important;
 }
 
-/* remove green horizontal rule if follows certain components */
+/* remove green horizontal rule if follows certain components with colored backgrounds */
 .jcc-hero ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside .jcc-card__title::after,
 .jcc-switchboard ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside .jcc-card__title::after {
   background-color: transparent ;
 }
 
+/* BEGIN restore green horizontal rule if follow a hero with white background */
+.jcc-hero--has-background-color--none ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside .jcc-card__title::after {
+  background-color: transparent ;
+}
+
+.jcc-hero--has-background-color--none ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside-main .jcc-card:first-child .jcc-card__title:first-child::after {
+  background-color: transparent ;
+}
+
+/* END */
 .jcc-text-section-aside__container {
   margin-left: auto ;
   margin-right: auto ;
@@ -69264,6 +69317,18 @@ div[class^="jcc-"] + .jcc-text-section-aside__container .jcc-text-section-aside 
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.49rem;
   }
+  .jcc-card.person h1.jcc-card__title {
+    font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 2.98rem;
+  }
+  .jcc-card.person h2.jcc-card__title {
+    font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 2.49rem;
+  }
+  .jcc-card.person h3.jcc-card__title {
+    font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 2.24rem;
+  }
   .jcc-card__title {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 1.49rem;
@@ -70929,6 +70994,18 @@ div[class^="jcc-"] + .jcc-text-section-aside__container .jcc-text-section-aside 
   .t-small {
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 0.81rem;
+  }
+  .jcc-card.person h1.jcc-card__title {
+    font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 1.99rem;
+  }
+  .jcc-card.person h2.jcc-card__title {
+    font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 1.74rem;
+  }
+  .jcc-card.person h3.jcc-card__title {
+    font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 1.49rem;
   }
   .jcc-card__title {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
