@@ -32823,13 +32823,14 @@ div[class^="jcc-"] + .jcc-text-section-aside__container .jcc-text-section-aside 
   background-color: transparent ;
 }
 
-/* BEGIN restore green horizontal rule if follow a hero with white background */
+/* BEGIN restore green horizontal rule if following a hero with white background */
 .jcc-hero--has-background-color--none ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside .jcc-card__title::after {
   background-color: #449dac ;
 }
 
-.jcc-hero--has-background-color--none ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside-main .jcc-card:first-child .jcc-card__title:first-child::after {
-  background-color: #449dac ;
+/* only first card under main column */
+.jcc-hero--has-background-color--none ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside-main .jcc-card:not(:first-child) .jcc-card__title::after {
+  background-color: transparent ;
 }
 
 /* END */
