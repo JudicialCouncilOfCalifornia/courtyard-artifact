@@ -32813,27 +32813,23 @@ h3.jcc-header-group__title {
 }
 
 /* removing excessive white spacing */
-div[class^="jcc-"] + .jcc-text-section-aside__container .jcc-text-section-aside {
+div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-section-aside {
   padding-top: 0  !important;
 }
 
-/* remove green horizontal rule if follows certain components with colored backgrounds */
-.jcc-hero ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside .jcc-card__title::after,
-.jcc-switchboard ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside .jcc-card__title::after {
+.jcc-text-section-aside-secondary__container {
+  /* title decoration for only first card under main column */
+  /* remove title decoration for all cards if specified no_title_decoration = true */
+}
+
+.jcc-text-section-aside-secondary__container .jcc-text-section-aside__aside.jcc-text-section-aside__aside-main .jcc-card:not(:first-child) .jcc-card__title::after {
   background-color: transparent ;
 }
 
-/* BEGIN restore green horizontal rule if following a hero with white background */
-.jcc-hero--has-background-color--none ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside .jcc-card__title::after {
-  background-color: #449dac ;
-}
-
-/* only first card under main column */
-.jcc-hero--has-background-color--none ~ .jcc-text-section-aside__container .jcc-text-section-aside .jcc-text-section-aside__aside-main .jcc-card:not(:first-child) .jcc-card__title::after {
+.jcc-text-section-aside-secondary__container .jcc-text-section-aside__aside.jcc-text-section-aside__aside-no-title-decoration .jcc-card__title::after {
   background-color: transparent ;
 }
 
-/* END */
 .jcc-text-section-aside__container {
   margin-left: auto ;
   margin-right: auto ;
@@ -65254,7 +65250,7 @@ div[class^="jcc-"] + .jcc-text-section-aside__container .jcc-text-section-aside 
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 1.74rem;
   }
-  .jcc-text-section-aside .jcc-text-section-aside__aside-main {
+  .jcc-text-section-aside-secondary__container .jcc-text-section-aside .jcc-text-section-aside__aside-main {
     -webkit-box-flex: 0  !important;
         -ms-flex: 0 0 auto  !important;
             flex: 0 0 auto  !important;
