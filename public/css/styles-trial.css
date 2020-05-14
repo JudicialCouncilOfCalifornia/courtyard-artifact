@@ -37133,8 +37133,7 @@ h3.jcc-header-group__title {
   width: 100% ;
 }
 
-.jcc-steps-section__container,
-.jcc-text-section {
+.jcc-steps-section__container {
   margin-left: auto ;
   margin-right: auto ;
   max-width: 87.5rem ;
@@ -37142,24 +37141,20 @@ h3.jcc-header-group__title {
   padding-right: 1rem ;
 }
 
-.jcc-steps-section__container .jcc-options__container,
-.jcc-text-section .jcc-options__container {
+.jcc-steps-section__container .jcc-options__container {
   padding-left: 0 ;
   margin-left: -6px;
 }
 
-.jcc-steps-section__container .jcc-options__container .jcc-options__item,
-.jcc-text-section .jcc-options__container .jcc-options__item {
+.jcc-steps-section__container .jcc-options__container .jcc-options__item {
   padding-left: 0 ;
 }
 
-.jcc-steps-section__container .jcc-options__container .jcc-option,
-.jcc-text-section .jcc-options__container .jcc-option {
+.jcc-steps-section__container .jcc-options__container .jcc-option {
   padding-left: 0;
 }
 
-.jcc-steps-section__container .jcc-option,
-.jcc-text-section .jcc-option {
+.jcc-steps-section__container .jcc-option {
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -70061,17 +70056,14 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
             flex: 0 0 auto ;
     width: 50% ;
   }
-  .jcc-steps-section__container,
-  .jcc-text-section {
+  .jcc-steps-section__container {
     padding-left: 2rem ;
     padding-right: 2rem ;
   }
-  .jcc-steps-section__container .jcc-options__container .jcc-option,
-  .jcc-text-section .jcc-options__container .jcc-option {
+  .jcc-steps-section__container .jcc-options__container .jcc-option {
     padding-left: 1.5rem ;
   }
-  .jcc-steps-section__container .jcc-option,
-  .jcc-text-section .jcc-option {
+  .jcc-steps-section__container .jcc-option {
     padding-left: 0 ;
   }
   .jcc-steps .jcc-step__item::before {
