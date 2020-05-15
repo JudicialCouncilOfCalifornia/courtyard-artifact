@@ -37706,7 +37706,8 @@ h3.jcc-header-group__title {
 
 /* removing excessive white spacing */
 div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-section-aside {
-  padding-top: 0  !important;
+  padding-top: 0 ;
+  padding-bottom: 1rem ;
 }
 
 .jcc-text-section-aside-secondary__container {
@@ -70191,10 +70192,10 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     font-size: 1.74rem;
   }
   .jcc-text-section-aside-secondary__container .jcc-text-section-aside .jcc-text-section-aside__aside-main {
-    -webkit-box-flex: 0  !important;
-        -ms-flex: 0 0 auto  !important;
-            flex: 0 0 auto  !important;
-    width: 66.66667%  !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto ;
+            flex: 0 0 auto ;
+    width: 66.66667% ;
   }
   .jcc-text-section-aside__container {
     padding-left: 2rem ;
