@@ -35672,6 +35672,10 @@ nav.jcc-primary-nav {
   background-color: #f2f6fb ;
 }
 
+.jcc-primary-nav .jcc-primary-nav__sub li .jcc-primary-nav__sub-sub--item a:hover {
+  text-decoration: underline ;
+}
+
 .jcc-primary-nav .jcc-primary-nav__sub li:hover {
   background-color: #bed9f0 ;
 }
@@ -69637,6 +69641,12 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     display: block ;
     width: 100%;
     padding-left: 1.7em;
+    padding-bottom: 1rem ;
+    padding-top: 1rem ;
+    font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 1.12rem;
+    letter-spacing: 1px;
+    background-color: transparent;
   }
   .jcc-primary-nav .jcc-primary-nav__sub li {
     display: -webkit-inline-box;
