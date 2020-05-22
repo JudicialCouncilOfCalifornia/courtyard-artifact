@@ -36275,6 +36275,9 @@ h3.jcc-header-group__title {
       flex-wrap: wrap ;
   margin-left: -1px ;
   margin-right: -1px ;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .jcc-hero-box-nav .jcc-hero-box-nav__nav .jcc-hero-box-nav__block > * {
@@ -36301,7 +36304,7 @@ h3.jcc-header-group__title {
       -ms-flex: 0 0 auto ;
           flex: 0 0 auto ;
   width: 100% ;
-  width: 100%;
+  height: auto;
 }
 
 .jcc-hero-box-nav .jcc-hero-box-nav__nav .jcc-hero-box-nav__block .jcc-tile:hover {
