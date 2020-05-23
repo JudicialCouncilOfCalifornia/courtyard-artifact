@@ -54146,7 +54146,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-list-section nav > ul > li:after {
     width: 100%;
-    background-color: #449dac ;
+    background-color: #00a398 ;
     content: "";
     height: 3px;
     position: absolute;
@@ -65915,7 +65915,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-list-section nav > ul > li:after {
     width: 45px;
-    background-color: #449dac ;
+    background-color: #00a398 ;
     content: "";
     height: 3px;
     position: absolute;

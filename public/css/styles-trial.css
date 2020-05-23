@@ -36892,7 +36892,7 @@ h3.jcc-header-group__title {
 .jcc-list-section nav > ul > li > ul > li a {
   font-size: 1.49rem;
   color: #07648d ;
-  color: #0076d6 ;
+  color: #0076d6  !important;
 }
 
 .jcc-list-section nav > ul > li > ul > li a:hover {
@@ -58957,7 +58957,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-list-section nav > ul > li:after {
     width: 100%;
-    background-color: #449dac ;
+    background-color: #00a398 ;
     content: "";
     height: 3px;
     position: absolute;
@@ -70727,7 +70727,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-list-section nav > ul > li:after {
     width: 45px;
-    background-color: #449dac ;
+    background-color: #00a398 ;
     content: "";
     height: 3px;
     position: absolute;
