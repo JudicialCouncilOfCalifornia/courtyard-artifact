@@ -33915,7 +33915,7 @@ a:visited {
 }
 
 .jcc-hero__brow a {
-  color: #0f6460 ;
+  color: #0f6460  !important;
 }
 
 .jcc-hero--has-background-color--dark .jcc-hero__brow {
