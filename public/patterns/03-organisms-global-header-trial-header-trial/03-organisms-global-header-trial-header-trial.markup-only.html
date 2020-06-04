@@ -653,18 +653,24 @@
       <img src="../../images/jcc-logo-long.png" alt="trial" />
     </div>
       </div>
-
-      <div class="buttons slicknav">
-        <span id="mobile-menu" class="mobile_button jcc-primary-nav">
-          <span id="js-header-trial_menu--mobile" class="mobile_button usa-accordion"></span>
-        </span>
-        <span id="translate" class="mobile_button translate">
-            <svg class="icon icon-globe  " role="img" title="Translate""><use class="" xlink:href="#i-globe"></use></svg>        </span>
-        <span id="search" class="mobile_button search">
-            <svg class="icon icon-search  " role="img" title="Search""><use class="" xlink:href="#i-search"></use></svg>        </span>
-      </div>
-      <div id="show-dropbutton" class=" show-button">
-        <div class="jcc-dropbutton">
+            <div class="buttons slicknav">
+        <a id="search" tabindex="0" role="button" aria-label="Global site search. Open or close field by using ENTER key now." aria-haspopup="true" class="mobile_button search">
+            <svg class="icon icon-search  " role="img" title="Search""><use class="" xlink:href="#i-search"></use></svg>        </a>
+        <div id="show-search" class="show-button">
+          <form class="usa-form jcc-form" action="/search">
+            
+<div class="jcc-fieldset-search">
+    <fieldset class="usa-fieldset">
+        <input type="text" placeholder="" class="usa-input" id="search-type-text" name="keyword" />
+        <button type="submit">  <svg class="icon icon-search  " role="img" title="Search""><use class="" xlink:href="#i-search"></use></svg></button>
+    </fieldset>
+</div>          </form>
+        </div>
+        
+                <a id="translate" tabindex="0" role="button" aria-label="Change language selection. Open or close menu by using ENTER key now." aria-haspopup="true" class="mobile_button translate">
+            <svg class="icon icon-globe  " role="img" title="Translate""><use class="" xlink:href="#i-globe"></use></svg>        </a>
+        <div id="show-translate" class="show-button">
+          <div class="jcc-dropbutton">
   <div class="usa-nav__inner">
     <ul class="usa-nav__primary usa-accordion">
       <li class="usa-nav__primary-item">
@@ -684,16 +690,11 @@
     </ul>
   </div>
 </div>
-      </div>
-      <div id="show-search" class=" show-button">
-        <form class="usa-form jcc-form" action="/search">
+        </div>
         
-<div class="jcc-fieldset-search">
-    <fieldset class="usa-fieldset">
-        <input type="text" placeholder="" class="usa-input" id="search-type-text" name="keyword" />
-        <button type="submit">  <svg class="icon icon-search  " role="img" title="Search""><use class="" xlink:href="#i-search"></use></svg></button>
-    </fieldset>
-</div>        </form>
+        <span id="mobile-menu" class="mobile_button jcc-primary-nav">
+          <span id="js-header-trial_menu--mobile" class="usa-accordion"></span>
+        </span>
       </div>
     </div>
   </div>

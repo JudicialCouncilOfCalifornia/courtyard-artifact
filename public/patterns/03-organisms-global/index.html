@@ -5,9 +5,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1591284456" media="all" />
-		<link rel="stylesheet" id='srl' href="../../css/styles-srl.css?1591284456" media="all" />
-		<link rel="stylesheet" id='trial' href="../../css/styles-trial.css?1591284456" media="all" disabled/>
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1591313520" media="all" />
+		<link rel="stylesheet" id='srl' href="../../css/styles-srl.css?1591313520" media="all" />
+		<link rel="stylesheet" id='trial' href="../../css/styles-trial.css?1591313520" media="all" disabled/>
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		<!-- never cache patterns -->
 <meta http-equiv="cache-control" content="max-age=0" />
@@ -16,8 +16,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1591284456" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1591284456" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1591313520" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1591313520" media="all" />
 		<!-- End Pattern Lab -->
 
 	</head>
@@ -1031,18 +1031,24 @@
       <img src="../../images/jcc-logo-long.png" alt="trial" />
     </div>
       </div>
-
-      <div class="buttons slicknav">
-        <span id="mobile-menu" class="mobile_button jcc-primary-nav">
-          <span id="js-header-trial_menu--mobile" class="mobile_button usa-accordion"></span>
-        </span>
-        <span id="translate" class="mobile_button translate">
-            <svg class="icon icon-globe  " role="img" title="Translate""><use class="" xlink:href="#i-globe"></use></svg>        </span>
-        <span id="search" class="mobile_button search">
-            <svg class="icon icon-search  " role="img" title="Search""><use class="" xlink:href="#i-search"></use></svg>        </span>
-      </div>
-      <div id="show-dropbutton" class=" show-button">
-        <div class="jcc-dropbutton">
+            <div class="buttons slicknav">
+        <a id="search" tabindex="0" role="button" aria-label="Global site search. Open or close field by using ENTER key now." aria-haspopup="true" class="mobile_button search">
+            <svg class="icon icon-search  " role="img" title="Search""><use class="" xlink:href="#i-search"></use></svg>        </a>
+        <div id="show-search" class="show-button">
+          <form class="usa-form jcc-form" action="/search">
+            
+<div class="jcc-fieldset-search">
+    <fieldset class="usa-fieldset">
+        <input type="text" placeholder="" class="usa-input" id="search-type-text" name="keyword" />
+        <button type="submit">  <svg class="icon icon-search  " role="img" title="Search""><use class="" xlink:href="#i-search"></use></svg></button>
+    </fieldset>
+</div>          </form>
+        </div>
+        
+                <a id="translate" tabindex="0" role="button" aria-label="Change language selection. Open or close menu by using ENTER key now." aria-haspopup="true" class="mobile_button translate">
+            <svg class="icon icon-globe  " role="img" title="Translate""><use class="" xlink:href="#i-globe"></use></svg>        </a>
+        <div id="show-translate" class="show-button">
+          <div class="jcc-dropbutton">
   <div class="usa-nav__inner">
     <ul class="usa-nav__primary usa-accordion">
       <li class="usa-nav__primary-item">
@@ -1062,16 +1068,11 @@
     </ul>
   </div>
 </div>
-      </div>
-      <div id="show-search" class=" show-button">
-        <form class="usa-form jcc-form" action="/search">
+        </div>
         
-<div class="jcc-fieldset-search">
-    <fieldset class="usa-fieldset">
-        <input type="text" placeholder="" class="usa-input" id="search-type-text" name="keyword" />
-        <button type="submit">  <svg class="icon icon-search  " role="img" title="Search""><use class="" xlink:href="#i-search"></use></svg></button>
-    </fieldset>
-</div>        </form>
+        <span id="mobile-menu" class="mobile_button jcc-primary-nav">
+          <span id="js-header-trial_menu--mobile" class="usa-accordion"></span>
+        </span>
       </div>
     </div>
   </div>
@@ -1080,7 +1081,7 @@
   </div>
   
   <script type="text/json" id="sg-pattern-data-organisms-header-trial" class="sg-pattern-data">
-    {"lineage":[{"lineagePattern":"molecules-header-topbar","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"molecules-primary-nav","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"atoms-logo","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"atoms-icon","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"atoms-dropbutton","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"atoms-search-input","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"}],"lineageR":[{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/04-templates-trial-court-homepage\/04-templates-trial-court-homepage.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternDesc":"","patternExtension":"twig","patternName":"header trial","patternPartial":"organisms-header-trial","patternState":""}
+    {"lineage":[{"lineagePattern":"molecules-header-topbar","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"molecules-primary-nav","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"atoms-logo","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"atoms-icon","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"atoms-search-input","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"},{"lineagePattern":"atoms-dropbutton","lineagePath":"..\/..\/patterns\/03-organisms-global-header-trial-header-trial\/03-organisms-global-header-trial-header-trial.html"}],"lineageR":[{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/04-templates-trial-court-homepage\/04-templates-trial-court-homepage.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternDesc":"","patternExtension":"twig","patternName":"header trial","patternPartial":"organisms-header-trial","patternState":""}
   </script>
 </div><!--end .sg-pattern-->                        <div id="organisms-header" class="sg-pattern">
   <div class="sg-pattern-head">
@@ -1170,10 +1171,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1591284456">
+<script id="pl-js-polyfill-insert-1591313520">
   (function() {
     if (self != top) {
-      var cb = '1591284456';
+      var cb = '1591313520';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -1183,16 +1184,16 @@
   })();
 </script>
 
-<script id="pl-js-insert-1591284456">
+<script id="pl-js-insert-1591313520">
   (function() {
     if (self != top) {
-      var cb = '1591284456';
+      var cb = '1591313520';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
   })();
 </script>
-	<script src="../../js/scripts.js?1591284456" type="text/javascript"></script>
+	<script src="../../js/scripts.js?1591313520" type="text/javascript"></script>
 	</div>
 	</body>
 </html>
