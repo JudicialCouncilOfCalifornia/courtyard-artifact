@@ -30868,7 +30868,7 @@ nav.jcc-primary-nav {
   font-size: 0.99rem;
   margin-top: 1em;
   line-height: 1.4em;
-  text-transform: capitalize;
+  text-transform: none;
   letter-spacing: 1px;
 }
 
