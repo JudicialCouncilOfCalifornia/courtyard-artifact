@@ -32033,6 +32033,7 @@ h3.jcc-header-group__title {
 }
 
 .jcc-cards-with-list__container > ul > li ul li .jcc-card__excerpt {
+  max-height: 10rem ;
   overflow: hidden;
   text-overflow: ellipsis;
 }
