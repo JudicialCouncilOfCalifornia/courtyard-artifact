@@ -36817,6 +36817,12 @@ h3.jcc-header-group__title {
   margin-top: 1rem ;
 }
 
+.jcc-cards-with-list__container > ul > li .jcc-card__excerpt {
+  max-height: 10rem ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .jcc-cards-with-list__container > ul > li > .jcc-cards-with-list__read_more {
   width: 100% ;
   text-transform: uppercase ;
@@ -36854,12 +36860,6 @@ h3.jcc-header-group__title {
   font-size: 1.24rem;
   margin-bottom: 0.5rem ;
   margin-top: 0.5rem ;
-}
-
-.jcc-cards-with-list__container > ul > li ul li .jcc-card__excerpt {
-  max-height: 10rem ;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .jcc-cards-with-list__container > ul > li ul li .jcc-card__excerpt,
