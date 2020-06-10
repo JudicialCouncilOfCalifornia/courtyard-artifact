@@ -66650,9 +66650,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     background-color: #f3f3f3;
     height: auto;
   }
+  .jcc-list-section nav > ul {
+    max-width: 100%;
+  }
   .jcc-list-section nav > ul > li {
     position: relative;
     padding-top: 0.8em;
+    width: calc(100% - 3rem);
   }
   .jcc-list-section nav > ul > li:after {
     width: 45px;
