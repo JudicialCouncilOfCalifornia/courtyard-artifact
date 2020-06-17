@@ -14766,7 +14766,6 @@ a:visited {
 
 .jcc-pagination a {
   margin: 0 0.6rem;
-  padding: 0.45rem 0.35rem;
   font-weight: bold ;
   color: #0076d6 ;
 }
@@ -25242,6 +25241,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-pagination .jcc-pagination__mobile {
     display: none ;
+  }
+  .jcc-pagination a {
+    padding: 0.45rem 0.35rem;
   }
   .jcc-timeline-dual__title-bar-title {
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
