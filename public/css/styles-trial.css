@@ -15446,6 +15446,21 @@ nav.jcc-primary-nav {
   letter-spacing: 0.025em  !important;
 }
 
+.usa-sidenav .jcc-haschildren {
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+}
+
+.usa-sidenav .icon {
+  float: right;
+  position: relative;
+  top: -2rem;
+  right: 0.6rem;
+}
+
+.usa-sidenav .usa-sidenav__sublist .usa-sidenav .usa-sidenav__sublist .usa-sidenav .usa-sidenav__sublist .usa-sidenav .usa-sidenav__sublist a {
+  padding-left: 5rem;
+}
+
 .jcc-address__address {
   display: -webkit-box;
   display: -ms-flexbox;
