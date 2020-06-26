@@ -10914,17 +10914,6 @@ a.usa-button.usa-button--unstyled:focus {
   border-style: solid;
 }
 
-.usa-select {
-  background-image: url(../images/icomoon/svg/expand_more.svg);
-  background-size: 1.5rem auto;
-}
-
-.jcc-select--big {
-  padding: 1.25rem ;
-  height: auto;
-  background-size: 2rem auto;
-}
-
 .form-required::after {
   color: #fb5a47 ;
   content: " *" !important;
@@ -11031,6 +11020,17 @@ a.usa-button.usa-button--unstyled:focus {
 .jcc-fieldset-search button .icon-search {
   height: 1.5rem ;
   width: 1.5rem ;
+}
+
+.usa-select {
+  background-image: url(../images/icomoon/svg/expand_more.svg);
+  background-size: 1.5rem auto;
+}
+
+.jcc-select--big {
+  padding: 1.25rem ;
+  height: auto;
+  background-size: 2rem auto;
 }
 
 .jcc-logo {
@@ -12634,14 +12634,6 @@ a:visited {
   transition: all 0.4s;
 }
 
-.jcc-tile:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  cursor: pointer;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
 .jcc-tile__icon-link {
   display: block ;
   width: 2.5rem ;
@@ -12652,6 +12644,14 @@ a:visited {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/switchboard-icon.svg);
+}
+
+.jcc-tile--hover:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .jcc-tile__brow {
@@ -12805,6 +12805,52 @@ a:visited {
   font-size: 1.49rem;
   font-weight: normal ;
   margin-bottom: 1rem ;
+}
+
+.jcc-contact-group label {
+  margin: 0 ;
+  margin-bottom: 0.5rem ;
+  width: 100% ;
+  max-width: none ;
+}
+
+.jcc-contact-group input {
+  margin: 0 ;
+  margin-right: 0.5rem ;
+  float: left ;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.jcc-contact-group button {
+  margin: 0 ;
+  padding-bottom: 0 ;
+  padding-top: 0 ;
+  padding-left: 1rem ;
+  padding-right: 1rem ;
+  width: auto ;
+  height: 2.5rem;
+}
+
+.jcc-contact-group .usa-error-message {
+  width: 100% ;
+}
+
+.jcc-contact-group__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  -ms-flex-wrap: wrap ;
+      flex-wrap: wrap ;
+  position: relative ;
+}
+
+.jcc-contact-group__helper {
+  color: #757575 ;
+  font-size: 0.81rem;
+  margin-top: 0.5rem ;
+  width: 100% ;
 }
 
 .summary-results .jcc-header-group {
