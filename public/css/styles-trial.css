@@ -15494,6 +15494,11 @@ nav.jcc-primary-nav {
   right: 0.6rem;
 }
 
+.usa-sidenav .icon-alt {
+  top: -1.7rem;
+  right: 1.3rem;
+}
+
 .usa-sidenav .usa-sidenav__sublist .usa-sidenav .usa-sidenav__sublist .usa-sidenav .usa-sidenav__sublist .usa-sidenav .usa-sidenav__sublist a {
   padding-left: 5rem;
 }
