@@ -18831,7 +18831,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   left: 30px;
 }
 
-.jcc-timeline-dual__number.none {
+.jcc-timeline-dual__number.none, .jcc-timeline-dual__number.line {
   display: none;
 }
 
