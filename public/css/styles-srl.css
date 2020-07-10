@@ -10860,7 +10860,7 @@ a.usa-button.usa-button--unstyled:focus {
   background-color: white ;
   -webkit-box-shadow: 0 0 0 2px #017cc1;
           box-shadow: 0 0 0 2px #017cc1;
-  background-image: url("../images/collect-dark.svg");
+  background-image: url("../images/graphics/collect-dark.svg");
   background-size: 1rem auto;
 }
 
@@ -11628,17 +11628,17 @@ a:visited,
 }
 
 .usa-alert--error .jcc-alert__body {
-  background-image: url("../images/error.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../images/graphics/error-warning.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
   padding-left: 3rem ;
 }
 
 .usa-alert--warning .jcc-alert__body {
-  background-image: url("../images/warning.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../images/graphics/warning-warning.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
   padding-left: 3rem ;
 }
 
 .usa-alert--success .jcc-alert__body {
-  background-image: url("../images/success.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../images/graphics/success-success.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
   padding-left: 3rem ;
 }
 
@@ -11853,7 +11853,7 @@ a:visited,
 }
 
 .jcc-complete .jcc-complete__icon.check {
-  background-image: url("../images/check.png");
+  background-image: url("../images/graphics/check.png");
 }
 
 .jcc-complete .jcc-complete__body {
@@ -12619,7 +12619,7 @@ a:visited,
   right: 0.75rem ;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/switchboard-icon.svg);
+  background-image: url(../images/graphics/switchboard-icon.svg);
 }
 
 .jcc-tile--hover:hover {
@@ -17492,7 +17492,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   left: 10px;
   position: absolute;
   display: block;
-  background-image: url("../images/time.svg");
+  background-image: url("../images/graphics/time.svg");
 }
 
 .jcc-timeline-dual__number {
@@ -17515,7 +17515,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 }
 
 .jcc-timeline-dual__number.wait {
-  background-image: url("../images/time.svg");
+  background-image: url("../images/graphics/time.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -17534,15 +17534,15 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 }
 
 .jcc-timeline-dual__icon.both {
-  background-image: url("../images/both.svg");
+  background-image: url("../images/graphics/both.svg");
 }
 
 .jcc-timeline-dual__icon.down {
-  background-image: url("../images/top-bottom.svg");
+  background-image: url("../images/graphics/top-bottom.svg");
 }
 
 .jcc-timeline-dual__icon.up {
-  background-image: url("../images/bottom-top.svg");
+  background-image: url("../images/graphics/bottom-top.svg");
 }
 
 .jcc-timeline-dual__top .jcc-timeline-dual__time {
