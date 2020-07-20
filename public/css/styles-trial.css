@@ -17171,6 +17171,7 @@ h3.jcc-header-group__title {
   padding: 0;
   text-align: left;
   font-size: 1.06rem;
+  cursor: pointer;
 }
 
 .jcc-modal__trigger:hover {
