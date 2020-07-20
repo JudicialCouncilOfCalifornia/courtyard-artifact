@@ -12799,7 +12799,8 @@ a:visited,
           flex: 1;
 }
 
-.jcc-contact-group button {
+.jcc-contact-group button,
+.jcc-contact-group input[type="submit"] {
   margin: 0 ;
   padding-bottom: 0 ;
   padding-top: 0 ;
