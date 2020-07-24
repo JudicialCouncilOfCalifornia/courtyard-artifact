@@ -18472,17 +18472,19 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   padding-top: 2rem ;
 }
 
-.jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-tiles-list__date,
-.jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-tiles-list__image,
 .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-card {
   width: 100% ;
   padding: 1rem ;
   padding-top: 0 ;
+  padding-left: 0 ;
+  padding-right: 0 ;
 }
 
 .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-tiles-list__date {
-  padding-left: 0 ;
-  padding-right: 0 ;
+  padding: 1rem ;
+  padding-top: 0 ;
+  padding-left: 1rem ;
+  padding-right: 1rem ;
   color: #00a398 ;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18556,19 +18558,17 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   text-decoration: underline ;
 }
 
-.jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-card {
-  padding-left: 0 ;
-  padding-right: 0 ;
-}
-
 .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-tiles-list__image {
+  padding: 1rem ;
+  padding-top: 0 ;
+  max-width: 20rem ;
   padding-left: 0 ;
   padding-right: 0 ;
   padding-bottom: 0 ;
 }
 
 .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-tiles-list__image img {
-  width: 100% ;
+  max-width: 15rem ;
 }
 
 .jcc-tiles-list__container .jcc-tiles-list__button {
@@ -30832,12 +30832,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
         -ms-flex-direction: row ;
             flex-direction: row ;
   }
-  .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-tiles-list__date,
-  .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-tiles-list__image,
   .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-card {
     padding-top: 1rem ;
+    padding-left: 1rem ;
+    padding-right: 1rem ;
   }
   .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-tiles-list__date {
+    padding-top: 1rem ;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column ;
@@ -30846,19 +30847,8 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
         -ms-flex-align: center ;
             align-items: center ;
   }
-  .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto ;
-            flex: 0 0 auto ;
-    width: 66.66667% ;
-    padding-left: 1rem ;
-    padding-right: 1rem ;
-  }
   .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-tiles-list__image {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto ;
-            flex: 0 0 auto ;
-    width: 25% ;
+    padding-top: 1rem ;
   }
   .jcc-timeline-dual-section__container {
     padding-left: 2rem ;
