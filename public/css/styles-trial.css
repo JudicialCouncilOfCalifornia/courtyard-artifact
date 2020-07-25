@@ -13103,6 +13103,19 @@ a:visited,
   position: absolute;
 }
 
+.jcc-card__img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.jcc-card__img img {
+  min-width: 100%;
+}
+
+.jcc-card__vid .media-oembed-content {
+  height: 200px;
+}
+
 .jcc-complete {
   background-color: #168092 ;
   padding: 2rem ;
@@ -13540,6 +13553,17 @@ a:visited,
 
 .jcc_link-list--multicolumn .jcc_link-list--multicolumn__row .jcc-link-list__list:last-child {
   padding-right: 0 ;
+}
+
+.jcc-link-list__button-container {
+  position: relative ;
+  left: -1.5rem ;
+  margin-top: 1rem ;
+  text-align: center ;
+}
+
+.jcc-link-list__button-container a.usa-button {
+  width: auto ;
 }
 
 .jcc-link-list {
@@ -16362,6 +16386,11 @@ h3.jcc-header-group__title {
   width: auto ;
 }
 
+.jcc-cards-with-button__container .jcc-cards__highlight > li:last-child,
+.jcc-cards-with-button__container .jcc-cards__highlight + ul > li:last-child {
+  margin-left: 1rem ;
+}
+
 .jcc-cards-with-list__container {
   padding-top: 4.5rem ;
   padding-bottom: 4.5rem ;
@@ -16965,6 +16994,33 @@ h3.jcc-header-group__title {
   padding-top: 20px;
   width: 100%;
   background-color: white ;
+}
+
+.jcc-link-list-with-button__container > .jcc-header-group {
+  margin-left: auto ;
+  margin-right: auto ;
+  max-width: 87.5rem ;
+  padding-left: 1rem ;
+  padding-right: 1rem ;
+  text-align: center ;
+  overflow: hidden ;
+}
+
+.jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 1.99rem;
+  margin-bottom: 2rem ;
+}
+
+.jcc-link-list-with-button__container > div {
+  margin-left: auto ;
+  margin-right: auto ;
+  max-width: 87.5rem ;
+  padding-left: 1rem ;
+  padding-right: 1rem ;
+  max-width: 83.5rem;
+  padding: 0 ;
+  margin-bottom: 0 ;
 }
 
 .jcc-list-section {
@@ -25447,6 +25503,12 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
       grid-column: button;
     }
   }
+  .jcc-cards__highlight .jcc-card__img {
+    height: 300px;
+  }
+  .jcc-cards__highlight .jcc-card__vid .media-oembed-content {
+    min-height: 300px;
+  }
   .jcc-hero__title {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 3.48rem;
@@ -29392,6 +29454,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     padding-left: 2rem ;
     padding-right: 2rem ;
   }
+  .jcc-link-list__button-container {
+    text-align: left ;
+  }
   .jcc-list-block {
     max-width: 60ex ;
   }
@@ -30358,6 +30423,37 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     width: 31%;
     margin-top: 0 ;
   }
+  .jcc-link-list-with-button__container > .jcc-header-group {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title {
+    position: relative;
+    overflow: hidden ;
+  }
+  .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title:after, .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title:before {
+    background-color: #00a398 ;
+    content: "";
+    height: 3px;
+  }
+  .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title:before, .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title:after {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+  .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title:before {
+    left: -0.5em;
+    margin-left: -50%;
+  }
+  .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+  .jcc-link-list-with-button__container > div {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
   .jcc-list-section nav {
     padding-left: 2rem ;
     padding-right: 2rem ;
@@ -31067,6 +31163,14 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-cards-with-list__container > ul > li:nth-child(2) {
     margin-bottom: 0 ;
+  }
+  .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title {
+    position: relative;
+  }
+  .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title:after, .jcc-link-list-with-button__container > .jcc-header-group .jcc-header-group__title:before {
+    background-color: #00a398 ;
+    content: "";
+    height: 3px;
   }
   .jcc-tiles-list__container > .jcc-header-group .jcc-header-group__title {
     position: relative;
