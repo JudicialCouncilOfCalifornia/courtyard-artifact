@@ -24658,6 +24658,15 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     padding-left: 2rem ;
     padding-right: 2rem ;
   }
+  .jcc-header__container--topbar.translate-disabled form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto ;
+            flex: 0 0 auto ;
+    width: 50% ;
+  }
+  .jcc-header__container--topbar.translate-disabled form .jcc-fieldset-search {
+    float: right;
+  }
   .jcc-primary-nav__container {
     padding-left: 2rem ;
     padding-right: 2rem ;
