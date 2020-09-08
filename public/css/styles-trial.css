@@ -14441,13 +14441,6 @@ a:visited,
   width: 100% ;
 }
 
-.jcc-search-group__container, .jcc-search-group .form--inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex ;
-  position: relative ;
-}
-
 .jcc-search-group__helper {
   color: #757575 ;
   font-size: 0.81rem;
@@ -14473,6 +14466,13 @@ a:visited,
   background-color: #e7f2f5 ;
 }
 
+.jcc-search-group--horizontal .jcc-search-group__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  position: relative ;
+}
+
 .jcc-search-group--horizontal label {
   display: none;
 }
@@ -14486,6 +14486,10 @@ a:visited,
 }
 
 .jcc-search-group .form--inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  position: relative ;
   max-width: 40rem ;
   -webkit-box-align: end;
       -ms-flex-align: end;
