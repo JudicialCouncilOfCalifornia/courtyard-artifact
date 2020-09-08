@@ -14448,6 +14448,14 @@ a:visited,
   width: 100% ;
 }
 
+.jcc-search-group--vertical .jcc-search-group__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  -ms-flex-wrap: wrap ;
+      flex-wrap: wrap ;
+}
+
 .jcc-search-group--vertical label {
   margin: 0 ;
   margin-bottom: 0.5rem ;
@@ -18144,6 +18152,7 @@ h3.jcc-header-group__title {
 .jcc-locate-section__content {
   width: 100% ;
   position: relative ;
+  margin-top: 1.5rem ;
 }
 
 .jcc-locations--full .jcc-locations__items {
@@ -31652,6 +31661,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
         -ms-flex: 0 0 auto ;
             flex: 0 0 auto ;
     width: 50% ;
+    margin-top: 0 ;
   }
   .jcc-locations--full .jcc-locations__items {
     padding-left: 2rem ;
