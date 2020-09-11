@@ -12126,6 +12126,26 @@ input[type="search"] {
   font-style: italic ;
 }
 
+.usa-button--back {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex ;
+  -webkit-box-align: center ;
+      -ms-flex-align: center ;
+          align-items: center ;
+  padding-bottom: 0.5rem ;
+  padding-top: 0.5rem ;
+  padding-right: 1.5rem ;
+  padding-left: 0.25rem ;
+}
+
+.usa-button--back svg {
+  position: relative ;
+  right: -4px;
+  width: 36px;
+  height: 36px;
+}
+
 .usa-checkbox__label {
   margin: 0 ;
 }
@@ -14554,6 +14574,14 @@ a:visited,
   font-weight: normal ;
   font-style: italic ;
   background-color: transparent ;
+}
+
+.usa-accordion--container {
+  margin-left: auto ;
+  margin-right: auto ;
+  max-width: 87.5rem ;
+  padding-left: 1rem ;
+  padding-right: 1rem ;
 }
 
 .jcc-accordion__content-container .usa-accordion__content {
@@ -30501,6 +30529,10 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-accordion__heading-container .usa-accordion__button {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 1.74rem;
+  }
+  .usa-accordion--container {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
   }
   .jcc-accordion__content-container .usa-accordion__content {
     padding-left: 2rem ;
