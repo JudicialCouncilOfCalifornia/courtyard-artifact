@@ -13757,6 +13757,19 @@ a:visited,
   background-color: white ;
 }
 
+.jcc-breadcrumbs-nav.has-back-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  -webkit-box-align: center ;
+      -ms-flex-align: center ;
+          align-items: center ;
+}
+
+.jcc-breadcrumbs-nav.has-back-button .usa-button--back {
+  margin-right: 1.5rem ;
+}
+
 .jcc-breadcrumbs {
   margin-bottom: 0;
   margin-top: 0;
