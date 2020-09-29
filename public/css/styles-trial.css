@@ -16621,6 +16621,19 @@ h3.jcc-header-group__title {
   padding-left: 0 ;
 }
 
+.jcc-header-base.usa-header--extended .usa-logo__graphic--mobile,
+.jcc-header-base.usa-header--extended .usa-logo__graphic--desktop {
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  height: 100%;
+}
+
+.jcc-header-base.usa-header--extended .usa-logo__graphic--mobile img,
+.jcc-header-base.usa-header--extended .usa-logo__graphic--desktop img {
+  max-height: 100%;
+}
+
 .jcc-header-base.jcc-header--inverted.usa-header {
   background-color: #162e51 ;
 }
@@ -33042,6 +33055,10 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-header-base .usa-navbar {
     height: 3.75rem;
+  }
+  .jcc-header-base.usa-header--extended .usa-logo__graphic--mobile img,
+  .jcc-header-base.usa-header--extended .usa-logo__graphic--desktop img {
+    height: 3rem;
   }
   .jcc-all .jcc-header-base .usa-nav {
     top: 2.25rem;
