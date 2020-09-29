@@ -16199,6 +16199,15 @@ h3.jcc-header-group__title {
   padding-top: 0.5rem ;
 }
 
+.jcc-footer-base .jcc-footer-global-wrapper .jcc-footer-global-copyright,
+.jcc-footer-base .jcc-footer-global-wrapper .jcc-global__menu {
+  display: inline-block;
+}
+
+.jcc-footer-base .jcc-footer-global-wrapper .jcc-footer-global-copyright {
+  margin-left: 2rem ;
+}
+
 .jcc-footer-base .grid-container {
   max-width: 87.5rem ;
 }
@@ -16631,6 +16640,10 @@ h3.jcc-header-group__title {
 
 .jcc-header-base.jcc-header--inverted.usa-header--extended .usa-nav {
   background-color: #1a4480 ;
+}
+
+.jcc-header-base.usa-header--extended .usa-nav .usa-nav__secondary {
+  bottom: 6rem;
 }
 
 .usa-js-mobile-nav--active .jcc-header-base .usa-nav__close {
@@ -32993,6 +33006,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group {
     background-color: #1a4480 ;
+  }
+  .jcc-footer-base .jcc-footer-global-wrapper .jcc-footer-global-copyright,
+  .jcc-footer-base .jcc-footer-global-wrapper .jcc-global__menu {
+    display: block;
+  }
+  .jcc-footer-base .jcc-footer-global-wrapper .jcc-footer-global-copyright {
+    margin-left: 1rem ;
   }
   .jcc-footer-base .usa-footer__logo-heading {
     margin-bottom: 2rem ;
