@@ -14886,6 +14886,8 @@ h3.jcc-header-group__title {
 
 .jcc-footer-base .jcc-footer-global-wrapper .jcc-footer-global-copyright {
   margin-left: 2rem ;
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.06rem;
 }
 
 .jcc-footer-base .grid-container {
