@@ -15450,7 +15450,7 @@ a:visited,
 .jcc-header-base .usa-nav__primary button,
 .jcc-header-base .usa-nav__primary > .usa-nav__primary-item > a {
   padding: 1.25rem ;
-  font-weight: 600 ;
+  font-weight: normal ;
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.06rem;
   color: #005ea2 ;
