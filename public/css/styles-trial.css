@@ -14157,6 +14157,29 @@ a:visited,
   display: none;
 }
 
+.jcc-share .jcc-modal__dialog {
+  width: auto ;
+  min-height: 0 ;
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+}
+
+.jcc-share .jcc-share__content {
+  position: absolute ;
+  margin-left: 1rem ;
+  margin-right: 1rem ;
+}
+
+.jcc-share .jcc-share__content[aria-hidden="true"] {
+  display: none ;
+}
+
+.jcc-share .jcc-share__content .jcc-modal__close-button {
+  position: absolute ;
+  top: 1rem ;
+  right: 1rem ;
+}
+
 .jcc-social-links {
   padding-top: 3rem ;
   padding-bottom: 3rem ;
@@ -18482,6 +18505,7 @@ h3.jcc-header-group__title {
   position: absolute ;
   top: 0.5rem;
   right: 0.5rem;
+  cursor: pointer ;
 }
 
 .jcc-modal__close-button svg {

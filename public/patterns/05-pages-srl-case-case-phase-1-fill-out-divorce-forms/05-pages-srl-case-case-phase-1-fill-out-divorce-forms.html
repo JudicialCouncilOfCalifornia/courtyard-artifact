@@ -5,9 +5,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1601514172" media="all" />
-		<link rel="stylesheet" id='srl' type='text/css' href="../../css/styles-srl.css?1601514172" media="all" />
-		<link rel="stylesheet" id='trial' type='text/css' href="../../css/styles-trial.css?1601514172" media="all" disabled/>
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1601523880" media="all" />
+		<link rel="stylesheet" id='srl' type='text/css' href="../../css/styles-srl.css?1601523880" media="all" />
+		<link rel="stylesheet" id='trial' type='text/css' href="../../css/styles-trial.css?1601523880" media="all" disabled/>
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		<!-- never cache patterns -->
 <meta http-equiv="cache-control" content="max-age=0" />
@@ -16,8 +16,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1601514172" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1601514172" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1601523880" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1601523880" media="all" />
 		<!-- End Pattern Lab -->
 
 	</head>
@@ -442,22 +442,49 @@
                   <div class="jcc-text-section__column-right">
             
 <div class="jcc-share">
-    
-        <a href="#" class="jcc-share__item">
+      <a id="print"
+       class="jcc-share__item usa-button usa-button--unstyled"
+       aria-label="Print current page"
+           >
       <img src="../../images/graphics/print.svg">
     </a>
-    
-    
-        <a href="#" class="jcc-share__item">
+          <a id="email"
+       class="jcc-share__item usa-button usa-button--unstyled"
+       aria-label="Email page to yourself"
+        data-a11y-toggle="email"    >
       <img src="../../images/graphics/email.svg">
     </a>
-    
-    
-        <a href="#" class="jcc-share__item">
+          <div class="jcc-modal__dialog js-dialog-window jcc-share__content" id="email">
+        <button class="jcc-modal__close-button usa-button--unstyled"
+                type="button"
+                data-a11y-toggle="email"
+                aria-label="Close this email dialog"
+        >
+          <svg class="icon icon-close " role="img" title="Close"><use class="" xlink:href="#i-close"></use></svg>
+        </button>
+        <div class="jcc-modal__content">
+          Email link to me
+        </div>
+      </div>
+          <a id="text"
+       class="jcc-share__item usa-button usa-button--unstyled"
+       aria-label="Text page to yourself"
+        data-a11y-toggle="text"    >
       <img src="../../images/graphics/text.svg">
     </a>
-    
-    </div>
+          <div class="jcc-modal__dialog js-dialog-window jcc-share__content" id="text">
+        <button class="jcc-modal__close-button usa-button--unstyled"
+                type="button"
+                data-a11y-toggle="text"
+                aria-label="Close this text dialog"
+        >
+          <svg class="icon icon-close " role="img" title="Close"><use class="" xlink:href="#i-close"></use></svg>
+        </button>
+        <div class="jcc-modal__content">
+          Text link to me
+        </div>
+      </div>
+      </div>
 
 <div class="jcc-callout  jcc-callout__block">
   <div class="jcc-callout__content" >
@@ -557,10 +584,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1601514172">
+<script id="pl-js-polyfill-insert-1601523880">
   (function() {
     if (self != top) {
-      var cb = '1601514172';
+      var cb = '1601523880';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -570,16 +597,16 @@
   })();
 </script>
 
-<script id="pl-js-insert-1601514172">
+<script id="pl-js-insert-1601523880">
   (function() {
     if (self != top) {
-      var cb = '1601514172';
+      var cb = '1601523880';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
   })();
 </script>
-	<script src="../../js/scripts.js?1601514172" type="text/javascript"></script>
+	<script src="../../js/scripts.js?1601523880" type="text/javascript"></script>
 	</div>
 	</body>
 </html>
