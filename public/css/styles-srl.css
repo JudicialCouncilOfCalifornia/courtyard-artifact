@@ -14287,7 +14287,14 @@ a:visited,
   border-top-style: solid;
 }
 
-.jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a {
+.jcc-header-base .usa-nav__submenu .usa-nav__submenu-item .usa-nav__submenu-list a {
+  border-left-width: 1rem;
+  border-left-color: #0b4778 ;
+  border-left-style: solid;
+}
+
+.jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a,
+.jcc-header-base .usa-nav__submenu .usa-nav__submenu-item .usa-nav__submenu_label {
   text-decoration: none ;
   padding: 1.25rem ;
   display: block ;
@@ -29254,7 +29261,8 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     border-top-color: #0b4778 ;
     border-top-style: solid;
   }
-  .jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a {
+  .jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a,
+  .jcc-header-base .usa-nav__submenu .usa-nav__submenu-item .usa-nav__submenu_label {
     background-color: #1f303e ;
   }
   .jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a:hover {
