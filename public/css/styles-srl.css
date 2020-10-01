@@ -12831,6 +12831,7 @@ a:visited,
 }
 
 .jcc-share__item {
+  width: auto ;
   margin-left: 0.5rem ;
   margin-right: 0.5rem ;
 }
@@ -12858,6 +12859,7 @@ a:visited,
 
 .jcc-share .jcc-share__content {
   position: absolute ;
+  z-index: 99999 ;
   margin-left: 1rem ;
   margin-right: 1rem ;
 }
