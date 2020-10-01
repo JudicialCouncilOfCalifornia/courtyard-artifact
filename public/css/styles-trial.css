@@ -20083,8 +20083,17 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   z-index: 15;
 }
 
-.scroll-button.hidden {
+.jcc-timeline-dual__slider-wrapper .scroll-button.hidden {
   display: none;
+}
+
+.top-only .jcc-timeline-dual__slider-wrapper .scroll-button {
+  height: 30px;
+}
+
+.bottom-only .jcc-timeline-dual__slider-wrapper .scroll-button {
+  top: 0;
+  height: 30px;
 }
 
 .jcc-timeline-dual__slider-wrapper .scroll-button--left {
@@ -26640,6 +26649,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
         -ms-flex-align: end;
             align-items: flex-end;
     height: 150px;
+    padding-right: 25px;
   }
   .jcc-timeline-dual-item__top::before {
     width: 100%;
@@ -26676,6 +26686,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
         -ms-flex-align: start;
             align-items: flex-start;
     height: 150px;
+    padding-right: 25px;
   }
   .jcc-timeline-dual-item__bottom::before {
     width: 100%;
