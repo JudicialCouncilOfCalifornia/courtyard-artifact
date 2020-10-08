@@ -1,0 +1,54 @@
+
+<div class="jcc-share">
+  <button id="print" class="jcc-share__button" aria-label="Print current page">
+    <span class="jcc-share__print"></span>
+  </button>
+                  
+
+        <button id="email"
+              class="jcc-share__button jcc-modal__trigger"
+              aria-label="Email page to yourself"
+              data-a11y-dialog-show="email"      >
+        <span class="jcc-share__email"></span>
+      </button>
+    
+
+<div class="jcc-modal jcc-modal--overlay" id="email">
+  <div class="jcc-modal__backdrop jcc-modal__backdrop--overlay" tabindex="-1"></div>
+
+  <dialog class="jcc-modal__dialog jcc-modal__dialog--overlay js-dialog-window" id="jcc-dialog-window" aria-label="email dialog window">
+    <button class="jcc-modal__close-button usa-button--unstyled jcc-modal__close-reset" type="button" data-a11y-dialog-hide="email" aria-label="Close this dialog window">
+        <svg class="icon icon-close  " role="img" title="Close"><use class="" xlink:href="#i-close"></use></svg>    </button>
+
+    <div class="jcc-modal__content">
+      Email link to me
+    </div>
+
+      </dialog>
+</div>
+  
+                  
+
+        <button id="text"
+              class="jcc-share__button jcc-modal__trigger"
+              aria-label="Text page to yourself"
+              data-a11y-dialog-show="text"      >
+        <span class="jcc-share__text"></span>
+      </button>
+    
+
+<div class="jcc-modal jcc-modal--overlay" id="text">
+  <div class="jcc-modal__backdrop jcc-modal__backdrop--overlay" tabindex="-1"></div>
+
+  <dialog class="jcc-modal__dialog jcc-modal__dialog--overlay js-dialog-window" id="jcc-dialog-window" aria-label="text dialog window">
+    <button class="jcc-modal__close-button usa-button--unstyled jcc-modal__close-reset" type="button" data-a11y-dialog-hide="text" aria-label="Close this dialog window">
+        <svg class="icon icon-close  " role="img" title="Close"><use class="" xlink:href="#i-close"></use></svg>    </button>
+
+    <div class="jcc-modal__content">
+      Text link to me
+    </div>
+
+      </dialog>
+</div>
+  
+  </div>

@@ -14133,55 +14133,6 @@ a:visited,
   position: relative ;
 }
 
-.jcc-share {
-  padding-top: 3rem ;
-  padding-bottom: 3rem ;
-}
-
-.jcc-share__item {
-  width: auto ;
-  margin-left: 0.5rem ;
-  margin-right: 0.5rem ;
-}
-
-.jcc-share__item *, .jcc-share__item, .jcc-share__item:visited {
-  color: #919191 ;
-  text-decoration: none ;
-}
-
-.jcc-share__item svg {
-  height: 3rem ;
-  width: 3rem ;
-}
-
-.jcc-share__item svg.ext {
-  display: none;
-}
-
-.jcc-share .jcc-modal__dialog {
-  width: auto ;
-  min-height: 0 ;
-  margin-top: 0 ;
-  margin-bottom: 0 ;
-}
-
-.jcc-share .jcc-share__content {
-  position: absolute ;
-  z-index: 99999 ;
-  margin-left: 1rem ;
-  margin-right: 1rem ;
-}
-
-.jcc-share .jcc-share__content[aria-hidden="true"] {
-  display: none ;
-}
-
-.jcc-share .jcc-share__content .jcc-modal__close-button {
-  position: absolute ;
-  top: 1rem ;
-  right: 1rem ;
-}
-
 .jcc-social-links {
   padding-top: 3rem ;
   padding-bottom: 3rem ;
@@ -14534,8 +14485,10 @@ a:visited,
 }
 
 .jcc-contact-group input {
-  margin: 0 ;
+  margin-top: 0 ;
+  margin-bottom: 0 ;
   margin-right: 0.5rem ;
+  margin-bottom: 0.5rem ;
   float: left ;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -14544,7 +14497,6 @@ a:visited,
 
 .jcc-contact-group button,
 .jcc-contact-group input[type="submit"] {
-  margin: 0 ;
   padding-left: 1rem ;
   padding-right: 1rem ;
   width: auto ;
@@ -14555,19 +14507,14 @@ a:visited,
 }
 
 .jcc-contact-group__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex ;
-  -ms-flex-wrap: wrap ;
-      flex-wrap: wrap ;
   position: relative ;
 }
 
 .jcc-contact-group__helper {
+  display: inline-block ;
   color: #757575 ;
   font-size: 0.81rem;
   margin-top: 0.5rem ;
-  width: 100% ;
 }
 
 .jcc-search-group input {
@@ -18436,6 +18383,16 @@ h3.jcc-header-group__title {
   display: none ;
 }
 
+.jcc-modal__backdrop--overlay {
+  display: block ;
+}
+
+.jcc-modal--overlay {
+  position: absolute ;
+  z-index: 99999 ;
+  width: 100%;
+}
+
 .jcc-modal[data-a11y-dialog-native] .jcc-modal__backdrop {
   display: none ;
 }
@@ -18492,6 +18449,19 @@ h3.jcc-header-group__title {
           box-shadow: 0 0.75rem 1.5rem 0 rgba(0, 0, 0, 0.1) ;
 }
 
+.jcc-modal__dialog--overlay {
+  position: fixed ;
+  top: 30%;
+  min-height: unset;
+}
+
+@supports (-ms-ime-align: auto) {
+  .jcc-modal__dialog--overlay {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 .jcc-modal__dialog dialog::-webkit-backdrop {
   background-color: white;
 }
@@ -18531,7 +18501,9 @@ h3.jcc-header-group__title {
   padding: 0;
   text-align: left;
   font-size: 1.06rem;
-  cursor: pointer;
+  margin-left: 0.5rem ;
+  margin-right: 0.5rem ;
+  cursor: pointer ;
 }
 
 .jcc-modal__trigger:hover {
@@ -18650,6 +18622,63 @@ h3.jcc-header-group__title {
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.jcc-share {
+  padding-top: 3rem ;
+  padding-bottom: 3rem ;
+}
+
+.jcc-share__item {
+  width: auto ;
+  margin-left: 0.5rem ;
+  margin-right: 0.5rem ;
+}
+
+.jcc-share__item *, .jcc-share__item, .jcc-share__item:visited {
+  color: #919191 ;
+  text-decoration: none ;
+}
+
+.jcc-share__item svg {
+  height: 3rem ;
+  width: 3rem ;
+}
+
+.jcc-share__item svg.ext {
+  display: none;
+}
+
+.jcc-share__button {
+  margin-left: 0.5rem ;
+  margin-right: 0.5rem ;
+  padding: 0 ;
+  background-color: transparent ;
+  border-width: 0;
+  border-style: solid;
+  cursor: pointer ;
+}
+
+.jcc-share__button span {
+  display: inline-block ;
+  height: 4.1rem;
+  width: 4.1rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.jcc-share__print {
+  background-image: url("../images/graphics/print.svg");
+}
+
+.jcc-share__email {
+  position: relative;
+  top: 2px;
+  background-image: url("../images/graphics/email.svg");
+}
+
+.jcc-share__text {
+  background-image: url("../images/graphics/text.svg");
 }
 
 .jcc-steps-section {
@@ -18884,7 +18913,7 @@ h3.jcc-header-group__title {
 .jcc-steps .jcc-step__item:after {
   content: "";
   display: block;
-  width: 100%;
+  width: 88%;
   position: absolute;
   z-index: 1;
   height: 3px;
@@ -26621,6 +26650,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-list-section nav > ul > li {
     max-width: 44%;
   }
+  .jcc-steps .jcc-step__item:after {
+    width: 92%;
+  }
 }
 
 @media all and (min-width: 55em) {
@@ -31833,6 +31865,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     padding-left: 2rem ;
     padding-right: 2rem ;
   }
+  @supports (-ms-ime-align: auto) {
+    .jcc-modal__dialog--overlay {
+      width: 53%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
   .jcc-modal__dialog {
     padding: 3rem ;
   }
@@ -32871,9 +32910,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-postcard--has-background-color--dark--secondary {
     padding-top: 1.5rem ;
   }
-  .jcc-share {
-    padding-bottom: 1.5rem ;
-  }
   .jcc-social-links {
     padding-bottom: 1.5rem ;
   }
@@ -32981,6 +33017,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-locate-section--has-background-color--light--primary,
   .jcc-locate-section--has-background-color--dark--primary {
     padding-top: 1.5rem ;
+  }
+  .jcc-share {
+    padding-bottom: 1.5rem ;
   }
   .jcc-steps-section {
     padding-bottom: 1.5rem ;
