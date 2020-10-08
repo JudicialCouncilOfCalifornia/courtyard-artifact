@@ -18656,7 +18656,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   display: flex ;
   -ms-flex-wrap: wrap ;
       flex-wrap: wrap ;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .jcc-timeline-dual__title-bar-title {
