@@ -13310,6 +13310,10 @@ a:visited,
   font-size: 1.74rem;
 }
 
+.jcc-card {
+  max-width: 60rem;
+}
+
 .jcc-card__brow {
   margin-bottom: 0.75rem ;
 }
@@ -13374,16 +13378,43 @@ a:visited,
 }
 
 .jcc-card__img {
-  height: 200px;
-  overflow: hidden;
+  position: relative;
 }
 
-.jcc-card__img img {
-  min-width: 100%;
+.jcc-card__img:before {
+  display: block ;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
 }
 
-.jcc-card__vid .media-oembed-content {
-  height: 200px;
+.jcc-card__img > .content {
+  position: absolute ;
+  top: 0 ;
+  left: 0 ;
+  right: 0 ;
+  bottom: 0 ;
+  overflow: hidden ;
+}
+
+.jcc-card__vid {
+  position: relative;
+}
+
+.jcc-card__vid:before {
+  display: block ;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.jcc-card__vid > .content {
+  position: absolute ;
+  top: 0 ;
+  left: 0 ;
+  right: 0 ;
+  bottom: 0 ;
+  overflow: hidden ;
 }
 
 .jcc-complete {
@@ -17548,9 +17579,17 @@ h3.jcc-header-group__title {
   width: auto ;
 }
 
-.jcc-cards-with-button__container .jcc-cards__highlight > li:last-child,
-.jcc-cards-with-button__container .jcc-cards__highlight + ul > li:last-child {
+.jcc-cards-with-button__container .jcc-cards-with-button__highlight > li:last-child,
+.jcc-cards-with-button__container .jcc-cards-with-button__highlight + ul > li:last-child {
   margin-left: 1rem ;
+}
+
+.jcc-cards-with-button__container .jcc-cards-with-button__highlight .jcc-cards-with-button__item {
+  margin-bottom: 0 ;
+}
+
+.jcc-cards-with-button__container .jcc-cards-with-button__highlight--large .jcc-cards-with-button__item:first-child .jcc-card__img img {
+  height: 113%;
 }
 
 .jcc-cards-with-list__container {
@@ -26737,12 +26776,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-card__content[aria-hidden="true"] {
     display: block ;
-  }
-  .jcc-cards__highlight .jcc-card__img {
-    height: 300px;
-  }
-  .jcc-cards__highlight .jcc-card__vid .media-oembed-content {
-    min-height: 300px;
   }
   .jcc-hero__title {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
