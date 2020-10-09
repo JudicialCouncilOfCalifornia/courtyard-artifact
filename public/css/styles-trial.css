@@ -17588,10 +17588,6 @@ h3.jcc-header-group__title {
   margin-bottom: 0 ;
 }
 
-.jcc-cards-with-button__container .jcc-cards-with-button__highlight--large .jcc-cards-with-button__item:first-child .jcc-card__img img {
-  height: 113%;
-}
-
 .jcc-cards-with-list__container {
   padding-top: 4.5rem ;
   padding-bottom: 4.5rem ;
