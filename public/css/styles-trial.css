@@ -13271,6 +13271,11 @@ a:visited,
   margin-top: 0 ;
 }
 
+.jcc-card-form .jcc-card__footer .usa-button {
+  padding-left: 1rem ;
+  padding-right: 1rem ;
+}
+
 .jcc-card.person {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15358,6 +15363,42 @@ a:visited,
 .jcc-button-pager_reset {
   padding-top: 0.5rem ;
   padding-bottom: 1rem ;
+}
+
+.jcc-cascading-jump-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  -ms-flex-wrap: wrap ;
+      flex-wrap: wrap ;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end ;
+}
+
+.jcc-cascading-jump-menu .jcc-cascading-jump-menu__form {
+  margin-right: 0.5rem ;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0 ;
+}
+
+.jcc-cascading-jump-menu .jcc-cascading-jump-menu__form .usa-select {
+  max-width: none ;
+  margin-bottom: 0.5rem ;
+}
+
+.jcc-cascading-jump-menu .jcc-cascading-jump-menu__form .usa-select:last-child {
+  margin-bottom: 0 ;
+}
+
+.jcc-cascading-jump-menu .usa-button {
+  margin-right: 0 ;
+}
+
+.jcc-cascading-jump-menu__child:disabled {
+  background-color: #e6e6e6 ;
+  cursor: not-allowed ;
 }
 
 .jcc-global-bar {

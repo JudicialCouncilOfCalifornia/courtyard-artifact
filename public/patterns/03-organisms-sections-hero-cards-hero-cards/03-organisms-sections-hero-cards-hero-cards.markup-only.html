@@ -46,7 +46,7 @@
               <span data-a11y-toggle="read-more-1">Take action on my court case</span>
           </h3>
     <div class="jcc-card__content" id="read-more-1">              <div class="jcc-card__excerpt"><p>Move your case forward make a change to a decision dismiss a case</p></div>
-                    <div class="jcc-card__footer">  
+                    <div class="jcc-card__footer">      
 
   <div class="jcc-jump-menu jcc-inline-input">
           <label class="usa-label sr-only" for="options">The label</label>
@@ -63,7 +63,7 @@
 
     <button class="usa-button usa-button--accent-warm">Go</button>
   </div>
-</div>
+  </div>
           </div>  </div>
 </div>
         </li>
@@ -80,7 +80,7 @@
               <span data-a11y-toggle="read-more-2">Start a court case</span>
           </h3>
     <div class="jcc-card__content" id="read-more-2">              <div class="jcc-card__excerpt"><p>Find your case type to get started</p></div>
-                    <div class="jcc-card__footer">  
+                    <div class="jcc-card__footer">      
 
   <div class="jcc-jump-menu jcc-inline-input">
           <label class="usa-label sr-only" for="options">The label</label>
@@ -96,7 +96,7 @@
 
     <button class="usa-button usa-button--accent-warm">Go</button>
   </div>
-</div>
+  </div>
           </div>  </div>
 </div>
         </li>
@@ -113,23 +113,32 @@
               <span data-a11y-toggle="read-more-3">Get help with papers I was served</span>
           </h3>
     <div class="jcc-card__content" id="read-more-3">              <div class="jcc-card__excerpt"><p>Look up by form number and understand your options</p></div>
-                    <div class="jcc-card__footer">  
+                    <div class="jcc-card__footer">      
 
-  <div class="jcc-jump-menu jcc-inline-input">
-          <label class="usa-label sr-only" for="options">The label</label>
-    
-    <select class="usa-select" name="options" id="options">
-      <option value>Action you want to do</option>
-                        <option value="#">Who sent me these papers?</option>
-                                <option value="#">What does this petition say?</option>
-                                <option value="#">What do I need to do?</option>
-                                <option value="#">What is legal parentage all about?</option>
-                                <option value="#">Additional Sections</option>
-                  </select>
+                                                                
+                                                                
+                                                                
+      
 
+  <div class="jcc-cascading-jump-menu">
+    <div class="jcc-cascading-jump-menu__form">
+              <label class="usa-label sr-only" for="options">The label</label>
+      
+      <select class="usa-select jcc-cascading-jump-menu__parent">
+        <option value="">Select your case type</option>
+                  <option>Choice #1</option>
+                  <option>Choice #2</option>
+                  <option>Choice #3</option>
+              </select>
+
+      <select class="usa-select jcc-cascading-jump-menu__child" disabled="disabled">
+      </select>
+    </div>
+
+    <input type="hidden" name="data" class="cascading-jump-menu__data" value="{&quot;Choice #1&quot;:{&quot;default_option&quot;:&quot;Action you want to do&quot;,&quot;items&quot;:[{&quot;name&quot;:&quot;1- Who sent me these papers?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;1- What does this petition say?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;1- What do I need to do?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;1- What is legal parentage all about?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;1- Additional Sections&quot;,&quot;url&quot;:&quot;#&quot;}]},&quot;Choice #2&quot;:{&quot;default_option&quot;:&quot;Choose something to do&quot;,&quot;items&quot;:[{&quot;name&quot;:&quot;2- Who sent me these papers?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;2- What does this petition say?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;2- What do I need to do?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;2- What is legal parentage all about?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;2- Additional Sections&quot;,&quot;url&quot;:&quot;#&quot;}]},&quot;Choice #3&quot;:{&quot;default_option&quot;:&quot;Action you want to do&quot;,&quot;items&quot;:[{&quot;name&quot;:&quot;3- Who sent me these papers?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;3- What does this petition say?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;3- What do I need to do?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;3- What is legal parentage all about?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;3- Additional Sections&quot;,&quot;url&quot;:&quot;#&quot;}]}}"/>
     <button class="usa-button usa-button--accent-warm">Go</button>
   </div>
-</div>
+  </div>
           </div>  </div>
 </div>
         </li>
@@ -146,7 +155,7 @@
               <span data-a11y-toggle="read-more-4">Get information about a legal matter</span>
           </h3>
     <div class="jcc-card__content" id="read-more-4">              <div class="jcc-card__excerpt"><p>Find out what kind of help you can get from the court for a variety of situations</p></div>
-                    <div class="jcc-card__footer">  
+                    <div class="jcc-card__footer">      
 
   <div class="jcc-jump-menu jcc-inline-input">
           <label class="usa-label sr-only" for="options">The label</label>
@@ -162,7 +171,7 @@
 
     <button class="usa-button usa-button--accent-warm">Go</button>
   </div>
-</div>
+  </div>
           </div>  </div>
 </div>
         </li>
@@ -179,7 +188,7 @@
               <span data-a11y-toggle="read-more-5">Look up a court case or citation</span>
           </h3>
     <div class="jcc-card__content" id="read-more-5">              <div class="jcc-card__excerpt"><p>Find a traffic ticket or court case using the county courts website</p></div>
-                    <div class="jcc-card__footer">  
+                    <div class="jcc-card__footer">      
 
   <div class="jcc-jump-menu jcc-inline-input">
           <label class="usa-label sr-only" for="options">The label</label>
@@ -195,7 +204,7 @@
 
     <button class="usa-button usa-button--accent-warm">Go</button>
   </div>
-</div>
+  </div>
           </div>  </div>
 </div>
         </li>
@@ -212,7 +221,7 @@
               <span data-a11y-toggle="read-more-6">Get help from the court</span>
           </h3>
     <div class="jcc-card__content" id="read-more-6">              <div class="jcc-card__excerpt"><p>Find In-person self-centers, court interpreters, disability access and more</p></div>
-                    <div class="jcc-card__footer">  
+                    <div class="jcc-card__footer">      
 
   <div class="jcc-jump-menu jcc-inline-input">
           <label class="usa-label sr-only" for="options">The label</label>
@@ -228,7 +237,7 @@
 
     <button class="usa-button usa-button--accent-warm">Go</button>
   </div>
-</div>
+  </div>
           </div>  </div>
 </div>
         </li>
