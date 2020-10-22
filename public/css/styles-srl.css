@@ -13059,8 +13059,10 @@ a:visited,
 .jcc-tile {
   border-radius: 0.5rem ;
   border-width: 1px;
-  border-color: #2378c3 ;
+  border-color: #c9c9c9 ;
   border-style: solid;
+  background-color: white ;
+  height: 100% ;
   padding: 1.5rem ;
   color: #2e2e2e ;
   -webkit-box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1) ;
@@ -13071,16 +13073,61 @@ a:visited,
   transition: all 0.4s;
 }
 
-.jcc-tile__icon-link {
+.jcc-tile--embellishment .jcc-tile__embellishment {
   display: block ;
-  width: 2.5rem ;
-  height: 2.5rem ;
   position: absolute ;
-  top: 0.75rem ;
-  right: 0.75rem ;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.jcc-tile--embellishment--icon-top-right .jcc-tile__embellishment {
+  width: 2.5rem ;
+  height: 2.5rem ;
+  top: 0.75rem ;
+  right: 0.75rem ;
   background-image: url(../images/graphics/switchboard-icon.svg);
+}
+
+.jcc-tile--embellishment--icon-bottom-left .jcc-tile__title {
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.24rem;
+  margin-bottom: 1rem ;
+}
+
+.jcc-tile--embellishment--icon-bottom-left .jcc-tile__embellishment {
+  width: 2.5rem ;
+  height: 2.5rem ;
+  background-image: url(../images/graphics/switchboard-icon.svg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.jcc-tile--embellishment--arrow-left {
+  padding-left: 7.5rem ;
+}
+
+.jcc-tile--embellishment--arrow-left .jcc-tile__embellishment {
+  width: 4.5rem ;
+  height: 4.5rem ;
+  left: 1.25rem ;
+  top: 50%;
+  background-image: url(../images/graphics/switchboard-arrow.svg);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.jcc-tile--embellishment--arrow-right {
+  padding-right: 7.5rem ;
+}
+
+.jcc-tile--embellishment--arrow-right .jcc-tile__embellishment {
+  width: 4.5rem ;
+  height: 4.5rem ;
+  right: 1.25rem ;
+  top: 50%;
+  background-image: url(../images/graphics/switchboard-arrow.svg);
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
 }
 
 .jcc-tile--hover:hover {
@@ -17996,21 +18043,6 @@ h3.jcc-header-group__title {
   padding-left: 0;
 }
 
-.jcc-switchboard--next-phase .jcc-switchboard__column-right .jcc-switchboard__content .jcc-switchboard__tiles .jcc-tile {
-  position: relative;
-}
-
-.jcc-switchboard--next-phase .jcc-switchboard__column-right .jcc-switchboard__content .jcc-switchboard__tiles .jcc-tile .jcc-tile__title {
-  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-size: 1.24rem;
-  margin-bottom: 1rem ;
-}
-
-.jcc-switchboard--next-phase .jcc-switchboard__column-right .jcc-switchboard__content .jcc-switchboard__tiles .jcc-tile .jcc-tile__icon-link {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
 .jcc-switchboard--next-right-column .jcc-switchboard__columns .jcc-header-group {
   padding-bottom: 0;
 }
@@ -18033,21 +18065,6 @@ h3.jcc-header-group__title {
   margin-top: 0;
   list-style-type: none;
   padding-left: 0;
-}
-
-.jcc-tile {
-  border-width: 1px;
-  border-color: #c9c9c9 ;
-  border-style: solid;
-  background-color: white ;
-  height: 100% ;
-}
-
-.jcc-switchboard__tiles--secondary .jcc-tile {
-  border-width: 1px;
-  border-color: #c9c9c9 ;
-  border-style: solid;
-  background-color: #f9f9f9 ;
 }
 
 .jcc-tab-section__container {
@@ -29867,6 +29884,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.74rem;
   }
+  .jcc-tile--embellishment--icon-bottom-left {
+    padding-bottom: 4em;
+  }
+  .jcc-tile--embellishment--icon-bottom-left .jcc-tile__embellishment {
+    bottom: 1rem ;
+    left: 1rem ;
+  }
   .jcc-tile__title {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 1.49rem;
@@ -31352,14 +31376,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     padding-left: 0.5rem ;
     padding-right: 0.5rem ;
   }
-  .jcc-switchboard--next-phase .jcc-switchboard__column-right .jcc-switchboard__content .jcc-switchboard__tiles .jcc-tile {
-    padding-bottom: 4em;
-  }
-  .jcc-switchboard--next-phase .jcc-switchboard__column-right .jcc-switchboard__content .jcc-switchboard__tiles .jcc-tile .jcc-tile__icon-link {
-    top: unset;
-    bottom: 1rem ;
-    left: 1rem ;
-  }
   .jcc-switchboard--next-right-column .jcc-switchboard__columns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -31890,6 +31906,10 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-court-summary__secondary {
     margin-top: 1rem ;
+  }
+  .jcc-tile--embellishment--icon-bottom-left .jcc-tile__embellishment {
+    top: 0.75rem ;
+    right: 0.75rem ;
   }
   .jcc-global-bar .jcc-inline-nav {
     -ms-flex-wrap: wrap;
