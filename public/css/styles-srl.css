@@ -16987,8 +16987,8 @@ h3.jcc-header-group__title {
   padding-left: 2rem ;
 }
 
-.jcc-hero-icon-nav.jcc-hero-icon-nav-style--default {
-  padding-bottom: 4rem ;
+.jcc-hero-icon-nav {
+  margin-bottom: 4rem ;
 }
 
 .jcc-hero-icon-nav.jcc-hero-icon-nav-style--default .jcc-hero-img-banner__hero {
@@ -31030,7 +31030,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     color: #ffbe2e ;
   }
   .jcc-hero-icon-nav.jcc-hero-icon-nav-style--default .jcc-hero-img-banner__hero {
-    height: 550px;
     padding-left: 2rem ;
     padding-right: 2rem ;
     padding-bottom: 4.5rem ;
