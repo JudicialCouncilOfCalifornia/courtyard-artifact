@@ -32019,6 +32019,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-hero--cards .jcc-hero--has-banner-image-half .jcc-hero__container {
     padding-bottom: 12rem;
   }
+  .jcc-hero--cards .jcc-hero--has-two-columns-threequarter {
+    padding-bottom: 12rem;
+  }
   .jcc-hero--cards .jcc-cards-section {
     margin-top: -14rem;
   }
