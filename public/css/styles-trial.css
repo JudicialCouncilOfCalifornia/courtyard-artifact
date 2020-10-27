@@ -13826,6 +13826,22 @@ a:visited,
   background-size: auto 100%;
 }
 
+.jcc-hero--has-banner-image-half .jcc-hero__lead,
+.jcc-hero--has-banner-image-half .jcc-hero__body,
+.jcc-hero--has-banner-image-half .jcc-hero__body > *,
+.jcc-hero--has-banner-image-half .jcc-hero__column-left,
+.jcc-hero--has-banner-image-half .jcc-hero__column-right {
+  max-width: 100% ;
+}
+
+.jcc-hero--has-banner-image-half .jcc-hero__banner {
+  grid-column-start: col-two;
+  grid-column-end: out-right-end;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+}
+
 .jcc-hero__columns > :last-child {
   margin-bottom: 0 ;
   padding-bottom: 0 ;
@@ -31046,6 +31062,18 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     grid-column-start: col-one;
     grid-column-end: col-two;
   }
+  .jcc-hero--has-banner-image-half {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 0 repeat(2, minmax(0, 50%)) 0;
+    grid-template-areas: "out-left col-one col-two out-right";
+  }
+  .jcc-hero--has-banner-image-half .jcc-hero__container {
+    padding-left: 0 ;
+    padding-right: 0 ;
+    grid-column-start: col-one;
+    grid-column-end: col-one;
+  }
   .jcc-hero--has-two-columns-half .jcc-hero__columns,
   .jcc-hero--has-two-columns-threequarter .jcc-hero__columns {
     display: -webkit-box;
@@ -31988,7 +32016,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
             flex: 0 0 auto ;
     width: 33.33333% ;
   }
-  .jcc-hero--cards .jcc-hero {
+  .jcc-hero--cards .jcc-hero--has-banner-image-half .jcc-hero__container {
     padding-bottom: 12rem;
   }
   .jcc-hero--cards .jcc-cards-section {
@@ -33095,6 +33123,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 @media all and (min-width: 87.5em) {
   .jcc-hero--has-banner-image {
     grid-template-columns: minmax(0, 1fr) minmax(0, 26.5rem) minmax(0, 26.5rem) minmax(0, 26.5rem) minmax(0, 1fr);
+  }
+  .jcc-hero--has-banner-image-half {
+    grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 40.75rem)) minmax(0, 1fr);
   }
   .jcc-hero-box-nav .jcc-hero-box-nav__nav .jcc-hero-box-nav__block .jcc-tile {
     -webkit-box-flex: 0;
