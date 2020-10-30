@@ -14468,6 +14468,7 @@ a:visited,
 
 .jcc-tile__brow {
   margin-bottom: 0.75rem ;
+  color: #2e2e2e ;
 }
 
 .jcc-tile__title {
@@ -14480,6 +14481,7 @@ a:visited,
 .jcc-tile__body {
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.93rem;
+  color: #2e2e2e ;
   margin-top: 1em;
 }
 
