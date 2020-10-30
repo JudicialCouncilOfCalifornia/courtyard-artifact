@@ -16984,6 +16984,10 @@ h3.jcc-header-group__title {
   height: 0;
 }
 
+.jcc-header-base.usa-header {
+  z-index: unset;
+}
+
 .jcc-header-base.usa-header--extended .usa-nav {
   background-color: #eff6fb ;
   border-width: 0;
