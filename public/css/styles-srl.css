@@ -25589,7 +25589,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 }
 
 @media all and (min-width: 55em) {
-  [data-quantity="3"] .jcc-location__hours-item {
+  [data-quantity="3"] > .jcc-location__hours-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto ;
             flex: 0 0 auto ;
