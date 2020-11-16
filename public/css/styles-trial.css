@@ -18681,9 +18681,10 @@ h3.jcc-header-group__title {
 }
 
 .jcc-modal--overlay {
-  position: absolute ;
+  position: fixed ;
   z-index: 99999 ;
   width: 100%;
+  top: 30%;
 }
 
 .jcc-modal[data-a11y-dialog-native] .jcc-modal__backdrop {
@@ -23764,26 +23765,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
 }
 
-@media all and (max-width: 63.99em) and (min-width: 40em) {
-  .usa-nav__primary .usa-current {
-    position: relative;
-  }
-  .usa-nav__primary .usa-current::after {
-    background-color: #005ea2;
-    border-radius: 99rem;
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0.25rem;
-    top: 0.25rem;
-    width: 0.25rem;
-    left: 0;
-  }
-  .usa-nav__submenu .usa-current::after {
-    display: none;
-  }
-}
-
 @media all and (min-width: 40em) {
   .tablet\:grid-container {
     margin-left: auto ;
@@ -26767,6 +26748,26 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
 }
 
+@media all and (max-width: 63.99em) and (min-width: 40em) {
+  .usa-nav__primary .usa-current {
+    position: relative;
+  }
+  .usa-nav__primary .usa-current::after {
+    background-color: #005ea2;
+    border-radius: 99rem;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0.25rem;
+    top: 0.25rem;
+    width: 0.25rem;
+    left: 0;
+  }
+  .usa-nav__submenu .usa-current::after {
+    display: none;
+  }
+}
+
 @media all and (min-width: 55em) {
   [data-quantity="3"] > .jcc-location__hours-item {
     -webkit-box-flex: 0;
@@ -27103,49 +27104,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
 }
 
-@media all and (min-width: 40em) and (min-width: 64em) {
-  .tablet\:grid-container {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-  .tablet\:grid-container-card {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-  .tablet\:grid-container-card-lg {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-  .tablet\:grid-container-mobile {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-  .tablet\:grid-container-mobile-lg {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-  .tablet\:grid-container-tablet {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-  .tablet\:grid-container-tablet-lg {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-  .tablet\:grid-container-desktop {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-  .tablet\:grid-container-desktop-lg {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-  .tablet\:grid-container-widescreen {
-    padding-left: 2rem ;
-    padding-right: 2rem ;
-  }
-}
-
 @media all and (min-width: 30em) and (min-width: 64em) {
   .mobile-lg\:grid-container {
     padding-left: 2rem ;
@@ -27188,6 +27146,49 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     padding-right: 2rem ;
   }
   .usa-footer__nav {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+}
+
+@media all and (min-width: 40em) and (min-width: 64em) {
+  .tablet\:grid-container {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .tablet\:grid-container-card {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .tablet\:grid-container-card-lg {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .tablet\:grid-container-mobile {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .tablet\:grid-container-mobile-lg {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .tablet\:grid-container-tablet {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .tablet\:grid-container-tablet-lg {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .tablet\:grid-container-desktop {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .tablet\:grid-container-desktop-lg {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .tablet\:grid-container-widescreen {
     padding-left: 2rem ;
     padding-right: 2rem ;
   }
@@ -34023,6 +34024,12 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .hide-for-print {
     display: none !important;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .jcc-modal--overlay {
+    position: absolute ;
   }
 }
 
