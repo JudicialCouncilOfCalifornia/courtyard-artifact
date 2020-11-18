@@ -20062,6 +20062,10 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   margin-bottom: 1.5rem ;
 }
 
+.jcc-tiles .jcc-tiles__item .jcc-tile__title {
+  color: #2378c3 ;
+}
+
 .jcc-tiles-section--has-two-columns .jcc-tiles__item {
   width: 100% ;
 }
