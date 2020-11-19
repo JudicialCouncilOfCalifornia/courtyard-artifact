@@ -12480,7 +12480,12 @@ a:visited,
   font-size: 0.99rem;
   text-transform: uppercase ;
   letter-spacing: 0.15em ;
+  color: #168092 ;
   margin-top: 1.5rem ;
+}
+
+.jcc-hero__brow a {
+  color: #168092  !important;
 }
 
 .jcc-hero--has-background-color--dark .jcc-hero__brow {
@@ -16203,6 +16208,7 @@ h3.jcc-header-group__title {
 .jcc-cards-with-button__container a:not(.usa-button) {
   text-decoration: none ;
   color: #07648d ;
+  color: #0076d6 ;
 }
 
 .jcc-cards-with-button__container a:not(.usa-button):hover {
