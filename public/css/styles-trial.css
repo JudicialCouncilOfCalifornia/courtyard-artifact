@@ -13602,12 +13602,6 @@ a:visited,
   background-color: #eff6fb ;
 }
 
-.jcc-hero .jcc-breadcrumbs-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex ;
-}
-
 .jcc-hero--viewport-height {
   min-height: 100vh ;
 }
@@ -15392,6 +15386,12 @@ a:visited,
 
 .jcc-breadcrumbs-nav.has-back-button .usa-button--back {
   margin-right: 1.5rem ;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.jcc-breadcrumbs-nav.has-back-button .jcc-breadcrumb__item {
+  font-size: 18px;
 }
 
 .jcc-breadcrumbs {
@@ -15400,27 +15400,30 @@ a:visited,
   list-style-type: none;
   padding-left: 0;
   color: #5c5c5c ;
+  line-height: 1.2 ;
 }
 
 .jcc-breadcrumb__item {
-  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-size: 1.37rem;
   padding-right: 0.5rem ;
   display: inline ;
-  font-size: 1.06rem !important;
+  font-size: 1.06rem;
   color: #1a4480 ;
+}
+
+.jcc-breadcrumb__item:last-child::after {
+  display: none;
+}
+
+.jcc-breadcrumb__item::after {
+  display: inline-block ;
+  content: "/";
+  margin-left: 0.6275rem;
 }
 
 .jcc-breadcrumb__item a {
   color: #07648d ;
   text-decoration: none;
   color: #0076d6 ;
-}
-
-.jcc-breadcrumb__item a:after {
-  display: inline-block ;
-  content: "/";
-  margin-left: 0.6275rem;
 }
 
 .jcc-button-pager {
@@ -26924,6 +26927,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
+  .jcc-breadcrumbs-nav.has-back-button .jcc-breadcrumb__item {
+    font-size: 21px;
+  }
   .jcc-pagination li.pager__item.jcc-pagination__full,
   .jcc-pagination li.pager__item.jcc-pagination__ellipsis,
   .jcc-pagination li.pager__item.jcc-pagination__total-pages {
@@ -31166,10 +31172,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 1.49rem;
   }
-  .jcc-breadcrumb__item {
-    font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    font-size: 1.49rem;
-  }
   .jcc-global-bar {
     height: 2.5rem;
   }
@@ -33472,6 +33474,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
+  .jcc-breadcrumbs-nav.hide-mobile {
+    display: none;
+  }
   .jcc-timeline-dual__wrapper {
     margin-top: 60px;
   }
@@ -33852,10 +33857,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-read-more--block .jcc-read-more__trigger {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 0.99rem;
-  }
-  .jcc-breadcrumb__item {
-    font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    font-size: 1.06rem;
   }
   .jcc-header-group__title {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
