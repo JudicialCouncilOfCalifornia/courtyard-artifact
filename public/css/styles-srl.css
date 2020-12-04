@@ -29624,10 +29624,11 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-hero--has-banner-image {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 18.66667rem) minmax(0, 18.66667rem) minmax(0, 18.66667rem) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 26.5rem) minmax(0, 26.5rem) minmax(0, 26.5rem) minmax(0, 1fr);
     grid-template-areas: "out-left col-one col-two col-three out-right";
   }
   .jcc-hero--has-banner-image .jcc-hero__container {
+    margin-left: 0 ;
     padding-left: 0 ;
     padding-right: 0 ;
     grid-column-start: col-one;
@@ -29640,6 +29641,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     grid-template-areas: "out-left col-one col-two out-right";
   }
   .jcc-hero--has-banner-image-half .jcc-hero__container {
+    margin-left: 0 ;
     padding-left: 0 ;
     padding-right: 0 ;
     grid-column-start: col-one;
@@ -31642,9 +31644,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 }
 
 @media all and (min-width: 75em) {
-  .jcc-hero--has-banner-image {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 22.33333rem) minmax(0, 22.33333rem) minmax(0, 22.33333rem) minmax(0, 1fr);
-  }
   .jcc-location--full .jcc-location__inner-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -31673,9 +31672,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 }
 
 @media all and (min-width: 87.5em) {
-  .jcc-hero--has-banner-image {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 26.5rem) minmax(0, 26.5rem) minmax(0, 26.5rem) minmax(0, 1fr);
-  }
   .jcc-hero--has-banner-image-half {
     grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 40.75rem)) minmax(0, 1fr);
   }
