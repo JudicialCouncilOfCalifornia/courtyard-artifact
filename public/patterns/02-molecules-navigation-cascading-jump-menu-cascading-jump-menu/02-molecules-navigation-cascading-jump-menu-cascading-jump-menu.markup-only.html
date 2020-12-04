@@ -7,20 +7,20 @@
 
   <div class="jcc-cascading-jump-menu">
     <div class="jcc-cascading-jump-menu__form">
-              <label class="usa-label sr-only" for="options">Common Questions</label>
+              <label class="usa-label sr-only" for="-parent-options">Common Questions</label>
       
-      <select class="usa-select jcc-cascading-jump-menu__parent">
+      <select class="usa-select jcc-cascading-jump-menu__parent" name="-parent-options" id="-parent-options">
         <option value="">Select your case type</option>
                   <option>Choice #1</option>
                   <option>Choice #2</option>
                   <option>Choice #3</option>
               </select>
 
-      <select class="usa-select jcc-cascading-jump-menu__child" disabled="disabled">
+      <select class="usa-select jcc-cascading-jump-menu__child" disabled="disabled" name="-child-options" id="-child-options">
         <option value="">Select your parent case type!</option>
       </select>
     </div>
 
     <input type="hidden" name="data" class="cascading-jump-menu__data" value="{&quot;default_option&quot;:&quot;Select your case type&quot;,&quot;default_child_option&quot;:&quot;Select your parent case type!&quot;,&quot;groups&quot;:{&quot;Choice #1&quot;:{&quot;default_option&quot;:&quot;Select your parent case type!&quot;,&quot;items&quot;:[{&quot;name&quot;:&quot;1- Who sent me these papers?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;1- What does this petition say?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;1- What do I need to do?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;1- What is legal parentage all about?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;1- Additional Sections&quot;,&quot;url&quot;:&quot;#&quot;}]},&quot;Choice #2&quot;:{&quot;default_option&quot;:&quot;Choose something to do&quot;,&quot;items&quot;:[{&quot;name&quot;:&quot;2- Who sent me these papers?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;2- What does this petition say?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;2- What do I need to do?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;2- What is legal parentage all about?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;2- Additional Sections&quot;,&quot;url&quot;:&quot;#&quot;}]},&quot;Choice #3&quot;:{&quot;default_option&quot;:&quot;Select your parent case type!&quot;,&quot;items&quot;:[{&quot;name&quot;:&quot;3- Who sent me these papers?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;3- What does this petition say?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;3- What do I need to do?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;3- What is legal parentage all about?&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;name&quot;:&quot;3- Additional Sections&quot;,&quot;url&quot;:&quot;#&quot;}]}}}"/>
-    <button class="usa-button usa-button--accent-warm">Go</button>
+    <button class="usa-button usa-button--accent-warm -submit">Go</button>
   </div>
