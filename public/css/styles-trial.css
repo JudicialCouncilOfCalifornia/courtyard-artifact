@@ -31575,9 +31575,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-header-base.usa-header--basic .usa-nav {
     position: relative ;
   }
-  .jcc-header-base.usa-header--basic .jcc-nav-secondary__menu {
-    top: -2.025rem;
-  }
   .jcc-header-base.usa-header--extended .usa-navbar,
   .jcc-header-base.usa-header--extended .usa-nav__inner {
     max-width: 87.5rem ;
