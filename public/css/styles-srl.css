@@ -15589,6 +15589,10 @@ h3.jcc-header-group__title {
   width: 100% ;
 }
 
+.jcc-header-hat .jcc-global__menu {
+  display: none ;
+}
+
 .jcc-header-base {
   border-top-width: 0.25rem;
   border-top-color: #ffbe2e ;
@@ -25626,6 +25630,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-pagination li.pager__item a {
     padding: 0.45rem 0.35rem;
+  }
+  .jcc-header-hat .jcc-global__menu {
+    display: block ;
   }
   .jcc-hero--cards .jcc-hero--has-two-columns-threequarter .jcc-hero__column-left {
     padding-right: 7.5rem ;
