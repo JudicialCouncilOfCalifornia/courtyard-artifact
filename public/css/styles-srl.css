@@ -10779,6 +10779,7 @@ input[type="search"] {
   padding-right: 2.5rem ;
   font-size: 1.12rem;
   font-weight: normal ;
+  color: white  !important;
   border-radius: 99rem ;
   background-color: #168092 ;
   position: relative;
@@ -11422,24 +11423,34 @@ video {
 }
 
 a,
-.usa-form a.usa-button--unstyled {
-  color: #0d7ea2 ;
+.usa-alert__text a,
+.usa-form a.usa-button--unstyled,
+a.usa-link {
+  color: #07648d ;
 }
 
 a:hover,
-.usa-form a.usa-button--unstyled:hover {
-  color: #009ec1 ;
+.usa-alert__text a:hover,
+.usa-form a.usa-button--unstyled:hover,
+a.usa-link:hover {
+  color: #00687d ;
 }
 
 a:active, a:focus,
+.usa-alert__text a:active,
+.usa-alert__text a:focus,
 .usa-form a.usa-button--unstyled:active,
-.usa-form a.usa-button--unstyled:focus {
-  color: #28a0cb ;
+.usa-form a.usa-button--unstyled:focus,
+a.usa-link:active,
+a.usa-link:focus {
+  color: #0d7ea2 ;
 }
 
 a:visited,
-.usa-form a.usa-button--unstyled:visited {
-  color: #0d7ea2 ;
+.usa-alert__text a:visited,
+.usa-form a.usa-button--unstyled:visited,
+a.usa-link:visited {
+  color: #07648d ;
 }
 
 .sr-only {
@@ -11712,6 +11723,10 @@ a:visited,
 .jcc-text-section__column-right h6,
 .jcc-wayfinder-section__content h6 {
   text-transform: none;
+}
+
+.usa-prose a, .jcc-callout__block a, .jcc-callout__italic a, .jcc-card__excerpt a, .jcc-hero__body a, .jcc-hero__column-right a, .jcc-step__excerpt a, .jcc-timeline-item__excerpt a, .jcc-read-more__content a, .jcc-header-group__lead a, .jcc-header-group__body a, .jcc-cards-with-button__container > ul > li > .jcc-cards-with-button__read_more a, .jcc-cards-with-list__container > ul > li > .jcc-cards-with-list__read_more a, .jcc-modal .jcc-modal__dialog .jcc-modal__content a, .jcc-text-section-aside .jcc-text-section-aside__content .jcc-card__excerpt a, .jcc-text-section-location__content a, .jcc-text-section-location__column-left a, .jcc-text-section-location__column-right a, .jcc-text-section__content a, .jcc-text-section__column-left a, .jcc-text-section__column-right a, .jcc-wayfinder-section__content a {
+  color: #07648d ;
 }
 
 .h-dash {
@@ -12509,10 +12524,6 @@ a:visited,
   font-size: 1.37rem;
   margin-bottom: 1rem ;
   line-height: 1.4 ;
-}
-
-.jcc-hero__lead a {
-  color: #07648d ;
 }
 
 .jcc-hero--has-one-column .jcc-hero__column-left {
@@ -13344,6 +13355,7 @@ a:visited,
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.24rem;
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal ;
   margin-bottom: 0.75rem ;
   margin-top: 0.75rem ;
   position: relative ;
@@ -13999,6 +14011,7 @@ a:visited,
   margin: 0;
   padding: 0;
   text-align: left;
+  color: #07648d ;
   font-size: 1.06rem;
   text-decoration: none;
   vertical-align: bottom;
@@ -15291,7 +15304,6 @@ h3.jcc-header-group__title {
 .jcc-footer-base .usa-footer__secondary-link a {
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.06rem;
-  color: #07648d ;
 }
 
 .jcc-footer-base .usa-footer__logo-heading {
@@ -16773,7 +16785,6 @@ h3.jcc-header-group__title {
 }
 
 .jcc-hero-icon-nav.jcc-hero-icon-nav-style--variant-five .jcc-hero-icon-nav__nav .jcc-hero-icon-nav__block .jcc-tile .jcc-tile__title {
-  color: #0076d6 ;
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.37rem;
 }
@@ -16872,7 +16883,6 @@ h3.jcc-header-group__title {
 .jcc-hero-icon-nav.jcc-hero-icon-nav-style--variant-one .jcc-hero-icon-nav__nav .jcc-tile__title {
   display: inline-block ;
   padding-left: 0.5rem ;
-  color: #0076d6 ;
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.37rem;
 }
@@ -17483,6 +17493,7 @@ h3.jcc-header-group__title {
   margin: 0;
   padding: 0;
   text-align: left;
+  color: #07648d ;
   font-size: 1.06rem;
   margin-left: 0.5rem ;
   margin-right: 0.5rem ;
@@ -18254,7 +18265,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 .jcc-text-section-aside .jcc-text-section-aside__aside .jcc-card__title {
   position: relative;
   padding-top: 0.8em;
-  color: #0b4778 ;
   text-transform: uppercase;
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.24rem;
@@ -18693,6 +18703,11 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 
 .jcc-text-section__column-left .jcc-option-list {
   margin-bottom: 2.5rem ;
+}
+
+.jcc-text-section__column-right h3 {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+  font-weight: normal ;
 }
 
 .jcc-text-section--has-one-column {
@@ -31481,6 +31496,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-text-section__column-left h3 {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 1.74rem;
+    font-weight: normal ;
   }
   .jcc-text-section__column-left .jcc-callout__block,
   .jcc-text-section__column-left .jcc-callout__italic {
