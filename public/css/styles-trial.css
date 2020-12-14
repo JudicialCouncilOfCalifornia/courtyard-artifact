@@ -12705,7 +12705,7 @@ video {
   padding: 0 ;
 }
 
-a,
+a:not(.usa-button),
 .usa-alert__text a,
 .usa-form a.usa-button--unstyled,
 a.usa-link,
@@ -12713,7 +12713,7 @@ a.usa-link,
   color: #07648d ;
 }
 
-a:hover,
+a:not(.usa-button):hover,
 .usa-alert__text a:hover,
 .usa-form a.usa-button--unstyled:hover,
 a.usa-link:hover,
@@ -12721,7 +12721,7 @@ a.usa-link:hover,
   color: #00687d ;
 }
 
-a:active, a:focus,
+a:not(.usa-button):active, a:not(.usa-button):focus,
 .usa-alert__text a:active,
 .usa-alert__text a:focus,
 .usa-form a.usa-button--unstyled:active,
@@ -12733,7 +12733,7 @@ a.usa-link:focus,
   color: #0d7ea2 ;
 }
 
-a:visited,
+a:not(.usa-button):visited,
 .usa-alert__text a:visited,
 .usa-form a.usa-button--unstyled:visited,
 a.usa-link:visited,
