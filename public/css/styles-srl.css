@@ -11425,14 +11425,16 @@ video {
 a,
 .usa-alert__text a,
 .usa-form a.usa-button--unstyled,
-a.usa-link {
+a.usa-link,
+.usa-footer__secondary-link a {
   color: #07648d ;
 }
 
 a:hover,
 .usa-alert__text a:hover,
 .usa-form a.usa-button--unstyled:hover,
-a.usa-link:hover {
+a.usa-link:hover,
+.usa-footer__secondary-link a:hover {
   color: #00687d ;
 }
 
@@ -11442,14 +11444,17 @@ a:active, a:focus,
 .usa-form a.usa-button--unstyled:active,
 .usa-form a.usa-button--unstyled:focus,
 a.usa-link:active,
-a.usa-link:focus {
+a.usa-link:focus,
+.usa-footer__secondary-link a:active,
+.usa-footer__secondary-link a:focus {
   color: #0d7ea2 ;
 }
 
 a:visited,
 .usa-alert__text a:visited,
 .usa-form a.usa-button--unstyled:visited,
-a.usa-link:visited {
+a.usa-link:visited,
+.usa-footer__secondary-link a:visited {
   color: #07648d ;
 }
 
@@ -15379,6 +15384,10 @@ h3.jcc-header-group__title {
   color: white ;
 }
 
+.jcc-footer-base.jcc-footer--inverted .usa-footer__logo-heading {
+  color: white ;
+}
+
 .jcc-footer-base.jcc-footer--inverted .usa-footer__secondary-link a {
   color: white ;
 }
@@ -16233,7 +16242,6 @@ h3.jcc-header-group__title {
 .jcc-cards-with-button__container a:not(.usa-button) {
   text-decoration: none ;
   color: #07648d ;
-  color: #0076d6 ;
 }
 
 .jcc-cards-with-button__container a:not(.usa-button):hover {
