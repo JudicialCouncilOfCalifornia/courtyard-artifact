@@ -12705,7 +12705,7 @@ video {
   padding: 0 ;
 }
 
-a:not(.usa-button),
+a,
 .usa-alert__text a,
 .usa-form a.usa-button--unstyled,
 a.usa-link,
@@ -12713,7 +12713,7 @@ a.usa-link,
   color: #07648d ;
 }
 
-a:not(.usa-button):hover,
+a:hover,
 .usa-alert__text a:hover,
 .usa-form a.usa-button--unstyled:hover,
 a.usa-link:hover,
@@ -12721,7 +12721,7 @@ a.usa-link:hover,
   color: #00687d ;
 }
 
-a:not(.usa-button):active, a:not(.usa-button):focus,
+a:active, a:focus,
 .usa-alert__text a:active,
 .usa-alert__text a:focus,
 .usa-form a.usa-button--unstyled:active,
@@ -12733,7 +12733,7 @@ a.usa-link:focus,
   color: #0d7ea2 ;
 }
 
-a:not(.usa-button):visited,
+a:visited,
 .usa-alert__text a:visited,
 .usa-form a.usa-button--unstyled:visited,
 a.usa-link:visited,
@@ -13011,10 +13011,6 @@ a.usa-link:visited,
 .jcc-text-section__column-right h6,
 .jcc-wayfinder-section__content h6 {
   text-transform: none;
-}
-
-.usa-prose a, .jcc-callout__block a, .jcc-callout__italic a, .jcc-card__excerpt a, .jcc-hero__body a, .jcc-hero__column-right a, .jcc-step__excerpt a, .jcc-timeline-item__excerpt a, .jcc-read-more__content a, .jcc-header-group__lead a, .jcc-header-group__body a, .jcc-cards-with-button__container > ul > li > .jcc-cards-with-button__read_more a, .jcc-cards-with-list__container > ul > li > .jcc-cards-with-list__read_more a, .jcc-modal .jcc-modal__dialog .jcc-modal__content a, .jcc-text-section-aside .jcc-text-section-aside__content .jcc-card__excerpt a, .jcc-text-section-location__content a, .jcc-text-section-location__column-left a, .jcc-text-section-location__column-right a, .jcc-text-section__content a, .jcc-text-section__column-left a, .jcc-text-section__column-right a, .jcc-wayfinder-section__content a {
-  color: #07648d ;
 }
 
 .h-dash {
