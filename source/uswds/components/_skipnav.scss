@@ -1,12 +1,13 @@
 .usa-skipnav {
   @include border-box-sizing;
   @include typeset;
+  @include typeset-link;
   background: transparent;
   left: 0;
   padding: units(1) units(2);
   position: absolute;
   top: -3.8rem; // skipnav link height
-  transition: all 0.2s ease-in-out;
+  transition: $project-easing;
   z-index: z-index(100);
 
   &:focus {
@@ -14,6 +15,6 @@
     left: 0;
     position: absolute;
     top: 0;
-    transition: all 0.2s ease-in-out;
+    transition: $project-easing;
   }
 }
