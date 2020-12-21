@@ -12700,7 +12700,7 @@ a.usa-link:active,
 a.usa-link:focus,
 .usa-footer__secondary-link a:active,
 .usa-footer__secondary-link a:focus {
-  color: #0d7ea2 ;
+  color: #00687d ;
 }
 
 a:visited,
@@ -13627,11 +13627,11 @@ a.usa-link:visited,
 }
 
 .jcc-hero--has-background-color--light > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-hero--has-background-color--light > a:active, .jcc-hero--has-background-color--light > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-hero--has-background-color--light > a:visited {
@@ -13643,11 +13643,11 @@ a.usa-link:visited,
 }
 
 .jcc-hero--has-background-color--light .jcc-breadcrumb__item a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-hero--has-background-color--light .jcc-breadcrumb__item a:active, .jcc-hero--has-background-color--light .jcc-breadcrumb__item a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-hero--has-background-color--light .jcc-breadcrumb__item a:visited {
@@ -13749,7 +13749,11 @@ a.usa-link:visited,
 }
 
 .jcc-hero__brow a {
-  color: #168092  !important;
+  color: #0f6460 ;
+}
+
+.jcc-hero__brow a:hover {
+  color: #0b4b3f ;
 }
 
 .jcc-hero--has-background-color--dark .jcc-hero__brow {
@@ -14208,13 +14212,13 @@ a.usa-link:visited,
 
 .jcc-postcard--has-background-color--light > a:hover,
 .jcc-postcard--has-background-color--light--secondary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-postcard--has-background-color--light > a:active, .jcc-postcard--has-background-color--light > a:focus,
 .jcc-postcard--has-background-color--light--secondary > a:active,
 .jcc-postcard--has-background-color--light--secondary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-postcard--has-background-color--light > a:visited,
@@ -15943,8 +15947,13 @@ a.usa-link:visited,
   text-decoration: none ;
 }
 
+.usa-pagination li.pager__item a:hover {
+  color: #00687d ;
+  text-decoration: underline ;
+}
+
 .usa-pagination li.pager__item a.is-active {
-  background-color: #0d7ea2 ;
+  background-color: #07648d ;
   border-radius: 100%;
   color: white ;
 }
@@ -17366,13 +17375,13 @@ h3.jcc-header-group__title {
 
 .jcc-cards-section--has-background-color--light > a:hover,
 .jcc-cards-section--has-background-color--light--secondary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-cards-section--has-background-color--light > a:active, .jcc-cards-section--has-background-color--light > a:focus,
 .jcc-cards-section--has-background-color--light--secondary > a:active,
 .jcc-cards-section--has-background-color--light--secondary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-cards-section--has-background-color--light > a:visited,
@@ -17495,11 +17504,11 @@ h3.jcc-header-group__title {
 }
 
 .jcc-cards-with-button__container a:not(.usa-button):hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-cards-with-button__container a:not(.usa-button):active, .jcc-cards-with-button__container a:not(.usa-button):focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-cards-with-button__container a:not(.usa-button):visited {
@@ -17684,11 +17693,11 @@ h3.jcc-header-group__title {
 }
 
 .jcc-cards-with-list__container a:not(.usa-button):hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-cards-with-list__container a:not(.usa-button):active, .jcc-cards-with-list__container a:not(.usa-button):focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-cards-with-list__container a:not(.usa-button):visited {
@@ -17889,13 +17898,13 @@ h3.jcc-header-group__title {
 
 .jcc-choice-section--has-background-color--light > a:hover,
 .jcc-choice-section--has-background-color--light--secondary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-choice-section--has-background-color--light > a:active, .jcc-choice-section--has-background-color--light > a:focus,
 .jcc-choice-section--has-background-color--light--secondary > a:active,
 .jcc-choice-section--has-background-color--light--secondary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-choice-section--has-background-color--light > a:visited,
@@ -18463,11 +18472,11 @@ h3.jcc-header-group__title {
 }
 
 .jcc-list-section nav > ul > li > ul > li a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-list-section nav > ul > li > ul > li a:active, .jcc-list-section nav > ul > li > ul > li a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-list-section nav > ul > li > ul > li a:visited {
@@ -18541,13 +18550,13 @@ h3.jcc-header-group__title {
 
 .jcc-locate-section--has-background-color--light > a:hover,
 .jcc-locate-section--has-background-color--light--primary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-locate-section--has-background-color--light > a:active, .jcc-locate-section--has-background-color--light > a:focus,
 .jcc-locate-section--has-background-color--light--primary > a:active,
 .jcc-locate-section--has-background-color--light--primary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-locate-section--has-background-color--light > a:visited,
@@ -19078,13 +19087,13 @@ h3.jcc-header-group__title {
 
 .jcc-steps-section--has-background-color--light > a:hover,
 .jcc-steps-section--has-background-color--light--primary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-steps-section--has-background-color--light > a:active, .jcc-steps-section--has-background-color--light > a:focus,
 .jcc-steps-section--has-background-color--light--primary > a:active,
 .jcc-steps-section--has-background-color--light--primary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-steps-section--has-background-color--light > a:visited,
@@ -19099,13 +19108,13 @@ h3.jcc-header-group__title {
 
 .jcc-steps-section--has-background-color--light .jcc-read-more__trigger:hover,
 .jcc-steps-section--has-background-color--light--primary .jcc-read-more__trigger:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-steps-section--has-background-color--light .jcc-read-more__trigger:active, .jcc-steps-section--has-background-color--light .jcc-read-more__trigger:focus,
 .jcc-steps-section--has-background-color--light--primary .jcc-read-more__trigger:active,
 .jcc-steps-section--has-background-color--light--primary .jcc-read-more__trigger:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-steps-section--has-background-color--light .jcc-read-more__trigger:visited,
@@ -19238,13 +19247,13 @@ h3.jcc-header-group__title {
 
 .jcc-switchboard--has-background-color--light > a:hover,
 .jcc-switchboard--has-background-color--light--primary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-switchboard--has-background-color--light > a:active, .jcc-switchboard--has-background-color--light > a:focus,
 .jcc-switchboard--has-background-color--light--primary > a:active,
 .jcc-switchboard--has-background-color--light--primary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-switchboard--has-background-color--light > a:visited,
@@ -19404,13 +19413,13 @@ h3.jcc-header-group__title {
 
 .jcc-tab-section--has-background-color--light > a:hover,
 .jcc-tab-section--has-background-color--light--secondary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-tab-section--has-background-color--light > a:active, .jcc-tab-section--has-background-color--light > a:focus,
 .jcc-tab-section--has-background-color--light--secondary > a:active,
 .jcc-tab-section--has-background-color--light--secondary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-tab-section--has-background-color--light > a:visited,
@@ -19588,13 +19597,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 
 .jcc-text-section-location--has-background-color--light > a:hover,
 .jcc-text-section-location--has-background-color--light--secondary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-text-section-location--has-background-color--light > a:active, .jcc-text-section-location--has-background-color--light > a:focus,
 .jcc-text-section-location--has-background-color--light--secondary > a:active,
 .jcc-text-section-location--has-background-color--light--secondary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-text-section-location--has-background-color--light > a:visited,
@@ -19720,13 +19729,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 
 .jcc-text-section-location--has-background-color--light > a:hover,
 .jcc-text-section-location--has-background-color--light--secondary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-text-section-location--has-background-color--light > a:active, .jcc-text-section-location--has-background-color--light > a:focus,
 .jcc-text-section-location--has-background-color--light--secondary > a:active,
 .jcc-text-section-location--has-background-color--light--secondary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-text-section-location--has-background-color--light > a:visited,
@@ -19864,13 +19873,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 
 .jcc-text-section--has-background-color--light > a:hover,
 .jcc-text-section--has-background-color--light--secondary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-text-section--has-background-color--light > a:active, .jcc-text-section--has-background-color--light > a:focus,
 .jcc-text-section--has-background-color--light--secondary > a:active,
 .jcc-text-section--has-background-color--light--secondary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-text-section--has-background-color--light > a:visited,
@@ -20177,11 +20186,11 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 }
 
 .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-card__title a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-card__title a:active, .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-card__title a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-tiles-list__container .jcc-tiles-list .jcc-tiles-list__tile .jcc-card__title a:visited {
@@ -20517,13 +20526,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 
 .jcc-timeline-section--has-background-color--light > a:hover,
 .jcc-timeline-section--has-background-color--light--primary > a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-timeline-section--has-background-color--light > a:active, .jcc-timeline-section--has-background-color--light > a:focus,
 .jcc-timeline-section--has-background-color--light--primary > a:active,
 .jcc-timeline-section--has-background-color--light--primary > a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-timeline-section--has-background-color--light > a:visited,
@@ -20546,7 +20555,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 .jcc-timeline-section--has-background-color--light--primary .jcc-modal__trigger:hover,
 .jcc-timeline-section--has-background-color--light--primary .jcc-timeline-item__trigger:hover,
 .jcc-timeline-section--has-background-color--light--primary a:hover {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-timeline-section--has-background-color--light .jcc-modal__trigger:active, .jcc-timeline-section--has-background-color--light .jcc-modal__trigger:focus,
@@ -20560,7 +20569,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 .jcc-timeline-section--has-background-color--light--primary .jcc-timeline-item__trigger:focus,
 .jcc-timeline-section--has-background-color--light--primary a:active,
 .jcc-timeline-section--has-background-color--light--primary a:focus {
-  color: #28a0cb ;
+  color: #00687d ;
 }
 
 .jcc-timeline-section--has-background-color--light .jcc-modal__trigger:visited,
@@ -32647,10 +32656,10 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     color: #07648d ;
   }
   .jcc-hero-icon-nav.jcc-hero-icon-nav-style--default .tile-icon .jcc-tile:hover > a:hover {
-    color: #28a0cb ;
+    color: #00687d ;
   }
   .jcc-hero-icon-nav.jcc-hero-icon-nav-style--default .tile-icon .jcc-tile:hover > a:active, .jcc-hero-icon-nav.jcc-hero-icon-nav-style--default .tile-icon .jcc-tile:hover > a:focus {
-    color: #28a0cb ;
+    color: #00687d ;
   }
   .jcc-hero-icon-nav.jcc-hero-icon-nav-style--default .tile-icon .jcc-tile:hover > a:visited {
     color: #07648d ;
