@@ -17138,7 +17138,7 @@ a.usa-link:visited,
   color: white ;
 }
 
-.jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a:hover {
+.jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a.usa-current, .jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a:hover {
   text-decoration: none ;
   padding: 1.25rem ;
   background-color: #1a4480 ;
@@ -32901,7 +32901,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-header-base .usa-nav__submenu .usa-nav__submenu-item .usa-nav__submenu_label {
     background-color: #162e51 ;
   }
-  .jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a:hover {
+  .jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a.usa-current, .jcc-header-base .usa-nav__submenu .usa-nav__submenu-item a:hover {
     background-color: #1a4480 ;
   }
   .jcc-header-base .usa-megamenu.usa-nav__submenu {
