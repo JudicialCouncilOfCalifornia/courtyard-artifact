@@ -17989,6 +17989,11 @@ h3.jcc-header-group__title {
   margin-top: 0 ;
 }
 
+.jcc-hero--cards .jcc-cards-section {
+  margin-bottom: -1.5rem;
+  padding-bottom: 0;
+}
+
 .jcc-hero--cards .jcc-card {
   border-width: 2px;
   border-color: #1b1b1b ;
