@@ -14880,31 +14880,6 @@ a.usa-link:visited,
   padding-bottom: 1rem ;
 }
 
-.jcc-hero--has-background-image {
-  color: white ;
-}
-
-.jcc-hero--has-background-image .jcc-hero__media {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.jcc-hero--has-background-image .jcc-hero__media img,
-.jcc-hero--has-background-image .jcc-hero__media picture {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-  height: 100%;
-  width: 100%;
-}
-
 .jcc-hero__container {
   margin-left: auto ;
   margin-right: auto ;
@@ -15006,68 +14981,92 @@ a.usa-link:visited,
   color: #07648d ;
 }
 
-.jcc-hero--has-background-color--dark {
+.jcc-hero--has-background-color--dark, .jcc-hero--has-background-image {
   background-color: #005ea2 ;
   color: white ;
 }
 
-.jcc-hero--has-background-color--dark .jcc-header-group__title,
+.jcc-hero--has-background-color--dark .jcc-header-group__title, .jcc-hero--has-background-image .jcc-header-group__title,
 .jcc-hero--has-background-color--dark .jcc-title,
-.jcc-hero--has-background-color--dark .jcc-hero__brow {
+.jcc-hero--has-background-image .jcc-title,
+.jcc-hero--has-background-color--dark .jcc-hero__brow,
+.jcc-hero--has-background-image .jcc-hero__brow {
   color: white ;
 }
 
-.jcc-hero--has-background-color--dark a {
+.jcc-hero--has-background-color--dark a, .jcc-hero--has-background-image a {
   color: #fef0c8 ;
 }
 
-.jcc-hero--has-background-color--dark a:hover {
+.jcc-hero--has-background-color--dark a:hover, .jcc-hero--has-background-image a:hover {
   color: #ffbe2e ;
 }
 
-.jcc-hero--has-background-color--dark a:active, .jcc-hero--has-background-color--dark a:focus {
+.jcc-hero--has-background-color--dark a:active, .jcc-hero--has-background-image a:active, .jcc-hero--has-background-color--dark a:focus, .jcc-hero--has-background-image a:focus {
   color: #ffbe2e ;
 }
 
-.jcc-hero--has-background-color--dark a:visited {
+.jcc-hero--has-background-color--dark a:visited, .jcc-hero--has-background-image a:visited {
   color: #ffbe2e ;
 }
 
-.jcc-hero--has-background-color--dark a {
+.jcc-hero--has-background-color--dark a, .jcc-hero--has-background-image a {
   color: #fef0c8 ;
 }
 
-.jcc-hero--has-background-color--dark a:hover {
+.jcc-hero--has-background-color--dark a:hover, .jcc-hero--has-background-image a:hover {
   color: #ffbe2e ;
 }
 
-.jcc-hero--has-background-color--dark a:active, .jcc-hero--has-background-color--dark a:focus {
+.jcc-hero--has-background-color--dark a:active, .jcc-hero--has-background-image a:active, .jcc-hero--has-background-color--dark a:focus, .jcc-hero--has-background-image a:focus {
   color: #ffbe2e ;
 }
 
-.jcc-hero--has-background-color--dark a:visited {
+.jcc-hero--has-background-color--dark a:visited, .jcc-hero--has-background-image a:visited {
   color: #ffbe2e ;
 }
 
-.jcc-hero--has-background-color--dark .jcc-breadcrumb__item a {
+.jcc-hero--has-background-color--dark .jcc-breadcrumb__item a, .jcc-hero--has-background-image .jcc-breadcrumb__item a {
   color: #fef0c8 ;
 }
 
-.jcc-hero--has-background-color--dark .jcc-breadcrumb__item a:hover {
+.jcc-hero--has-background-color--dark .jcc-breadcrumb__item a:hover, .jcc-hero--has-background-image .jcc-breadcrumb__item a:hover {
   color: #ffbe2e ;
 }
 
-.jcc-hero--has-background-color--dark .jcc-breadcrumb__item a:active, .jcc-hero--has-background-color--dark .jcc-breadcrumb__item a:focus {
+.jcc-hero--has-background-color--dark .jcc-breadcrumb__item a:active, .jcc-hero--has-background-image .jcc-breadcrumb__item a:active, .jcc-hero--has-background-color--dark .jcc-breadcrumb__item a:focus, .jcc-hero--has-background-image .jcc-breadcrumb__item a:focus {
   color: #ffbe2e ;
 }
 
-.jcc-hero--has-background-color--dark .jcc-breadcrumb__item a:visited {
+.jcc-hero--has-background-color--dark .jcc-breadcrumb__item a:visited, .jcc-hero--has-background-image .jcc-breadcrumb__item a:visited {
   color: #ffbe2e ;
 }
 
-.jcc-hero--has-background-color--dark .jcc-hero__title,
-.jcc-hero--has-background-color--dark .jcc-breadcrumb__item {
+.jcc-hero--has-background-color--dark .jcc-hero__title, .jcc-hero--has-background-image .jcc-hero__title,
+.jcc-hero--has-background-color--dark .jcc-breadcrumb__item,
+.jcc-hero--has-background-image .jcc-breadcrumb__item {
   color: white ;
+}
+
+.jcc-hero--has-background-image .jcc-hero__media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.jcc-hero--has-background-image .jcc-hero__media img,
+.jcc-hero--has-background-image .jcc-hero__media picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  height: 100%;
+  width: 100%;
 }
 
 .jcc-hero--has-background-color--none {
