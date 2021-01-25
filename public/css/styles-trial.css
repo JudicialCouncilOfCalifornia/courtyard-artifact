@@ -14651,44 +14651,17 @@ a.usa-link:visited,
   display: none ;
 }
 
-.jcc-card__img {
-  position: relative;
-}
-
-.jcc-card__img:before {
-  display: block ;
-  content: "";
-  width: 100%;
-  padding-top: 56.25%;
-}
-
-.jcc-card__img > .content {
-  position: absolute ;
-  top: 0 ;
-  left: 0 ;
-  right: 0 ;
-  bottom: 0 ;
+.jcc-card__media {
+  -webkit-box-sizing: border-box ;
+          box-sizing: border-box ;
+  height: 0 ;
   overflow: hidden ;
+  padding: 0 0 56.25% ;
 }
 
-.jcc-card__vid {
-  position: relative;
-}
-
-.jcc-card__vid:before {
-  display: block ;
-  content: "";
-  width: 100%;
-  padding-top: 56.25%;
-}
-
-.jcc-card__vid > .content {
-  position: absolute ;
-  top: 0 ;
-  left: 0 ;
-  right: 0 ;
-  bottom: 0 ;
-  overflow: hidden ;
+.jcc-card__media img {
+  max-width: none ;
+  width: 100% ;
 }
 
 .jcc-complete {
