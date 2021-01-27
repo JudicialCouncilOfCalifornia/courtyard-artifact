@@ -13364,7 +13364,7 @@ a.usa-link:visited,
   display: none ;
 }
 
-.jcc-card__media {
+.jcc-card__excerpt-media {
   -webkit-box-sizing: border-box ;
           box-sizing: border-box ;
   height: 0 ;
@@ -13372,7 +13372,7 @@ a.usa-link:visited,
   padding: 0 0 56.25% ;
 }
 
-.jcc-card__media img {
+.jcc-card__excerpt-media img {
   max-width: none ;
   width: 100% ;
 }
