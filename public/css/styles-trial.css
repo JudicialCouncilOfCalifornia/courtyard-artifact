@@ -5074,6 +5074,184 @@ input[type="search"] {
   transition: 0.2s ease-in-out;
 }
 
+.usa-step-indicator {
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.99rem;
+  line-height: 1.2 ;
+  background-color: white;
+  margin-bottom: 2rem;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.usa-step-indicator__segments {
+  counter-reset: usa-step-indicator;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.usa-step-indicator__segment {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0% ;
+          flex: 1 1 0% ;
+  counter-increment: usa-step-indicator;
+  margin-left: 1px;
+  margin-right: 1px;
+  max-width: 15rem;
+  min-height: 0.5rem;
+  position: relative;
+}
+
+.usa-step-indicator__segment:after {
+  background-color: #f3f3f3;
+  content: "";
+  display: block;
+  height: 0.5rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.usa-step-indicator__segment--complete::after {
+  background-color: #162e51;
+}
+
+.usa-step-indicator__segment--complete .usa-step-indicator__segment-label {
+  color: #162e51;
+}
+
+.usa-step-indicator__segment--current::after {
+  background-color: #005ea2;
+}
+
+.usa-step-indicator__segment--current .usa-step-indicator__segment-label {
+  color: #005ea2;
+  font-weight: bold;
+}
+
+.usa-step-indicator__segment-label {
+  display: none;
+}
+
+.usa-step-indicator__header {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.usa-step-indicator__heading {
+  color: #1b1b1b;
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.06rem;
+  font-weight: bold;
+  margin: 1rem 0 0;
+}
+
+.usa-step-indicator__current-step {
+  height: 2.5rem ;
+  border-radius: 99rem ;
+  width: 2.5rem ;
+  font-weight: normal ;
+  -webkit-font-feature-settings: "tnum" 1, "kern" 1 ;
+          font-feature-settings: "tnum" 1, "kern" 1 ;
+  background-color: #005ea2;
+  color: white;
+  display: inline-block;
+  padding: calc( (2.5rem - (2ex * 1.2)) * 0.5);
+  text-align: center;
+}
+
+.usa-step-indicator__total-steps {
+  font-weight: normal ;
+  -webkit-font-feature-settings: "tnum" 1, "kern" 1 ;
+          font-feature-settings: "tnum" 1, "kern" 1 ;
+  color: #005ea2;
+  margin-right: 0.5rem;
+}
+
+.usa-step-indicator--counters .usa-step-indicator__segment--complete::before,
+.usa-step-indicator--counters-sm .usa-step-indicator__segment--complete::before {
+  background-color: #162e51;
+  -webkit-box-shadow: 0 0 0 0.25rem white;
+          box-shadow: 0 0 0 0.25rem white;
+  color: white;
+}
+
+.usa-step-indicator--counters .usa-step-indicator__segment--current::before,
+.usa-step-indicator--counters-sm .usa-step-indicator__segment--current::before {
+  background-color: #005ea2;
+  -webkit-box-shadow: 0 0 0 0.25rem white;
+          box-shadow: 0 0 0 0.25rem white;
+  color: white;
+}
+
+.usa-step-indicator--no-labels {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.usa-step-indicator--no-labels .usa-step-indicator__segment {
+  margin-top: 0;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.usa-step-indicator--no-labels .usa-step-indicator__segment:before {
+  display: none;
+}
+
+.usa-step-indicator--no-labels .usa-step-indicator__segment:last-child:after {
+  display: block;
+}
+
+.usa-step-indicator--no-labels .usa-step-indicator__heading {
+  margin-top: 1rem;
+}
+
+.usa-step-indicator--no-labels .usa-step-indicator__segment-label {
+  display: none;
+}
+
+.usa-step-indicator--center {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.usa-step-indicator--center .usa-step-indicator__segment {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.usa-step-indicator--center .usa-step-indicator__segment:before {
+  left: calc( 50% - ( ( 2.5rem + 0.25rem ) / 2 ));
+}
+
+.usa-step-indicator--center .usa-step-indicator__segment-label {
+  padding-left: 0.5rem ;
+  padding-right: 0.5rem ;
+  text-align: center;
+}
+
+.usa-step-indicator--center.usa-step-indicator--no-labels .usa-step-indicator__segment:first-child:after {
+  left: 0;
+}
+
+.usa-step-indicator--center.usa-step-indicator--no-labels .usa-step-indicator__segment:last-child:after {
+  right: 0;
+}
+
+.usa-step-indicator--center.usa-step-indicator--counters-sm .usa-step-indicator__segment:before {
+  left: calc( 50% - ( ( 1.5rem + 0.25rem ) / 2 ));
+}
+
 [class*="font-mono-"] {
   font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
 }
@@ -18020,6 +18198,146 @@ nav.jcc-primary-nav {
   padding-left: 5rem;
 }
 
+.step-indicator-base-scheme-sans .usa-step-indicator__header h2 {
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.step-indicator-base-scheme-sans .jcc-step-indicator-base li {
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.step-indicator-base-scheme-sans .jcc-step-indicator-base li:before {
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.step-indicator-base-scheme-sans .usa-step-indicator__segment--current:after {
+  background-color: #005ea2;
+}
+
+.step-indicator-base-scheme-sans .usa-step-indicator__current-step {
+  background-color: #005ea2;
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.25rem transparent;
+          box-shadow: 0 0 0 0.25rem transparent;
+}
+
+.step-indicator-base-scheme-sans .jcc-step-indicator-base.usa-step-indicator--counters .usa-step-indicator__segment--current::before {
+  background-color: #005ea2;
+  -webkit-box-shadow: 0 0 0 0.25rem #ffffff;
+          box-shadow: 0 0 0 0.25rem #ffffff;
+  color: #ffffff;
+}
+
+.step-indicator-base-scheme-serif .usa-step-indicator__header h2 {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+.step-indicator-base-scheme-serif .jcc-step-indicator-base li {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+.step-indicator-base-scheme-serif .jcc-step-indicator-base li:before {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+.step-indicator-base-scheme-serif .usa-step-indicator__segment--current:after {
+  background-color: #005ea2;
+}
+
+.step-indicator-base-scheme-serif .usa-step-indicator__current-step {
+  background-color: #005ea2;
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.25rem transparent;
+          box-shadow: 0 0 0 0.25rem transparent;
+}
+
+.step-indicator-base-scheme-serif .jcc-step-indicator-base.usa-step-indicator--counters .usa-step-indicator__segment--current::before {
+  background-color: #005ea2;
+  -webkit-box-shadow: 0 0 0 0.25rem #ffffff;
+          box-shadow: 0 0 0 0.25rem #ffffff;
+  color: #ffffff;
+}
+
+.step-indicator-base-scheme-simple .usa-step-indicator__header h2 {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+.step-indicator-base-scheme-simple .jcc-step-indicator-base li {
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.step-indicator-base-scheme-simple .jcc-step-indicator-base li:before {
+  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+.step-indicator-base-scheme-simple .usa-step-indicator__segment--current:after {
+  background-color: #ffbe2e;
+}
+
+.step-indicator-base-scheme-simple .usa-step-indicator__current-step {
+  background-color: #ffffff;
+  color: #005ea2;
+  -webkit-box-shadow: 0 0 0 0.25rem #ffbe2e;
+          box-shadow: 0 0 0 0.25rem #ffbe2e;
+}
+
+.step-indicator-base-scheme-simple .jcc-step-indicator-base.usa-step-indicator--counters .usa-step-indicator__segment--current::before {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.25rem #ffbe2e;
+          box-shadow: 0 0 0 0.25rem #ffbe2e;
+  color: #005ea2;
+}
+
+.jcc-step-indicator-base .item-alignment-center .usa-step-indicator__segment-label {
+  text-align: center;
+}
+
+.jcc-step-indicator-base.usa-step-indicator--counters .usa-step-indicator__segment--complete::before, .jcc-step-indicator-base.usa-step-indicator--counters-sm .usa-step-indicator__segment--complete::before {
+  background-color: #162e51;
+  -webkit-box-shadow: 0 0 0 0.25rem white;
+          box-shadow: 0 0 0 0.25rem white;
+  color: white;
+}
+
+.jcc-step-indicator-base.usa-step-indicator--counters .usa-step-indicator__segment--current::before, .jcc-step-indicator-base.usa-step-indicator--counters-sm .usa-step-indicator__segment--current::before {
+  background-color: #005ea2;
+  -webkit-box-shadow: 0 0 0 0.25rem white;
+          box-shadow: 0 0 0 0.25rem white;
+  color: white;
+}
+
+.jcc-step-indicator-base.usa-step-indicator--center {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.jcc-step-indicator-base.usa-step-indicator--center .usa-step-indicator__segment {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.jcc-step-indicator-base.usa-step-indicator--center .usa-step-indicator__segment:before {
+  left: calc( 50% - ( ( 2.5rem + 0.25rem ) / 2 ));
+}
+
+.jcc-step-indicator-base.usa-step-indicator--center .usa-step-indicator__segment-label {
+  padding-left: 0.5rem ;
+  padding-right: 0.5rem ;
+  text-align: center;
+}
+
+.jcc-step-indicator-base.usa-step-indicator--center.usa-step-indicator--no-labels .usa-step-indicator__segment:first-child:after {
+  left: 0;
+}
+
+.jcc-step-indicator-base.usa-step-indicator--center.usa-step-indicator--no-labels .usa-step-indicator__segment:last-child:after {
+  right: 0;
+}
+
+.jcc-step-indicator-base.usa-step-indicator--center.usa-step-indicator--counters-sm .usa-step-indicator__segment:before {
+  left: calc( 50% - ( ( 1.5rem + 0.25rem ) / 2 ));
+}
+
 .jcc-address__address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25981,6 +26299,91 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .usa-sidenav__sublist .usa-current::after {
     display: none;
+  }
+  .usa-step-indicator {
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  .usa-step-indicator__segment:after {
+    height: 0.5rem;
+  }
+  .usa-step-indicator__segment-label {
+    color: #5c5c5c;
+    display: block;
+    font-size: 0.99rem;
+    margin-top: calc( 0.5rem + 0.5rem);
+    padding-right: 2rem;
+    text-align: left;
+  }
+  .usa-step-indicator__heading {
+    font-size: 1.37rem;
+    margin-top: 2rem;
+  }
+  .usa-step-indicator--counters .usa-step-indicator__segment,
+  .usa-step-indicator--counters-sm .usa-step-indicator__segment {
+    margin-left: 0 ;
+    margin-right: 0 ;
+    margin-top: calc( ( ( 2.5rem - 0.5rem ) / 2 ) + 0.25rem);
+  }
+  .usa-step-indicator--counters .usa-step-indicator__segment:before,
+  .usa-step-indicator--counters-sm .usa-step-indicator__segment:before {
+    height: 2.5rem ;
+    border-radius: 99rem ;
+    width: 2.5rem ;
+    -webkit-font-feature-settings: "tnum" 1, "kern" 1 ;
+            font-feature-settings: "tnum" 1, "kern" 1 ;
+    background-color: white;
+    -webkit-box-shadow: inset 0 0 0 0.25rem #f3f3f3, 0 0 0 0.25rem white;
+            box-shadow: inset 0 0 0 0.25rem #f3f3f3, 0 0 0 0.25rem white;
+    color: #5c5c5c;
+    content: counter(usa-step-indicator);
+    display: block;
+    font-weight: bold;
+    left: 0;
+    line-height: 1;
+    padding: calc( (2.5rem - (2ex * 1)) * 0.5);
+    position: absolute;
+    text-align: center;
+    top: calc( ( 2.5rem - 0.5rem ) / -2);
+    z-index: 100;
+  }
+  .usa-step-indicator--counters .usa-step-indicator__segment:last-child:after,
+  .usa-step-indicator--counters-sm .usa-step-indicator__segment:last-child:after {
+    display: none;
+  }
+  .usa-step-indicator--counters .usa-step-indicator__segment-label,
+  .usa-step-indicator--counters-sm .usa-step-indicator__segment-label {
+    margin-top: calc( ( ( 2.5rem + 0.5rem ) / 2 ) + 0.5rem);
+  }
+  .usa-step-indicator--counters.usa-step-indicator--center .usa-step-indicator__segment:first-child:after,
+  .usa-step-indicator--counters-sm.usa-step-indicator--center .usa-step-indicator__segment:first-child:after {
+    left: 50%;
+    right: 0;
+    width: auto;
+  }
+  .usa-step-indicator--counters.usa-step-indicator--center .usa-step-indicator__segment:last-child:after,
+  .usa-step-indicator--counters-sm.usa-step-indicator--center .usa-step-indicator__segment:last-child:after {
+    display: block;
+    left: 0;
+    right: 50%;
+    width: auto;
+  }
+  .usa-step-indicator--counters-sm .usa-step-indicator__segment {
+    margin-top: calc( ( ( 1.5rem - 0.5rem ) / 2 ) + 0.25rem);
+  }
+  .usa-step-indicator--counters-sm .usa-step-indicator__segment:before {
+    height: 1.5rem ;
+    border-radius: 99rem ;
+    width: 1.5rem ;
+    font-size: 0.87rem;
+    padding: calc(0.25rem + 1px);
+    top: calc( ( 1.5rem - 0.5rem ) / -2);
+  }
+  .usa-step-indicator--counters-sm .usa-step-indicator__segment:last-child:after {
+    display: none;
+  }
+  .usa-step-indicator--counters-sm .usa-step-indicator__segment-label {
+    margin-top: calc( ( ( 1.5rem + 0.5rem ) / 2 ) + 0.5rem);
   }
   .tablet\:border-1px {
     border: 1px solid !important;
