@@ -15800,7 +15800,6 @@ a.usa-link:visited,
 }
 
 .jcc-cascading-jump-menu .jcc-cascading-jump-menu__form {
-  margin-right: 0.5rem ;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0% ;
           flex: 1 1 0% ;
@@ -15809,10 +15808,6 @@ a.usa-link:visited,
 .jcc-cascading-jump-menu .jcc-cascading-jump-menu__form .usa-select {
   max-width: none ;
   margin-bottom: 0.5rem ;
-}
-
-.jcc-cascading-jump-menu .jcc-cascading-jump-menu__form .usa-select:last-child {
-  margin-bottom: 0 ;
 }
 
 .jcc-cascading-jump-menu .usa-button {
@@ -24902,6 +24897,12 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-timeline-dual-item__time {
     width: 80%;
+  }
+  .jcc-cascading-jump-menu .jcc-cascading-jump-menu__form {
+    margin-right: 0.5rem ;
+  }
+  .jcc-cascading-jump-menu .jcc-cascading-jump-menu__form .usa-select:last-child {
+    margin-bottom: 0 ;
   }
   .jcc-inline-nav__item {
     display: inline-block ;
