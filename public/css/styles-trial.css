@@ -15449,6 +15449,23 @@ a.usa-link:visited,
   width: 100%;
 }
 
+.jcc-hero--has-background-image .jcc-hero__media::after {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(85%, black));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), black 85%);
+}
+
+.jcc-hero--has-background-image.jcc-hero--background-parallax .jcc-hero__media img {
+  position: absolute;
+  min-height: 150%;
+}
+
 .jcc-hero--has-background-color--none {
   background-color: transparent ;
 }
