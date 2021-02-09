@@ -14175,7 +14175,7 @@ a.usa-link:visited,
 
 .jcc-hero--has-background-image.jcc-hero--background-parallax .jcc-hero__media img {
   position: absolute;
-  min-height: 150%;
+  height: auto;
 }
 
 .jcc-hero--has-background-color--none {
