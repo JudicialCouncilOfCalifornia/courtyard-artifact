@@ -14141,41 +14141,12 @@ a.usa-link:visited,
 }
 
 .jcc-hero--has-background-image .jcc-hero__media {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.jcc-hero--has-background-image .jcc-hero__media img,
-.jcc-hero--has-background-image .jcc-hero__media picture {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-  height: 100%;
-  width: 100%;
-}
-
-.jcc-hero--has-background-image .jcc-hero__media::after {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), black);
+  display: none ;
 }
 
 .jcc-hero--has-background-image.jcc-hero--background-parallax .jcc-hero__media img {
   position: absolute;
-  height: auto;
+  height: 150%;
 }
 
 .jcc-hero--has-background-color--none {
@@ -28205,6 +28176,40 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 @media all and (min-width: 55em) {
   .jcc-hero__content {
     padding-top: 3rem ;
+  }
+  .jcc-hero--has-background-image .jcc-hero__media {
+    display: block ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .jcc-hero--has-background-image .jcc-hero__media img,
+  .jcc-hero--has-background-image .jcc-hero__media picture {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+  }
+  .jcc-hero--has-background-image .jcc-hero__media::after {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), black);
+  }
+  .jcc-hero--has-background-image.jcc-hero--background-parallax .jcc-hero__media img {
+    height: auto;
   }
   [data-quantity="3"] > .jcc-location__hours-item {
     -webkit-box-flex: 0;
