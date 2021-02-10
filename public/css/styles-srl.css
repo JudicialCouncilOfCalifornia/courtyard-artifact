@@ -28208,9 +28208,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black));
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), black);
   }
-  .jcc-hero--has-background-image.jcc-hero--background-parallax .jcc-hero__media img {
-    height: auto;
-  }
   [data-quantity="3"] > .jcc-location__hours-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto ;
@@ -32455,6 +32452,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-hero--inset-bottom {
     padding-bottom: 10rem;
+  }
+  .jcc-hero--has-background-image.jcc-hero--background-parallax .jcc-hero__media img {
+    height: auto;
   }
   .jcc-hero--has-banner-image {
     display: grid;
