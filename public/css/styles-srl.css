@@ -19178,7 +19178,7 @@ h3.jcc-header-group__title {
 }
 
 .jcc-hero-icon-nav {
-  margin-bottom: 4rem ;
+  margin-bottom: 2rem ;
 }
 
 .jcc-hero-icon-nav .jcc-hero {
@@ -19236,7 +19236,12 @@ h3.jcc-header-group__title {
 }
 
 .jcc-hero-icon-nav__nav .jcc-card {
-  height: 15rem;
+  height: 10rem;
+}
+
+.jcc-hero-icon-nav__nav .jcc-card .usa-card__container {
+  padding-bottom: 2.5rem ;
+  padding-top: 2.5rem ;
 }
 
 .jcc-hero-icon-nav__nav .jcc-card:nth-child(1) .usa-card__container {
@@ -19255,36 +19260,22 @@ h3.jcc-header-group__title {
   background-color: #162e51 ;
 }
 
-.jcc-hero-icon-nav__nav .jcc-card .jcc-image--media-icon img {
-  width: 4.5rem ;
-  height: 4.5rem ;
-}
-
 .jcc-hero-icon-nav__nav .jcc-card h2,
 .jcc-hero-icon-nav__nav .jcc-card h3 {
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-size: 1.49rem;
+  font-size: 0.99rem;
   font-weight: bold ;
 }
 
 .jcc-hero-icon-nav__nav .usa-card__media {
-  position: relative ;
   margin-left: auto ;
   margin-right: auto ;
-  bottom: -22%;
 }
 
 .jcc-hero-icon-nav__nav .usa-card__header {
-  position: relative ;
-  padding-left: 1rem  !important;
-  padding-right: 1rem  !important;
+  padding-left: 0  !important;
+  padding-right: 0  !important;
   text-align: center ;
-  bottom: -27%;
-}
-
-.jcc-image--media-icon {
-  width: 4.5rem ;
-  height: 4.5rem ;
 }
 
 .jcc-hero-icon-nav__block--image {
@@ -28019,18 +28010,30 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-postcard__tag {
     display: block ;
   }
-  .jcc-hero-icon-nav__block--image {
-    display: block ;
-    overflow: hidden ;
-    height: 30rem;
+  .jcc-hero-icon-nav__nav .jcc-card {
+    height: 15rem;
   }
-  .jcc-hero-icon-nav__block--image img {
-    width: 100% ;
-    height: 100% ;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 50% 50%;
-       object-position: 50% 50%;
+  .jcc-hero-icon-nav__nav .jcc-card .usa-card__container {
+    padding-bottom: 3.5rem ;
+    padding-top: 3.5rem ;
+  }
+  .jcc-hero-icon-nav__nav .jcc-card .jcc-image--media-icon img {
+    width: 4rem ;
+    height: 4rem ;
+  }
+  .jcc-hero-icon-nav__nav .jcc-card h2,
+  .jcc-hero-icon-nav__nav .jcc-card h3 {
+    font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 1.49rem;
+  }
+  .jcc-hero-icon-nav__nav .usa-card__header {
+    padding-top: 1.5rem ;
+    padding-left: 1rem  !important;
+    padding-right: 1rem  !important;
+  }
+  .jcc-image--media-icon {
+    width: 4rem ;
+    height: 4rem ;
   }
   .jcc-list-section nav > ul {
     -webkit-box-orient: horizontal;
@@ -28249,6 +28252,26 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-hero--cards .jcc-hero--has-two-columns-threequarter .jcc-hero__column-left {
     padding-right: 7.5rem ;
+  }
+  .jcc-hero-icon-nav__nav .jcc-cards__container {
+    padding-left: 0 ;
+    padding-right: 0 ;
+  }
+  .jcc-hero-icon-nav__nav .jcc-card {
+    width: 49%;
+  }
+  .jcc-hero-icon-nav__block--image {
+    display: block ;
+    overflow: hidden ;
+    height: 30rem;
+  }
+  .jcc-hero-icon-nav__block--image img {
+    width: 100% ;
+    height: 100% ;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
   .jcc-timeline-dual__title-bar-title {
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
@@ -35015,10 +35038,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-breadcrumbs-nav.hide-mobile {
     display: none;
-  }
-  .jcc-hero-icon-nav__nav .jcc-cards__container {
-    padding-left: 0 ;
-    padding-right: 0 ;
   }
   .jcc-timeline-dual__wrapper {
     margin-top: 60px;
