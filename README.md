@@ -4,50 +4,39 @@ This is a consumable artifact for the [Courtyard Pattern Library](https://github
 
 It includes tooling to regenerate from the Pattern Lab and sync to this artifact.
 
+There are temporarily 2 versions of the artifact available to support the needs of trial courts. The near furutre goal is to update all sites to use the latest version of the artifact and move to a cleaner versioning strategy for future releases of the artifact.
+
+ - 1.x - is available at the 1.x directory in the artifact.
+ - 2.x - is available at the 2.x directory in the artifact.
+
 ## Preview
-https://jccpatternlab.z22.web.core.windows.net/
+https://jccpatternlab.z22.web.core.windows.net/1.x
+https://jccpatternlab.z22.web.core.windows.net/2.x
 
-## Tooling
+Any new implementations should use the 2.x version as 1.x is deprecated.
 
-### Lando
-
-Lando is used for easy PHP and Node environments and is configured with the following commands:
-
-```yaml
-clone:
-  description: Clone Courtyard to build an artifact, or for development. `lando clone`
-  ...
-artifact:
-  description: (Re)build the artifact.
-  ...
-sync:
-  description: Sync built assets to artifact.
-  ...
-```
 
 ### Instructions
 
-#### To update the pattern library:
+#### To update the artifact from the latest source repo:
 
- - `clone [this repo]`
- - `cd [this repo directory]`
- - `lando start`
- - `lando clone [branch to checkout]` - At this time, `development` branch gives the best results. Please update this if that changes.
-   - `lando clone tags/[tag to checkout]`
- - `lando artifact` - will install and build the pattern library as well as sync it to the `/public` directory of this artifact.
+The build of this artifact is triggered automatically when the Courtyard source repo is updated.
 
-See [Courtyard's Composer Install Wizard Docs](https://github.com/Exygy/courtyard#composer-install-wizard) for the answers to the prompts during install.
+To run an artifact build manually, with the right permissions, you can trigger the workflow on the "Actions" tab in github on the Artifact repo.
 
 See the [Courtyard Repository](https://github.com/Exygy/courtyard) for additional information and troubleshooting.
 
 
 #### Update the composer package:
 
- - Testing workflow TBD
- - After a new build is tested and verified commit the changes to this courtyard-artifact repo on `master` branch.
- - Add a new version tag: x.y.z
- - Push master and tag to Github
- - Packagist should be updated automatically.
+The artifact will automatically increment it's patch level version on each build to trigger a new release on Packagist.
 
-Your artifact can now be installed via `composer require judicialcouncil/courtyard-artifact`.
+To indicate a stable release, manually increment the major or minor semver number.
 
+Your artifact can now be installed via `composer require judicialcouncil/courtyard-artifact:~x.y.z`.
+
+#### To test a version locally
+
+ - Clone the courtyard artifact
+ - Checkout an available tag
+ - Open /path/to/artifact/2.x/public/index.html in a web browser
