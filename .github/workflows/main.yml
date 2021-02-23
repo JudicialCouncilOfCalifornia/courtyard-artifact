@@ -25,4 +25,4 @@ jobs:
         source_dir: .
         container_name: $web
         connection_string: ${{ secrets.ConnectionString }}
-        extra_args: --pattern=?.x
+        extra_args: --pattern=*.x
