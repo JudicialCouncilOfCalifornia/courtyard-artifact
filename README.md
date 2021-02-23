@@ -11,8 +11,8 @@ There are temporarily 2 versions of the artifact available to support the needs 
 
 ## Preview
 
- - https://jccpatternlab.z22.web.core.windows.net/1.x
- - https://jccpatternlab.z22.web.core.windows.net/2.x
+ - https://jccpatternlab.z22.web.core.windows.net/1.x/public/
+ - https://jccpatternlab.z22.web.core.windows.net/2.x/public/
 
 Any new implementations should use the 2.x version as 1.x is deprecated.
 
