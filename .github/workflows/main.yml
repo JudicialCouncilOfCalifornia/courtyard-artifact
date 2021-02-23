@@ -22,6 +22,6 @@ jobs:
 
     - uses: bacongobbler/azure-blob-storage-upload@v1.0.0
       with:
-        source_dir: public
+        source_dir: .
         container_name: $web
         connection_string: ${{ secrets.ConnectionString }}
