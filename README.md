@@ -11,7 +11,7 @@ There are temporarily 2 versions of the artifact available to support the needs 
 
 ## Preview
 
- - http://patternlab.courts.ca.gov/1.x/public
+ - http://patternlab.courts.ca.gov/1.x/public/
  - http://patternlab.courts.ca.gov/2.x/public/
 
 Any new implementations should use the 2.x version as 1.x is deprecated.
