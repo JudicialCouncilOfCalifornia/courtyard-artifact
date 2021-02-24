@@ -1,0 +1,4 @@
+button:
+  text: 'Default'
+  style: 'primary'
+  aria_label: "Click me to execute action"
