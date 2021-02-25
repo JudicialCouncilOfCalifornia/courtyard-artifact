@@ -19336,6 +19336,36 @@ h3.jcc-header-group__title {
   margin-bottom: 0 ;
 }
 
+.jcc-list-excerpt-with-button__container .jcc-list-excerpts {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+}
+
+.jcc-list-excerpt-with-button__container .jcc-list-excerpts .jcc-excerpt__item {
+  list-style: none;
+  width: 100% ;
+  margin-top: 0 ;
+  margin-bottom: 2rem ;
+  padding-left: 1.5rem ;
+  padding-right: 1.5rem ;
+  padding-top: 1rem ;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto ;
+          flex: 0 1 auto ;
+  width: 50% ;
+}
+
+.jcc-list-excerpt-with-button__container .jcc-list-excerpts .jcc-excerpt__item a {
+  text-decoration: none;
+}
+
+.jcc-list-excerpt-with-button__container .jcc-cards-with-button__button-container {
+  text-align: center ;
+}
+
 .jcc-list-section {
   padding-top: 4.5rem ;
   padding-bottom: 4.5rem ;
@@ -33102,6 +33132,12 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-link-list-with-button__container > div {
     padding-left: 2rem ;
     padding-right: 2rem ;
+  }
+  .jcc-list-excerpt-with-button__container .jcc-list-excerpts .jcc-excerpt__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto ;
+            flex: 0 1 auto ;
+    width: 33.33333% ;
   }
   .jcc-list-section nav {
     padding-left: 2rem ;
