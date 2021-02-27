@@ -33391,7 +33391,8 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     width: 66.66667% ;
   }
   .jcc-text-section-aside .jcc-text-section-aside__content .jcc-card__title {
-    padding-bottom: 2rem ;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem ;
     position: relative;
     overflow: hidden ;
   }
