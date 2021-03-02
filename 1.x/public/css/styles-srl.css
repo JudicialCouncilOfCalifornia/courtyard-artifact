@@ -33391,8 +33391,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     width: 66.66667% ;
   }
   .jcc-text-section-aside .jcc-text-section-aside__content .jcc-card__title {
-    padding-top: 1.1rem;
-    padding-bottom: 1rem ;
+    padding-top: 1.13rem;
     position: relative;
     overflow: hidden ;
   }
@@ -33420,6 +33419,11 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-text-section-aside .jcc-text-section-aside__aside .jcc-card {
     margin-top: 3.5rem ;
+  }
+  @-moz-document url-prefix() {
+    .jcc-text-section-aside__content .jcc-card__title {
+      padding-top: 1.1rem !important;
+    }
   }
   .jcc-text-section-location__container {
     padding-left: 2rem ;
