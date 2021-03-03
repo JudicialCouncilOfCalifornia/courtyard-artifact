@@ -66,6 +66,7 @@ jobs:
           PATCH=$((PATCH+1))
           NEW_TAG="$MAJOR.$MINOR.$PATCH"
           git tag -a $NEW_TAG -m "Autotag $NEW_TAG created by github-actions"
+          git push origin master --tags
   
   deploy:
     needs: build
@@ -91,4 +92,3 @@ jobs:
         connection_string: ${{ secrets.ConnectionString }}
         extra_args: --destination-path 2.x
           
-          git push origin master --tags
