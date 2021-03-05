@@ -67,28 +67,17 @@ jobs:
           NEW_TAG="$MAJOR.$MINOR.$PATCH"
           git tag -a $NEW_TAG -m "Autotag $NEW_TAG created by github-actions"
           git push origin master --tags
-  
-  deploy:
-    needs: build
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-
-    - uses: bacongobbler/azure-blob-storage-upload@v1.0.0
-      with:
-        source_dir: 1.x
-        container_name: $web
-        connection_string: ${{ secrets.ConnectionString }}
-        extra_args: --destination-path 1.x
-
-    - uses: bacongobbler/azure-blob-storage-upload@v1.0.0
-      with:
-        source_dir: 2.x
-        container_name: $web
-        connection_string: ${{ secrets.ConnectionString }}
-        extra_args: --destination-path 2.x
-          
+      # Push changes to azure demo.
+      - uses: bacongobbler/azure-blob-storage-upload@v1.0.0
+        with:
+          source_dir: 2.x
+          container_name: $web
+          connection_string: ${{ secrets.ConnectionString }}
+          extra_args: --destination-path 2.x
+      - uses: bacongobbler/azure-blob-storage-upload@v1.0.0
+        with:
+          source_dir: 1.x
+          container_name: $web
+          connection_string: ${{ secrets.ConnectionString }}
+          extra_args: --destination-path 1.x
+            
