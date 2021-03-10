@@ -14902,7 +14902,7 @@ a.usa-link:visited,
 
 .jcc-card--icon .usa-card__media {
   height: auto  !important;
-  overflow: auto  !important;
+  overflow: visible  !important;
   padding: 0  !important;
 }
 
@@ -29360,8 +29360,8 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     font-size: 1.24rem;
   }
   .jcc-hero-icon-nav__nav .usa-card__container {
-    padding-bottom: 3.5rem ;
     padding-top: 3.5rem ;
+    padding-bottom: 2.5rem ;
   }
   .jcc-hero-icon-nav__nav .usa-card__header {
     padding-top: 1.5rem ;
