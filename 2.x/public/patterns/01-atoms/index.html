@@ -5,8 +5,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-local.css?1615425144" media="all" />
-		<link rel="stylesheet" id='srl' type='text/css' href="../../css/local.css?1615425144" media="all" />
+		<link rel="stylesheet" id='sg-css' href="../../styleguide/css/sg-local.css?1615589123" media="all" />
+		<link rel="stylesheet" id='pl-css' type='text/css' href="../../css/local.css?1615589123" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		<!-- never cache patterns -->
@@ -16,12 +16,22 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1615425144" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1615425144" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1615589123" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1615589123" media="all" />
 		<!-- End Pattern Lab -->
 	</head>
 
 	<body>
+		<div class="jcc-schemebar">
+			<span class="jcc-schemebar__select">
+				<label for="jcc-schemebar-schemes">Scheme: </label>
+				<select class="jcc-schemebar__switcher" name="jcc-schemebar-schemes" id="jcc-schemebar-schemes">
+					<option value="base">Base</option>
+					<option value="local">Local</option>
+	      </select>
+			</span>
+		</div>
+
     <div style="width:0;height:0;position:absolute;overflow:hidden;">
       <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
@@ -420,395 +430,6 @@
   <script type="text/json" id="sg-pattern-data-atoms-buttons-example" class="sg-pattern-data">
     {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"button"},"patternDesc":"","patternExtension":"twig","patternName":"buttons example","patternPartial":"atoms-buttons-example","patternState":""}
   </script>
-</div><!--end .sg-pattern-->                        <div id="viewall-atoms-colors" class="sg-subtype">
-  <h2>
-    <a href="../../patterns/01-atoms-colors/index.html" class="patternLink" data-patternpartial="viewall-atoms-colors">
-      colors
-    </a>
-  </h2>
-  
-  <div class="sg-pattern-body">
-    
-  </div>
-</div>                        <div id="atoms-colors-example" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/01-atoms-colors-colors-example/01-atoms-colors-colors-example.html" class="patternLink" data-patternpartial="atoms-colors-example" title="Link to Pattern">
-        colors example
-        
-              </a>
-    </h3>
-    
-    <div class="sg-pattern-breadcrumb">
-      
-    </div>
-    
-    <a href="#" data-patternpartial="atoms-colors-example" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-colors-example" class="sg-pattern-extra-toggle">
-      <span>&#9660;</span>
-    </a>
-  </div>
-  
-  <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-colors-example"></div>
-    
-  <div class="sg-pattern-example">
-    
-
-  <div class="sg-h5">Theme colors</div>
-      <div class="sg-h6">Base</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-base-lightest"></span>
-          <span class="sg-hex" data-color="base-lightest"></span>
-          <span class="sg-label">base-lightest</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-base-lighter"></span>
-          <span class="sg-hex" data-color="base-lighter"></span>
-          <span class="sg-label">base-lighter</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-base-light"></span>
-          <span class="sg-hex" data-color="base-light"></span>
-          <span class="sg-label">base-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-base"></span>
-          <span class="sg-hex" data-color="base"></span>
-          <span class="sg-label">base</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-base-dark"></span>
-          <span class="sg-hex" data-color="base-dark"></span>
-          <span class="sg-label">base-dark</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-base-darker"></span>
-          <span class="sg-hex" data-color="base-darker"></span>
-          <span class="sg-label">base-darker</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-base-darkest"></span>
-          <span class="sg-hex" data-color="base-darkest"></span>
-          <span class="sg-label">base-darkest</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-ink"></span>
-          <span class="sg-hex" data-color="ink"></span>
-          <span class="sg-label">ink</span>
-        </li>
-          </ul>
-      <div class="sg-h6">Primary</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-primary-lightest"></span>
-          <span class="sg-hex" data-color="primary-lightest"></span>
-          <span class="sg-label">primary-lightest</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-primary-lighter"></span>
-          <span class="sg-hex" data-color="primary-lighter"></span>
-          <span class="sg-label">primary-lighter</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-primary-light"></span>
-          <span class="sg-hex" data-color="primary-light"></span>
-          <span class="sg-label">primary-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-primary"></span>
-          <span class="sg-hex" data-color="primary"></span>
-          <span class="sg-label">primary</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-primary-vivid"></span>
-          <span class="sg-hex" data-color="primary-vivid"></span>
-          <span class="sg-label">primary-vivid</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-primary-dark"></span>
-          <span class="sg-hex" data-color="primary-dark"></span>
-          <span class="sg-label">primary-dark</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-primary-darker"></span>
-          <span class="sg-hex" data-color="primary-darker"></span>
-          <span class="sg-label">primary-darker</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-primary-darkest"></span>
-          <span class="sg-hex" data-color="primary-darkest"></span>
-          <span class="sg-label">primary-darkest</span>
-        </li>
-          </ul>
-      <div class="sg-h6">Secondary</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-secondary-lightest"></span>
-          <span class="sg-hex" data-color="secondary-lightest"></span>
-          <span class="sg-label">secondary-lightest</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-secondary-lighter"></span>
-          <span class="sg-hex" data-color="secondary-lighter"></span>
-          <span class="sg-label">secondary-lighter</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-secondary-light"></span>
-          <span class="sg-hex" data-color="secondary-light"></span>
-          <span class="sg-label">secondary-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-secondary"></span>
-          <span class="sg-hex" data-color="secondary"></span>
-          <span class="sg-label">secondary</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-secondary-vivid"></span>
-          <span class="sg-hex" data-color="secondary-vivid"></span>
-          <span class="sg-label">secondary-vivid</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-secondary-dark"></span>
-          <span class="sg-hex" data-color="secondary-dark"></span>
-          <span class="sg-label">secondary-dark</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-secondary-darker"></span>
-          <span class="sg-hex" data-color="secondary-darker"></span>
-          <span class="sg-label">secondary-darker</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-secondary-darkest"></span>
-          <span class="sg-hex" data-color="secondary-darkest"></span>
-          <span class="sg-label">secondary-darkest</span>
-        </li>
-          </ul>
-      <div class="sg-h6">Accent warm</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-accent-warm-lightest"></span>
-          <span class="sg-hex" data-color="accent-warm-lightest"></span>
-          <span class="sg-label">accent-warm-lightest</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-warm-lighter"></span>
-          <span class="sg-hex" data-color="accent-warm-lighter"></span>
-          <span class="sg-label">accent-warm-lighter</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-warm-light"></span>
-          <span class="sg-hex" data-color="accent-warm-light"></span>
-          <span class="sg-label">accent-warm-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-warm"></span>
-          <span class="sg-hex" data-color="accent-warm"></span>
-          <span class="sg-label">accent-warm</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-warm-dark"></span>
-          <span class="sg-hex" data-color="accent-warm-dark"></span>
-          <span class="sg-label">accent-warm-dark</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-warm-darker"></span>
-          <span class="sg-hex" data-color="accent-warm-darker"></span>
-          <span class="sg-label">accent-warm-darker</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-warm-darkest"></span>
-          <span class="sg-hex" data-color="accent-warm-darkest"></span>
-          <span class="sg-label">accent-warm-darkest</span>
-        </li>
-          </ul>
-      <div class="sg-h6">Accent cool</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-accent-cool-lightest"></span>
-          <span class="sg-hex" data-color="accent-cool-lightest"></span>
-          <span class="sg-label">accent-cool-lightest</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-cool-lighter"></span>
-          <span class="sg-hex" data-color="accent-cool-lighter"></span>
-          <span class="sg-label">accent-cool-lighter</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-cool-light"></span>
-          <span class="sg-hex" data-color="accent-cool-light"></span>
-          <span class="sg-label">accent-cool-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-cool"></span>
-          <span class="sg-hex" data-color="accent-cool"></span>
-          <span class="sg-label">accent-cool</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-cool-dark"></span>
-          <span class="sg-hex" data-color="accent-cool-dark"></span>
-          <span class="sg-label">accent-cool-dark</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-cool-darker"></span>
-          <span class="sg-hex" data-color="accent-cool-darker"></span>
-          <span class="sg-label">accent-cool-darker</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-accent-cool-darkest"></span>
-          <span class="sg-hex" data-color="accent-cool-darkest"></span>
-          <span class="sg-label">accent-cool-darkest</span>
-        </li>
-          </ul>
-    <div class="sg-h5">State colors</div>
-      <div class="sg-h6">Info</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-info-lighter"></span>
-          <span class="sg-hex" data-color="info-lighter"></span>
-          <span class="sg-label">info-lighter</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-info-light"></span>
-          <span class="sg-hex" data-color="info-light"></span>
-          <span class="sg-label">info-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-info"></span>
-          <span class="sg-hex" data-color="info"></span>
-          <span class="sg-label">info</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-info-dark"></span>
-          <span class="sg-hex" data-color="info-dark"></span>
-          <span class="sg-label">info-dark</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-info-darker"></span>
-          <span class="sg-hex" data-color="info-darker"></span>
-          <span class="sg-label">info-darker</span>
-        </li>
-          </ul>
-      <div class="sg-h6">Error</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-error-lighter"></span>
-          <span class="sg-hex" data-color="error-lighter"></span>
-          <span class="sg-label">error-lighter</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-error-light"></span>
-          <span class="sg-hex" data-color="error-light"></span>
-          <span class="sg-label">error-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-error"></span>
-          <span class="sg-hex" data-color="error"></span>
-          <span class="sg-label">error</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-error-dark"></span>
-          <span class="sg-hex" data-color="error-dark"></span>
-          <span class="sg-label">error-dark</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-error-darker"></span>
-          <span class="sg-hex" data-color="error-darker"></span>
-          <span class="sg-label">error-darker</span>
-        </li>
-          </ul>
-      <div class="sg-h6">Warning</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-warning-lighter"></span>
-          <span class="sg-hex" data-color="warning-lighter"></span>
-          <span class="sg-label">warning-lighter</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-warning-light"></span>
-          <span class="sg-hex" data-color="warning-light"></span>
-          <span class="sg-label">warning-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-warning"></span>
-          <span class="sg-hex" data-color="warning"></span>
-          <span class="sg-label">warning</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-warning-dark"></span>
-          <span class="sg-hex" data-color="warning-dark"></span>
-          <span class="sg-label">warning-dark</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-warning-darker"></span>
-          <span class="sg-hex" data-color="warning-darker"></span>
-          <span class="sg-label">warning-darker</span>
-        </li>
-          </ul>
-      <div class="sg-h6">Success</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-success-lighter"></span>
-          <span class="sg-hex" data-color="success-lighter"></span>
-          <span class="sg-label">success-lighter</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-success-light"></span>
-          <span class="sg-hex" data-color="success-light"></span>
-          <span class="sg-label">success-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-success"></span>
-          <span class="sg-hex" data-color="success"></span>
-          <span class="sg-label">success</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-success-dark"></span>
-          <span class="sg-hex" data-color="success-dark"></span>
-          <span class="sg-label">success-dark</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-success-darker"></span>
-          <span class="sg-hex" data-color="success-darker"></span>
-          <span class="sg-label">success-darker</span>
-        </li>
-          </ul>
-      <div class="sg-h6">Disabled</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-disabled-light"></span>
-          <span class="sg-hex" data-color="disabled-light"></span>
-          <span class="sg-label">disabled-light</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-disabled"></span>
-          <span class="sg-hex" data-color="disabled"></span>
-          <span class="sg-label">disabled</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-disabled-dark"></span>
-          <span class="sg-hex" data-color="disabled-dark"></span>
-          <span class="sg-label">disabled-dark</span>
-        </li>
-          </ul>
-      <div class="sg-h6">Emergency</div>
-    <ul class="sg-colors">
-              <li>
-          <span class="sg-swatch bg-emergency"></span>
-          <span class="sg-hex" data-color="emergency"></span>
-          <span class="sg-label">emergency</span>
-        </li>
-              <li>
-          <span class="sg-swatch bg-emergency-dark"></span>
-          <span class="sg-hex" data-color="emergency-dark"></span>
-          <span class="sg-label">emergency-dark</span>
-        </li>
-          </ul>
-  
-  </div>
-  
-  <script type="text/json" id="sg-pattern-data-atoms-colors-example" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"colors"},"patternDesc":"","patternExtension":"twig","patternName":"colors example","patternPartial":"atoms-colors-example","patternState":""}
-  </script>
 </div><!--end .sg-pattern-->                        <div id="viewall-atoms-forms" class="sg-subtype">
   <h2>
     <a href="../../patterns/01-atoms-forms/index.html" class="patternLink" data-patternpartial="viewall-atoms-forms">
@@ -844,14 +465,14 @@
 
 
 <div  class="usa-checkbox">
-		<input class="usa-checkbox__input" id="checkbox-1277262764" type="checkbox" name="Test" value="checkbox-1277262764">
-	<label class="usa-checkbox__label" for="checkbox-1277262764">First</label>
+		<input class="usa-checkbox__input" id="checkbox-1785901948" type="checkbox" name="Test" value="checkbox-1785901948">
+	<label class="usa-checkbox__label" for="checkbox-1785901948">First</label>
 </div>
 
   </div>
   
   <script type="text/json" id="sg-pattern-data-atoms-checkbox" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[{"lineagePattern":"molecules-checkbox-group","lineagePath":"..\/..\/patterns\/02-molecules-forms-checkbox-group\/02-molecules-forms-checkbox-group.html"},{"lineagePattern":"molecules-checkbox-group-inline","lineagePath":"..\/..\/patterns\/02-molecules-forms-checkbox-group-inline\/02-molecules-forms-checkbox-group-inline.html"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"","patternExtension":"twig","patternName":"checkbox","patternPartial":"atoms-checkbox","patternState":""}
+    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"","patternExtension":"twig","patternName":"checkbox","patternPartial":"atoms-checkbox","patternState":""}
   </script>
 </div><!--end .sg-pattern-->                        <div id="atoms-date-input" class="sg-pattern">
   <div class="sg-pattern-head">
@@ -878,22 +499,22 @@
 <fieldset class="usa-fieldset">
 			<legend class="usa-legend">Filing Date</legend>
 	
-					<span class="usa-hint" id="dobHint-804769671">For example: 04 28 1986</span>
+					<span class="usa-hint" id="dobHint-1319362610">For example: 04 28 1986</span>
 	
 	<div class="usa-form-group">
 		
 		<div class="usa-memorable-date">
 												<div class="usa-form-group usa-form-group--month">
-				<label class="usa-label" for="date_of_birth-month--2044060785">Month</label>
-				<input class="usa-input usa-input--inline" aria-describedby="dobHint-804769671" id="date_of_birth-month--2044060785" name="date_of_birth-month--2044060785" type="number" min="1" max="12" value="">
+				<label class="usa-label" for="date_of_birth-month--1370629767">Month</label>
+				<input class="usa-input usa-input--inline" aria-describedby="dobHint-1319362610" id="date_of_birth-month--1370629767" name="date_of_birth-month--1370629767" type="number" min="1" max="12" value="">
 			</div>
 			<div class="usa-form-group usa-form-group--day">
-				<label class="usa-label" for="date_of_birth-day--620416138">Day</label>
-				<input class="usa-input usa-input--inline" aria-describedby="dobHint-804769671" id="date_of_birth-day--620416138" name="date_of_birth-day--620416138" type="number" min="1" max="31" value="">
+				<label class="usa-label" for="date_of_birth-day--1170637286">Day</label>
+				<input class="usa-input usa-input--inline" aria-describedby="dobHint-1319362610" id="date_of_birth-day--1170637286" name="date_of_birth-day--1170637286" type="number" min="1" max="31" value="">
 			</div>
 			<div class="usa-form-group usa-form-group--year">
-				<label class="usa-label" for="date_of_birth-year--60382224">Year</label>
-				<input class="usa-input usa-input--inline" aria-describedby="dobHint-804769671" id="date_of_birth-year--60382224" name="date_of_birth-year--60382224" type="number" min="1900" max="2019" value="">
+				<label class="usa-label" for="date_of_birth-year--2053163433">Year</label>
+				<input class="usa-input usa-input--inline" aria-describedby="dobHint-1319362610" id="date_of_birth-year--2053163433" name="date_of_birth-year--2053163433" type="number" min="1900" max="2019" value="">
 			</div>
 		</div>
 	</div>
@@ -929,14 +550,14 @@
 
 
 <div  class="usa-radio">
-		<input class="usa-radio__input" id="Nine1487621874" type="radio" checked name="Sample" value="Nine1487621874">
-	<label class="usa-radio__label" for="Nine1487621874">First</label>
+		<input class="usa-radio__input" id="Nine1577917639" type="radio" checked name="Sample" value="Nine1577917639">
+	<label class="usa-radio__label" for="Nine1577917639">First</label>
 </div>
 
   </div>
   
   <script type="text/json" id="sg-pattern-data-atoms-radio" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[{"lineagePattern":"molecules-radio-group","lineagePath":"..\/..\/patterns\/02-molecules-forms-radio-group\/02-molecules-forms-radio-group.html"},{"lineagePattern":"molecules-radio-group-inline","lineagePath":"..\/..\/patterns\/02-molecules-forms-radio-group-inline\/02-molecules-forms-radio-group-inline.html"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"","patternExtension":"twig","patternName":"radio","patternPartial":"atoms-radio","patternState":""}
+    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"","patternExtension":"twig","patternName":"radio","patternPartial":"atoms-radio","patternState":""}
   </script>
 </div><!--end .sg-pattern-->                        <div id="atoms-search-input" class="sg-pattern">
   <div class="sg-pattern-head">
@@ -963,7 +584,7 @@
 
 <div class="jcc-fieldset-search">
 	<fieldset class="usa-fieldset">
-				<input type="text" placeholder="" class="usa-input" id="search-type-text--489146895" name="" title="Search this site"/>
+				<input type="text" placeholder="" class="usa-input" id="search-type-text--381672633" name="" title="Search this site"/>
 		<button type="submit" aria-label="Submit your search">
   <svg class="icon icon-search  " role="presentation" title="Search" aria-hidden="true"><use class="" xlink:href="#i-search"></use></svg></button>
 	</fieldset>
@@ -1853,135 +1474,6 @@
   <script type="text/json" id="sg-pattern-data-atoms-tag" class="sg-pattern-data">
     {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"tag"},"patternDesc":"","patternExtension":"twig","patternName":"tag","patternPartial":"atoms-tag","patternState":""}
   </script>
-</div><!--end .sg-pattern-->                        <div id="viewall-atoms-typography" class="sg-subtype">
-  <h2>
-    <a href="../../patterns/01-atoms-typography/index.html" class="patternLink" data-patternpartial="viewall-atoms-typography">
-      typography
-    </a>
-  </h2>
-  
-  <div class="sg-pattern-body">
-    
-  </div>
-</div>                        <div id="atoms-fonts-example" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/01-atoms-typography-fonts-example/01-atoms-typography-fonts-example.html" class="patternLink" data-patternpartial="atoms-fonts-example" title="Link to Pattern">
-        fonts example
-        
-              </a>
-    </h3>
-    
-    <div class="sg-pattern-breadcrumb">
-      
-    </div>
-    
-    <a href="#" data-patternpartial="atoms-fonts-example" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-fonts-example" class="sg-pattern-extra-toggle">
-      <span>&#9660;</span>
-    </a>
-  </div>
-  
-  <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-fonts-example"></div>
-    
-  <div class="sg-pattern-example">
-      <section id="font-family-sans" class="usa-grid spaced margin-bottom-4">
-    <h2 class="usa-heading-alt font-family-sans">Lato</h2>
-    <h4 class="font-family-sans"><span><em>font family mixin:</em> @include u-font-family(font-family-sans)</span></h4>
-    <h5><span><em>Utility class</em> .font-family-sans</span></h5>
-
-    <div class="usa-grid-full">
-      <div class="usa-width-one-half font-family-sans">
-        Lato is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic (“Lato” means “Summer” in Polish). In December 2010 the Lato family was published under the Open Font License by his foundry tyPoland, with support from Google. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. “Male and female, serious but friendly. With the feeling of the Summer,” says Łukasz. Learn more at www.latofonts.com
-      </div>
-
-      <div class="font-family-sans typography-font-family-sans-intro usa-width-one-half usa-end-row">
-        <span class="text-huge">Aa</span>
-        <div>
-          <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-          <p class="text-tiny">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-          <p class="text-tiny">0 1 2 3 4 5 6 7 8 9</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="font-family-serif" class="usa-grid spaced margin-bottom-4">
-    <h2 class="usa-heading-alt font-family-serif">Lora</h2>
-    <h4 class="font-family-serif"><span><em>font family mixin:</em> @include u-font-family(font-family-serif)</span></h4>
-    <h5><span><em>Utility class</em> .font-family-serif</span></h5>
-
-    <div class="usa-grid-full">
-      <div class="usa-width-one-half font-family-serif">
-        Lora is a well-balanced contemporary serif with roots in calligraphy. It is a text typeface with moderate contrast well suited for body text. A paragraph set in Lora will make a memorable appearance because of its brushed curves in contrast with driving serifs. The overall typographic voice of Lora perfectly conveys the mood of a modern-day story, or an art essay. Technically Lora is optimised for screen appearance, and works equally well in print. In March 2019, the family has been updated to a variable font family.
-      </div>
-
-      <div class="font-family-serif typography-font-family-serif-intro usa-width-one-half usa-end-row">
-        <span class="text-huge">Aa</span>
-        <div>
-          <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-          <p class="text-tiny">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-          <p class="text-tiny">0 1 2 3 4 5 6 7 8 9</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  </div>
-  
-  <script type="text/json" id="sg-pattern-data-atoms-fonts-example" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"typography"},"patternDesc":"","patternExtension":"twig","patternName":"fonts example","patternPartial":"atoms-fonts-example","patternState":""}
-  </script>
-</div><!--end .sg-pattern-->                        <div id="atoms-headings-text-example" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/01-atoms-typography-headings-text-example/01-atoms-typography-headings-text-example.html" class="patternLink" data-patternpartial="atoms-headings-text-example" title="Link to Pattern">
-        headings text example
-        
-              </a>
-    </h3>
-    
-    <div class="sg-pattern-breadcrumb">
-      
-    </div>
-    
-    <a href="#" data-patternpartial="atoms-headings-text-example" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-headings-text-example" class="sg-pattern-extra-toggle">
-      <span>&#9660;</span>
-    </a>
-  </div>
-  
-  <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-headings-text-example"></div>
-    
-  <div class="sg-pattern-example">
-    <div class="margin-bottom-4">
-  <h1 class="jcc-h1">H1 consectetur adipiscing elit donec aliquam</h1>
-  <h2 class="jcc-h2">H2 nulla sagittis nulla eget lacus rhoncus bibendum</h2>
-  <h3 class="jcc-h3">H3 pellentesque lobortis nec nisl id faucibus</h3>
-  <h4 class="jcc-h4">H4 ut sit amet diam ut dolor porta elementum nec </h4>
-  <h5 class="jcc-h5">H5 suspendisse blandit, ante et posuere porttitor</h5>
-  <h6 class="jcc-h6">H6 duis aute irure dolor in reprehenderit en voluptate</h6>
-
-  <p class="jcc-lead">Lead ras egestas non lacus et volutpat</p>
-  <p>Regular body inceptos dictum mus dolor accumsan sapien integer fusce erat, primis id nostra</p>
-  <p class="jcc-small">Small posuere libero sed neque consectetur tincidunt</p>
-</div>
-
-<div class="usa-prose">
-  <h1>H1 consectetur adipiscing elit donec aliquam</h1>
-  <h2>H2 nulla sagittis nulla eget lacus rhoncus bibendum</h2>
-  <h3>H3 pellentesque lobortis nec nisl id faucibus</h3>
-  <h4>H4 ut sit amet diam ut dolor porta elementum nec </h4>
-  <h5>H5 suspendisse blandit, ante et posuere porttitor</h5>
-  <h6>H6 ras egestas non lacus et volutpat</h6>
-
-  <p class="jcc-lead">Lead ras egestas non lacus et volutpat</p>
-  <p>Regular body inceptos dictum mus dolor accumsan sapien integer fusce erat, primis id nostra</p>
-  <p class="jcc-small">Small posuere libero sed neque consectetur tincidunt</p>
-</div>
-
-  </div>
-  
-  <script type="text/json" id="sg-pattern-data-atoms-headings-text-example" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"typography"},"patternDesc":"","patternExtension":"twig","patternName":"headings text example","patternPartial":"atoms-headings-text-example","patternState":""}
-  </script>
 </div><!--end .sg-pattern-->            </div> <!--end #sg-patterns-->
 </div><!--end .sg-main-->
 			<!--DO NOT REMOVE-->
@@ -2020,10 +1512,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1615425144">
+<script id="pl-js-polyfill-insert-1615589123">
   (function() {
     if (self != top) {
-      var cb = '1615425144';
+      var cb = '1615589123';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -2033,16 +1525,17 @@
   })();
 </script>
 
-<script id="pl-js-insert-1615425144">
+<script id="pl-js-insert-1615589123">
   (function() {
     if (self != top) {
-      var cb = '1615425144';
+      var cb = '1615589123';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
   })();
 </script>
-			<script src="../../js/scripts.js?1615425144" type="text/javascript"></script>
+			<script src="../../styleguide/js/styleguide.js?1615589123" type="text/javascript"></script>
+			<script src="../../js/scripts.js?1615589123" type="text/javascript"></script>
 		</div>
 	</body>
 </html>
