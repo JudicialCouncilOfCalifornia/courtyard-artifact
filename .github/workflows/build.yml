@@ -22,10 +22,8 @@ jobs:
           npm install
           npm run build
       - run: |
-          mkdir -p 2.x/public 2.x/source/_patterns 2.x/source/uswds
-          cp -R courtyard/public/* 2.x/public/.
-          cp -R courtyard/source/_patterns/* 2.x/source/_patterns/.
-          cp -R courtyard/node_modules/uswds/src/stylesheets/* 2.x/source/uswds/.
+          rsync -KPar --delete --force courtyard/public 2.x/public
+          rsync -KPar --delete --force courtyard/source/_patterns 2.x/source/_patterns
           rm -rf courtyard
       # Build the 1.x artifact.
       - uses: actions/checkout@v2
