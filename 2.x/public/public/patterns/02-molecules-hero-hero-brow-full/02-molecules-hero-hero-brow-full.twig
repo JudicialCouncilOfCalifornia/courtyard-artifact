@@ -1,0 +1,63 @@
+{#
+/**
+ * Available variables:
+ * - hero - primary variable
+ *   - layout: arrangement/visibility [default, full-main]
+ *   - background: background color [default, alt]
+ *   - main: the main content
+ *     - title: the title
+ *     - lead: lead text
+ *     - brow: the brow text
+ *   - aside: secondary content
+ *     - title: the title
+ *     - text: the text
+ *     - link: the link
+ *       - url: the link url
+ *       - text: the link text
+ *   - classes: array of classes to add to component
+ */
+#}
+
+{% set classes = [
+  'jcc-hero',
+  'jcc-hero--layout-' ~ hero.layout|default('default'),
+  'jcc-hero--background-' ~ hero.background|default('default'),
+]|merge(hero.classes|default([''])) %}
+
+<div class="{{ classes|join(' ')|trim }}">
+  <div class="jcc-hero__container">
+    <div class="jcc-hero__content">
+      <div class="jcc-hero__main">
+        {% if hero.main.brow %}
+          <p class="jcc-hero__main-brow">{{ hero.main.brow }}</p>
+        {% endif %}
+
+        <h1 class="jcc-hero__main-title">
+          {{ hero.main.title }}
+        </h1>
+
+        {% if hero.main.lead %}
+          <div class="jcc-hero__main-lead">{{ hero.main.lead }}</div>
+        {% endif %}
+      </div>
+
+      {% if hero.aside %}
+        <aside class="jcc-hero__aside">
+          {% if hero.aside.title %}
+            <h4 class="jcc-hero__aside-title">{{ hero.aside.title }}</h4>
+          {% endif %}
+
+          {% if hero.aside.text %}
+            <div class="jcc-hero__aside-text">{{ hero.aside.text }}</div>
+          {% endif %}
+
+          {% if hero.aside.link.url %}
+            <div class="jcc-hero__aside-link">
+              <a href="{{ hero.aside.link.url }}">{{ hero.aside.link.text }}</a>
+            </div>
+          {% endif %}
+        </aside>
+      {% endif %}
+    </div>
+  </div>
+</div>

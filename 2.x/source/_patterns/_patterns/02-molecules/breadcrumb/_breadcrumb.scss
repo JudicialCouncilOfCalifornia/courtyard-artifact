@@ -1,0 +1,9 @@
+.usa-breadcrumb--container {
+  @include grid-container(widescreen);
+}
+
+.usa-breadcrumb__link {
+  span {
+    text-decoration: none;
+  }
+}

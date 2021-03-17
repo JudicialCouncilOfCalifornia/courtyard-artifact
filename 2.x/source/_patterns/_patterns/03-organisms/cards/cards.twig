@@ -1,0 +1,36 @@
+{#
+/**
+ * Available variables:
+ * - cards - primary variable
+ *   - background: background color [default, alt]
+ *   - num_cols: the number of columns at desktop widths [1, 3, 4]
+ *   - heading: the heading (title & lead)
+ *   - items: array of card items
+ *   - classes: array of classes to add to component
+ */
+#}
+
+{% set classes = [
+  'jcc-cards',
+  'jcc-cards--' ~ cards.num_cols|default('3') ~ 'cols',
+]|merge(cards.classes|default([])) %}
+
+{% set content %}
+  <ul class="{{ classes|join(' ')|trim }}">
+    {% for item in cards.items %}
+      <li class="jcc-cards__item">
+        {% include "@molecules/card/card.twig" with {
+          card: item
+        } %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endset %}
+
+{% include "@molecules/section/section.twig" with {
+  section: {
+    heading: cards.heading,
+    content: content,
+    background: cards.background|default('default'),
+  }
+} %}

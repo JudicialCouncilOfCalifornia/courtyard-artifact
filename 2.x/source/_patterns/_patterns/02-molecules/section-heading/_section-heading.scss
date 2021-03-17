@@ -1,0 +1,73 @@
+$_config_schemes: (
+  base: (
+    background: $theme-body-background-color,
+    alt-background: $theme-color-base-lightest,
+  ),
+);
+
+$_config: map-merge-by-keys($_config_schemes, base, $_config_schemes, $scheme);
+
+.jcc-section-heading {
+  overflow: hidden;
+}
+
+.jcc-section-heading__title {
+  @include u-margin-bottom(3);
+}
+
+.jcc-section-heading__title--full {
+  @include at-media-max(desktop) {
+    @include add-dash($dash-position: "above-center", $dash-width: 5rem);
+  }
+
+  @include at-media(desktop) {
+    .jcc-section--background-alt & {
+      @include add-dash(
+        $dash-position: "left-right",
+        $inner-spacing: 150px,
+        $inner-color: color(map-get($_config, alt-background))
+      );
+    }
+
+    .jcc-section:not(.jcc-section--background-alt) & {
+      @include add-dash(
+        $dash-position: "left-right",
+        $inner-spacing: 150px,
+        $inner-color: color(map-get($_config, background))
+      );
+    }
+  }
+}
+
+.jcc-section-heading__title--partial {
+  @include at-media-max(desktop) {
+    @include add-dash($dash-position: "above-left", $dash-width: 5rem);
+  }
+
+  @include at-media(desktop) {
+    .jcc-section--background-alt & {
+      @include add-dash(
+        $dash-position: "right",
+        $inner-spacing: 150px,
+        $inner-color: color(map-get($_config, alt-background))
+      );
+    }
+
+    .jcc-section:not(.jcc-section--background-alt) & {
+      @include add-dash(
+        $dash-position: "right",
+        $inner-spacing: 150px,
+        $inner-color: color(map-get($_config, background))
+      );
+    }
+  }
+}
+
+.jcc-section-heading__lead {
+  @extend .jcc-lead;
+  @include u-margin-bottom(5);
+
+  > * {
+    max-width: unset;
+  }
+}

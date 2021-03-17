@@ -1,0 +1,77 @@
+@media print {
+  a:link:after {
+    display: block;
+    text-transform: none;
+    font-size: 12px;
+    // add full URL in front of relative links "
+    // content: "https://housing.sfgov.org" attr(href); Update when URL is known
+    content: attr(href);
+  }
+
+  a[href^="http"]:link:after {
+    // if link already starts with http, then just print that
+    content: attr(href);
+  }
+
+  #js-header_menu--mobile {
+    visibility: hidden !important;
+  }
+
+  body {
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    text-align: left !important;
+  }
+
+  h1,
+  .jcc-h1 {
+    font-size: 36px;
+  }
+
+  h2,
+  .jcc-h2 {
+    font-size: 24px;
+  }
+
+  h3,
+  .jcc-h3 {
+    font-size: 20px;
+  }
+
+  h4,
+  .jcc-h4 {
+    font-size: 18px;
+  }
+
+  h5,
+  .jcc-h5 {
+    font-size: 16px;
+  }
+
+  h6,
+  .jcc-h6 {
+    font-size: 14px;
+  }
+
+  small,
+  .jcc-small {
+    font-size: 12px;
+  }
+}
+
+@media print {
+  .show-for-print {
+    display: block;
+  }
+
+  .usa-accordion [hidden] {
+    display: block !important;
+  }
+
+  a[href]:after {
+    content: none !important;
+  }
+
+  .hide-for-print {
+    display: none !important;
+  }
+}
