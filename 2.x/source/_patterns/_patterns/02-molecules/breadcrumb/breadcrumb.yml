@@ -1,5 +1,0 @@
-breadcrumb:
-  items:
-    - url: "#"
-      label: "Primary nav"
-    - label: "Secondary level item"
