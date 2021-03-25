@@ -14206,15 +14206,15 @@ a.usa-link:hover,
   color: #00687d ;
 }
 
-a:active, a:focus,
+a:active, a:focus:not(.usa-button),
 .usa-alert__text a:active,
-.usa-alert__text a:focus,
+.usa-alert__text a:focus:not(.usa-button),
 .usa-form a.usa-button--unstyled:active,
-.usa-form a.usa-button--unstyled:focus,
+.usa-form a.usa-button--unstyled:focus:not(.usa-button),
 a.usa-link:active,
-a.usa-link:focus,
+a.usa-link:focus:not(.usa-button),
 .usa-footer__secondary-link a:active,
-.usa-footer__secondary-link a:focus {
+.usa-footer__secondary-link a:focus:not(.usa-button) {
   color: #00687d ;
 }
 
