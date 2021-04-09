@@ -1,0 +1,37 @@
+footer_base:
+  height_variant: 'big'
+  links:
+    - text: Nested section 1
+      links:
+        - text: Navigation link 1
+          href: "#"
+        - text: Navigation link 2
+          href: "#"
+        - text: Navigation link 3
+          href: "#"
+        - text: Navigation link 4
+          href: "#"
+        - text: A very long navigation link that goes onto two lines
+          href: "#"
+    - text: Nested section 2
+      links:
+        - text: Navigation link 5
+          href: "#"
+        - text: Navigation link 6
+          href: "#"
+        - text: Navigation link 7
+          href: "#"
+        - text: Navigation link 8
+          href: "#"
+    - text: Simple link 1
+      links:
+        - text: Navigation link 9
+          href: "#"
+        - text: Navigation link 10
+          href: "#"
+        - text: Navigation link 11
+          href: "#"
+        - text: Navigation link 12
+          href: "#"
+    - text: Subscribe with your email address to receive news and updates
+      block: '<div><input id="input-type-text" class="usa-input margin-bottom-2" name="input-type-text" type="text"><button class="usa-button ">Sign Up</button></div>'
