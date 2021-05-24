@@ -17555,16 +17555,6 @@ nav.jcc-primary-nav {
   margin-left: 1rem;
 }
 
-.jcc-header-group > :first-child {
-  margin-top: 0 ;
-  padding-top: 0 ;
-}
-
-.jcc-header-group > :last-child {
-  margin-bottom: 0 ;
-  padding-bottom: 0 ;
-}
-
 .jcc-header-group__brow {
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.99rem;
@@ -20684,10 +20674,6 @@ nav.jcc-primary-nav {
   padding-bottom: 4rem ;
 }
 
-.jcc-switchboard .jcc-header-group {
-  padding-bottom: 2rem ;
-}
-
 .jcc-switchboard .jcc-header-group__title {
   padding-bottom: 1rem ;
 }
@@ -21616,10 +21602,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   padding-bottom: 1rem ;
 }
 
-.jcc-text-section .jcc-header-group {
-  padding-bottom: 2rem ;
-}
-
 .jcc-text-section__container {
   margin-left: auto ;
   margin-right: auto ;
@@ -22356,7 +22338,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 }
 
 .jcc-timeline-section .jcc-header-group {
-  padding-bottom: 3rem ;
+  padding-bottom: 1rem ;
 }
 
 .jcc-timeline-section--has-background-color--light,
@@ -22729,8 +22711,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   color: #0b4778 ;
   position: relative;
   padding-bottom: 0.8em;
-  font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
-  font-size: 1.74rem;
   text-align: center;
 }
 
@@ -22750,8 +22730,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 }
 
 .jcc-wayfinder-section .jcc-lead {
-  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-size: 1.12rem;
   text-align: left;
 }
 
@@ -34561,14 +34539,6 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-timeline-section__container {
     padding-left: 2rem ;
     padding-right: 2rem ;
-  }
-  .jcc-wayfinder-section .jcc-header-group__title {
-    font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
-    font-size: 2.49rem;
-  }
-  .jcc-wayfinder-section .jcc-lead {
-    font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    font-size: 1.49rem;
   }
   .jcc-wayfinder-section__content {
     margin-bottom: 2rem ;
