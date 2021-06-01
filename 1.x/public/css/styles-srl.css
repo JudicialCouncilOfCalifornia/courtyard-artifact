@@ -13408,12 +13408,12 @@ a.usa-link:visited,
 }
 
 .usa-alert--error .jcc-alert__body {
-  background-image: url("../images/graphics/error-warning.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../images/graphics/error.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
   padding-left: 3rem ;
 }
 
 .usa-alert--warning .jcc-alert__body {
-  background-image: url("../images/graphics/warning-warning.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../images/graphics/warning-warm.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
   padding-left: 3rem ;
 }
 
@@ -13423,7 +13423,7 @@ a.usa-link:visited,
 }
 
 .usa-alert--info .jcc-alert__body {
-  background-image: url("../images/info.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../images/graphics/info.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
   padding-left: 3rem ;
 }
 
