@@ -12225,6 +12225,35 @@ input[type="search"] {
   fill: #fff;
 }
 
+.jcc-hero--has-background-color--dark .usa-button, .jcc-hero--has-background-image .usa-button {
+  color: #005ea2 ;
+  background-color: white !important;
+}
+
+.jcc-hero--has-background-color--dark .usa-button:hover, .jcc-hero--has-background-image .usa-button:hover, .jcc-hero--has-background-color--dark .usa-button.usa-button--hover, .jcc-hero--has-background-image .usa-button.usa-button--hover {
+  color: #1b1b1b ;
+  background-color: #ffbe2e !important;
+}
+
+.jcc-hero--has-background-color--dark .usa-button:active, .jcc-hero--has-background-image .usa-button:active, .jcc-hero--has-background-color--dark .usa-button.usa-button--active, .jcc-hero--has-background-image .usa-button.usa-button--active {
+  color: #1b1b1b ;
+  background-color: #c2850c !important;
+}
+
+.jcc-hero--has-background-color--dark .usa-button:visited, .jcc-hero--has-background-image .usa-button:visited, .jcc-hero--has-background-color--dark .usa-button:focus, .jcc-hero--has-background-image .usa-button:focus {
+  color: #1b1b1b ;
+}
+
+.jcc-hero--has-background-color--dark .usa-button.usa-button--unstyled, .jcc-hero--has-background-image .usa-button.usa-button--unstyled {
+  background-color: transparent !important;
+  color: white ;
+}
+
+.jcc-hero--has-background-color--dark .usa-button.usa-button--unstyled:hover, .jcc-hero--has-background-image .usa-button.usa-button--unstyled:hover {
+  background-color: transparent !important;
+  color: #c9c9c9 ;
+}
+
 .jcc-background--dark {
   background-color: #005ea2 ;
   color: white ;
