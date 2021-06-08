@@ -14970,6 +14970,10 @@ a.usa-link:visited,
   padding-top: 1rem ;
 }
 
+.jcc-card--icon .usa-card__body {
+  padding-top: 0  !important;
+}
+
 .jcc-card--icon .usa-card__header,
 .jcc-card--icon .usa-card__body,
 .jcc-card--icon .usa-card__footer {
@@ -15401,6 +15405,14 @@ a.usa-link:visited,
   max-width: 87.5rem ;
   padding-left: 1rem ;
   padding-right: 1rem ;
+}
+
+.jcc-hero__container ul li {
+  margin-bottom: 1.5rem ;
+}
+
+.jcc-hero__container .jcc-hero__column-right p {
+  max-width: 300px;
 }
 
 .jcc-hero__content {
