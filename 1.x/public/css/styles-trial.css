@@ -13980,6 +13980,15 @@ h4,
 .jcc-wayfinder-section__content h4,
 .cke_editable h4,
 .cke_panel_block[title="Paragraph Format"] h4,
+.jcc-option__title,
+.jcc-option h3,
+.jcc-option h4,
+.jcc-option h5,
+.jcc-option h6,
+.jcc-step__excerpt .jcc-option h3,
+.jcc-step__excerpt .jcc-option h4,
+.jcc-step__excerpt .jcc-option h5,
+.jcc-step__excerpt .jcc-option h6,
 h5,
 .heading-h5,
 .usa-prose h5,
@@ -14131,7 +14140,16 @@ h4,
 .jcc-text-section__column-right h4,
 .jcc-wayfinder-section__content h4,
 .cke_editable h4,
-.cke_panel_block[title="Paragraph Format"] h4 {
+.cke_panel_block[title="Paragraph Format"] h4,
+.jcc-option__title,
+.jcc-option h3,
+.jcc-option h4,
+.jcc-option h5,
+.jcc-option h6,
+.jcc-step__excerpt .jcc-option h3,
+.jcc-step__excerpt .jcc-option h4,
+.jcc-step__excerpt .jcc-option h5,
+.jcc-step__excerpt .jcc-option h6 {
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.37rem;
 }
@@ -16000,6 +16018,17 @@ a.usa-link:visited,
   color: #162e51 ;
 }
 
+.jcc-option__title, .jcc-option h3,
+.jcc-option h4,
+.jcc-option h5,
+.jcc-option h6, .jcc-step__excerpt .jcc-option h3,
+.jcc-step__excerpt .jcc-option h4,
+.jcc-step__excerpt .jcc-option h5,
+.jcc-step__excerpt .jcc-option h6 {
+  line-height: 1.2 ;
+  margin-bottom: 0.5rem ;
+}
+
 .jcc-option {
   border-radius: 0.5rem ;
   padding: 1.5rem ;
@@ -16015,10 +16044,6 @@ a.usa-link:visited,
   width: 3rem ;
   height: 0.25rem ;
   margin-bottom: 0.5rem ;
-}
-
-.jcc-option h6 {
-  margin-bottom: 2px ;
 }
 
 .jcc-postcard {
@@ -34164,7 +34189,16 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-text-section__column-right h4,
   .jcc-wayfinder-section__content h4,
   .cke_editable h4,
-  .cke_panel_block[title="Paragraph Format"] h4 {
+  .cke_panel_block[title="Paragraph Format"] h4,
+  .jcc-option__title,
+  .jcc-option h3,
+  .jcc-option h4,
+  .jcc-option h5,
+  .jcc-option h6,
+  .jcc-step__excerpt .jcc-option h3,
+  .jcc-step__excerpt .jcc-option h4,
+  .jcc-step__excerpt .jcc-option h5,
+  .jcc-step__excerpt .jcc-option h6 {
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.37rem;
   }
@@ -36417,7 +36451,16 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-text-section__column-right h4,
   .jcc-wayfinder-section__content h4,
   .cke_editable h4,
-  .cke_panel_block[title="Paragraph Format"] h4 {
+  .cke_panel_block[title="Paragraph Format"] h4,
+  .jcc-option__title,
+  .jcc-option h3,
+  .jcc-option h4,
+  .jcc-option h5,
+  .jcc-option h6,
+  .jcc-step__excerpt .jcc-option h3,
+  .jcc-step__excerpt .jcc-option h4,
+  .jcc-step__excerpt .jcc-option h5,
+  .jcc-step__excerpt .jcc-option h6 {
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.24rem;
   }
