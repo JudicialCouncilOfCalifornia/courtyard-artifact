@@ -12706,6 +12706,10 @@ h4,
 .jcc-step__excerpt .jcc-option h4,
 .jcc-step__excerpt .jcc-option h5,
 .jcc-step__excerpt .jcc-option h6,
+.cke_editable .jcc-option h3,
+.cke_editable .jcc-option h4,
+.cke_editable .jcc-option h5,
+.cke_editable .jcc-option h6,
 h5,
 .heading-h5,
 .usa-prose h5,
@@ -12866,7 +12870,11 @@ h4,
 .jcc-step__excerpt .jcc-option h3,
 .jcc-step__excerpt .jcc-option h4,
 .jcc-step__excerpt .jcc-option h5,
-.jcc-step__excerpt .jcc-option h6 {
+.jcc-step__excerpt .jcc-option h6,
+.cke_editable .jcc-option h3,
+.cke_editable .jcc-option h4,
+.cke_editable .jcc-option h5,
+.cke_editable .jcc-option h6 {
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.37rem;
 }
@@ -14721,9 +14729,13 @@ a.usa-link:visited,
 .jcc-option h6, .jcc-step__excerpt .jcc-option h3,
 .jcc-step__excerpt .jcc-option h4,
 .jcc-step__excerpt .jcc-option h5,
-.jcc-step__excerpt .jcc-option h6 {
+.jcc-step__excerpt .jcc-option h6, .cke_editable .jcc-option h3,
+.cke_editable .jcc-option h4,
+.cke_editable .jcc-option h5,
+.cke_editable .jcc-option h6 {
   line-height: 1.2 ;
   margin-bottom: 0.5rem ;
+  color: #2e2e2e  !important;
 }
 
 .jcc-option {
@@ -32897,7 +32909,11 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-step__excerpt .jcc-option h3,
   .jcc-step__excerpt .jcc-option h4,
   .jcc-step__excerpt .jcc-option h5,
-  .jcc-step__excerpt .jcc-option h6 {
+  .jcc-step__excerpt .jcc-option h6,
+  .cke_editable .jcc-option h3,
+  .cke_editable .jcc-option h4,
+  .cke_editable .jcc-option h5,
+  .cke_editable .jcc-option h6 {
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.37rem;
   }
@@ -35159,7 +35175,11 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-step__excerpt .jcc-option h3,
   .jcc-step__excerpt .jcc-option h4,
   .jcc-step__excerpt .jcc-option h5,
-  .jcc-step__excerpt .jcc-option h6 {
+  .jcc-step__excerpt .jcc-option h6,
+  .cke_editable .jcc-option h3,
+  .cke_editable .jcc-option h4,
+  .cke_editable .jcc-option h5,
+  .cke_editable .jcc-option h6 {
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.24rem;
   }
