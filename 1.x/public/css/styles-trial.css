@@ -16063,7 +16063,30 @@ a.usa-link:visited,
 .cke_editable .jcc-option h6 {
   line-height: 1.2 ;
   margin-bottom: 0.5rem ;
+  padding-bottom: 0 ;
   color: #2e2e2e  !important;
+}
+
+.jcc-option__title:after, .jcc-option h2:after,
+.jcc-option h3:after,
+.jcc-option h4:after,
+.jcc-option h5:after,
+.jcc-option h6:after, .jcc-text-section__column-left .jcc-option h2:after,
+.jcc-text-section__column-left .jcc-option h3:after,
+.jcc-text-section__column-left .jcc-option h4:after,
+.jcc-text-section__column-left .jcc-option h5:after,
+.jcc-text-section__column-left .jcc-option h6:after,
+.jcc-step__excerpt .jcc-option h2:after,
+.jcc-step__excerpt .jcc-option h3:after,
+.jcc-step__excerpt .jcc-option h4:after,
+.jcc-step__excerpt .jcc-option h5:after,
+.jcc-step__excerpt .jcc-option h6:after,
+.cke_editable .jcc-option h2:after,
+.cke_editable .jcc-option h3:after,
+.cke_editable .jcc-option h4:after,
+.cke_editable .jcc-option h5:after,
+.cke_editable .jcc-option h6:after {
+  content: none;
 }
 
 .jcc-option {
