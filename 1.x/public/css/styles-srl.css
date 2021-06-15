@@ -16676,6 +16676,15 @@ a.usa-link:visited,
   background-image: url(../img/angle-arrow-up-white.svg);
 }
 
+.jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion ul .usa-nav__submenu-item a {
+  background-color: #ffbe2e ;
+  color: #1b1b1b ;
+}
+
+.jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion ul .usa-nav__submenu-item a:hover {
+  background-color: #c2850c ;
+}
+
 .jcc-header-base.jcc-header--inverted .usa-nav__primary .usa-current::after,
 .jcc-header-base.jcc-header--inverted .usa-nav__primary .usa-nav__link:hover::after {
   background-color: #73b3e7 ;
@@ -33525,12 +33534,12 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-header-base.jcc-header--inverted .usa-nav__primary button[aria-expanded="true"] {
     background-color: #005ea2 ;
   }
+  .jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion__button[aria-expanded="true"], .jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion__button:hover {
+    background-color: #ffbe2e ;
+    color: #1b1b1b ;
+  }
   .jcc-header-base.jcc-header--inverted .usa-nav__submenu.usa-megamenu {
     background-color: #005ea2 ;
-  }
-  .jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion__button[aria-expanded="true"] {
-    background-color: #005ea2 ;
-    color: white ;
   }
   .slicknav_menu {
     display: none ;
