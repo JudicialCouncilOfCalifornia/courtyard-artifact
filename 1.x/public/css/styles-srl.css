@@ -35777,6 +35777,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     top: 0.75rem ;
     right: 0.75rem ;
   }
+  .jcc-contact-group__container {
+    padding-bottom: 1rem ;
+  }
   .jcc-global-bar .jcc-inline-nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
