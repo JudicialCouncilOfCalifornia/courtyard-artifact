@@ -1,0 +1,48 @@
+{#
+/**
+ * Available variables:
+ * - cards - primary variable
+ *   - background: background color [default, alt]
+ *   - num_cols: the number of columns at desktop widths [1, 2-50-50, 2-75-25, 3, 4]
+ *   - heading: the heading (title & lead)
+ *   - items: array of card items
+ *   - link: link/button
+ *     - url: link url
+ *     - text: link text
+ *   - classes: array of classes to add to component
+ */
+#}
+
+{% set tag = cards.heading.title is empty ? 'h2' : 'h3' %}
+
+{% set classes = [
+  'jcc-cards',
+  'jcc-cards--' ~ cards.num_cols|default('3') ~ '-cols',
+]|merge(cards.classes|default([])) %}
+
+{% set content %}
+  <ul class="{{ classes|join(' ')|trim }}">
+    {% for item in cards.items %}
+      {% set item = item|merge({ title_tag: tag }) %}
+      <li class="jcc-cards__item">
+        {% include "@molecules/card/card.twig" with {
+          card: item
+        } %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if cards.link.url %}
+    <div class="jcc-cards__link">
+      <a href="{{ cards.link.url }}">{{ cards.link.text }}</a>
+    </div>
+  {% endif %}
+{% endset %}
+
+{% include "@molecules/section/section.twig" with {
+  section: {
+    heading: cards.heading,
+    content: content,
+    background: cards.background|default('default'),
+  }
+} %}
