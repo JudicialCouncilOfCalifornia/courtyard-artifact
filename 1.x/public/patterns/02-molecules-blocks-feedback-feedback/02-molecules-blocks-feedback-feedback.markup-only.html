@@ -1,18 +1,40 @@
 <div class="jcc-feedback" id="feedback-id" data-feedback="container" visible="visible">
+  <dialog class="jcc-feedback__dialog" role="dialog" data-feedback="dialog" tabindex="-1">
+    <div class="jcc-feedback__dialog-header">
+      <div class="jcc-feedback__dialog-close">
+        
 
-  <dialog role="dialog" data-feedback="dialog">
-          <form class='webform'>
-        Form Goes Here
-      </form>
-        <div class="jcc-feedback__dialog-footer">
-      <button tabindex="-1" aria-label="Close this dialog window" data-feedback="trigger-close">
-          <svg class="icon icon-close  " role="presentation" title="Close"><use class="" xlink:href="#i-close"></use></svg>      </button>
-    </div>
+<button id="feedback_close"  class="usa-button usa-button--unstyled" aria_label="Close this dialog window" tabindex=-1 data-feedback=trigger-close>
+        <svg class="icon icon-close  " role="presentation" title="Close"><use class="" xlink:href="#i-close"></use></svg>  </button>
+      </div>
+
+        <svg class="icon icon-like_dislike  " role="presentation" title="Helpful?"><use class="" xlink:href="#i-like_dislike"></use></svg>
+              <h2>Was this helpful?</h2>
+      
+              <div class="jcc-feedback__dialog-header--lead">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      
+              <div class="jcc-feedback__actions">
+                  
+
+<button   class="usa-button usa-button--outline usa-button--round">
+  Yes</button>
+                  
+
+<button   class="usa-button usa-button--outline usa-button--round">
+  No</button>
+                </div>
+          </div>
+    <div class="jcc-feedback__dialog-body">
+                        <form class='webform'>
+          <div class='margin-2'><label class='usa-label' for='input-type-text'>Any Additional Feedback?</label><input class='usa-input' id='input-type-text' name='input-type-text' type='text'><label class='usa-label' for='input-type-text'>Email (optional)</label><input class='usa-input' id='input-type-text' name='input-type-text' type='text'><button class='usa-button usa-button--primary' aria_label='Click me to execute action'>Submit</button></div>
+        </form>
+                    </div>
   </dialog>
 
   <div class="jcc-feedback__trigger-container">
-    <button class="usa-button usa-button--accent-warm" data-feedback="trigger">
-      Was this helpful?
-        <svg class="icon icon-expand_more  " role="presentation" title="Expand More"><use class="" xlink:href="#i-expand_more"></use></svg>    </button>
+    
+
+<button id="feedback_open"  class="usa-button usa-button--primary usa-button--icon-top" data-feedback=trigger>
+        <svg class="icon icon-like_dislike  " role="presentation" title="Helpful?"><use class="" xlink:href="#i-like_dislike"></use></svg>  Was this helpful?</button>
   </div>
 </div>
