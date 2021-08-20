@@ -21054,10 +21054,11 @@ nav.jcc-primary-nav {
 }
 
 .jcc-drawer {
-  position: sticky ;
-  padding-bottom: 2rem ;
-  padding-top: 2rem ;
-  bottom: 1.25rem;
+  position: fixed ;
+  bottom: 0 ;
+  width: 100% ;
+  padding-bottom: 0 ;
+  padding-top: 0 ;
   z-index: 99999;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
@@ -21099,6 +21100,10 @@ nav.jcc-primary-nav {
           flex: 0 1 auto ;
   width: auto ;
   max-width: 100% ;
+}
+
+.jcc-drawer__inner .jcc-feedback + block {
+  background-color: #005ea2 ;
 }
 
 .jcc-drawer__inner .jcc-feedback__trigger-container button {
@@ -35656,6 +35661,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-choice-section__container .jcc-form-group__options {
     max-width: 75%;
+  }
+  .jcc-drawer {
+    position: sticky ;
+    width: auto ;
+    padding-bottom: 2rem ;
+    padding-top: 2rem ;
+    bottom: 1.25rem;
   }
   .jcc-drawer__inner {
     -webkit-box-pack: end;
