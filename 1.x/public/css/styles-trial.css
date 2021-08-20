@@ -15693,8 +15693,13 @@ a.usa-link:visited,
 .jcc-feedback .jcc-feedback__trigger-container button {
   width: auto ;
   margin-right: 0 ;
+  background-color: #1a4480 ;
   color: #c3ebfa ;
   font-weight: normal ;
+}
+
+.jcc-feedback .jcc-feedback__trigger-container button:hover {
+  background-color: #112f4e ;
 }
 
 .jcc-feedback .jcc-feedback__trigger-container .icon-like_dislike {
@@ -21100,10 +21105,6 @@ nav.jcc-primary-nav {
           flex: 0 1 auto ;
   width: auto ;
   max-width: 100% ;
-}
-
-.jcc-drawer__inner .jcc-feedback + block {
-  background-color: #005ea2 ;
 }
 
 .jcc-drawer__inner .jcc-feedback__trigger-container button {
