@@ -15641,6 +15641,7 @@ a.usa-link:visited,
   width: 100% ;
   margin-top: 1rem ;
   text-transform: uppercase ;
+  max-width: 30rem;
 }
 
 .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form > div {
