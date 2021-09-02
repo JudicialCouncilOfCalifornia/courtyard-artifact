@@ -15620,7 +15620,7 @@ a.usa-link:visited,
   color: #ffbe2e ;
 }
 
-.jcc-feedback .jcc-feedback__dialog-header .icon-like_dislike, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .icon-like_dislike {
+.jcc-feedback .jcc-feedback__dialog-header .icon-like-dislike, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .icon-like-dislike {
   height: 2.5rem ;
   width: 2.5rem ;
   color: #c3ebfa ;
@@ -15711,9 +15711,9 @@ a.usa-link:visited,
   background-color: #112f4e ;
 }
 
-.jcc-feedback .jcc-feedback__trigger-container .icon-like_dislike {
+.jcc-feedback .jcc-feedback__trigger-container .icon-like-dislike {
   position: relative ;
-  top: 0.5rem ;
+  top: 0 ;
   height: 3rem ;
   width: 3rem ;
   margin-top: -0.5rem;
