@@ -12230,7 +12230,8 @@ input[type="search"] {
   font-style: italic ;
 }
 
-.usa-button--back {
+.usa-button--back,
+.usa-button--index {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex ;
@@ -12243,11 +12244,17 @@ input[type="search"] {
   padding-left: 0.25rem ;
 }
 
-.usa-button--back svg {
+.usa-button--back svg,
+.usa-button--index svg {
   position: relative ;
   right: -4px;
   width: 36px;
   height: 36px;
+}
+
+.usa-button--index svg {
+  padding: 10px 8px 8px 8px;
+  margin-right: 5px;
 }
 
 .scroll-button {
@@ -14463,6 +14470,31 @@ a.usa-link:visited,
   position: relative ;
 }
 
+.jcc-hero__content .jcc_hero__content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+}
+
+.jcc-hero__content .jcc_hero__content-top .jcc_hero__breadcrumbs-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto ;
+          flex: 0 1 auto ;
+  width: 58.33333% ;
+}
+
+.jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto ;
+          flex: 0 1 auto ;
+  width: 25% ;
+}
+
+.jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled {
+  text-decoration: none;
+  color: #07648d ;
+}
+
 .jcc-hero__brow {
   display: block ;
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
@@ -16429,6 +16461,11 @@ a.usa-link:visited,
 
 .jcc-breadcrumbs-nav.has-back-button .jcc-breadcrumb__item {
   font-size: 18px;
+}
+
+.jcc-breadcrumbs-nav .usa-button--unstyled {
+  text-decoration: none;
+  color: #07648d ;
 }
 
 .jcc-breadcrumbs {
@@ -29512,6 +29549,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-hero__content {
     padding-top: 3rem ;
   }
+  .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled {
+    font-size: 21px;
+  }
   .jcc-hero--has-background-image .jcc-hero__media {
     display: block ;
     position: absolute;
@@ -29678,6 +29718,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
             flex-grow: 1;
   }
   .jcc-breadcrumbs-nav.has-back-button .jcc-breadcrumb__item {
+    font-size: 21px;
+  }
+  .jcc-breadcrumbs-nav .usa-button--unstyled {
     font-size: 21px;
   }
   .jcc-pagination li.pager__item.jcc-pagination__full,
