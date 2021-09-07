@@ -15764,19 +15764,8 @@ a.usa-link:visited,
 }
 
 .jcc-hero__content .jcc_hero__content-top .jcc_hero__breadcrumbs-wrapper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto ;
-          flex: 0 1 auto ;
-  width: 58.33333% ;
   -ms-flex-item-align: center;
       align-self: center;
-}
-
-.jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto ;
-          flex: 0 1 auto ;
-  width: 25% ;
 }
 
 .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled {
@@ -30847,6 +30836,21 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     position: relative ;
     width: 30rem ;
     height: auto;
+  }
+  .jcc-hero__content .jcc_hero__content-top .jcc_hero__breadcrumbs-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto ;
+            flex: 0 1 auto ;
+    width: 25% ;
+  }
+  .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto ;
+            flex: 0 1 auto ;
+    width: 58.33333% ;
+  }
+  .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled {
+    float: right;
   }
   .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled {
     font-size: 21px;
