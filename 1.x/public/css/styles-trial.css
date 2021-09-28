@@ -13532,6 +13532,16 @@ input[type="search"] {
   height: 36px;
 }
 
+.usa-button--back {
+  margin-left: -15px;
+}
+
+.usa-button--back svg {
+  position: relative ;
+  right: auto;
+  left: 0px;
+}
+
 .usa-button--index svg {
   padding: 10px 8px 8px 8px;
   margin-right: 5px;
@@ -17822,9 +17832,6 @@ a.usa-link:visited,
 }
 
 .jcc-breadcrumbs-nav.has-back-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex ;
   -webkit-box-align: center ;
       -ms-flex-align: center ;
           align-items: center ;
@@ -30924,13 +30931,13 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto ;
             flex: 0 1 auto ;
-    width: 25% ;
+    width: 33.33333% ;
   }
   .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto ;
             flex: 0 1 auto ;
-    width: 75% ;
+    width: 66.66667% ;
   }
   .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled {
     float: right;
