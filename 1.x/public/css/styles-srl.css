@@ -14143,6 +14143,10 @@ a.usa-link:visited,
   padding-bottom: 2rem ;
 }
 
+.jcc-complete .jcc-complete__body a {
+  color: white ;
+}
+
 .jcc-complete .jcc-complete__left {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto ;
