@@ -18687,6 +18687,10 @@ a.usa-link:visited,
           flex-direction: column ;
 }
 
+.jcc-read-more span {
+  margin-right: 0.5rem ;
+}
+
 .jcc-read-more .icon {
   display: inline-block ;
   width: 1.25rem;
