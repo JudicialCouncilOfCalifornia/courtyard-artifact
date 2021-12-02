@@ -22136,6 +22136,16 @@ nav.jcc-primary-nav {
   padding-bottom: 0 ;
   padding-top: 0 ;
   z-index: 99999;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.jcc-drawer:not([visible]) {
+  opacity: 0;
+}
+
+.jcc-drawer[visible] {
+  opacity: 1;
 }
 
 .jcc-drawer__inner, .jcc-drawer__inner .block--single {
@@ -22183,16 +22193,6 @@ nav.jcc-primary-nav {
 
 .jcc-drawer__inner .block--single, .jcc-drawer__inner .block--single .block--single {
   width: 100% ;
-}
-
-.jcc-drawer__inner .jcc-feedback:not([visible]), .jcc-drawer__inner .block--single .jcc-feedback:not([visible]), .jcc-drawer__inner .jcc-chat:not([visible]), .jcc-drawer__inner .block--single .jcc-chat:not([visible]), .jcc-drawer__inner .block--single .jcc-chat:not([visible]), .jcc-drawer__inner .block--single .jcc-chat:not([visible]) {
-  opacity: 0;
-}
-
-.jcc-drawer__inner .jcc-feedback[visible], .jcc-drawer__inner .block--single .jcc-feedback[visible], .jcc-drawer__inner .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible] {
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  opacity: 1;
 }
 
 .jcc-drawer__inner .jcc-chat__trigger-container button, .jcc-drawer__inner .block--single .jcc-chat__trigger-container button {
