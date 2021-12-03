@@ -1,0 +1,132 @@
+{#
+/**
+ * Available variables:
+ * - card - primary variable
+ *   - style: general style of card [hover, cta, cta-color, borderless, media-left, media-full,
+ *        media-full-overlay, media-top, media-top-overlay]
+ *   - title: title of card
+ *   - title_tag: tag/size of card title
+ *   - brow: text in upper left
+ *   - icon: icon in brow
+ *   - body: main text content
+ *   - link: card link/button
+ *     - url: card link/button url
+ *     - text: card link/button text
+ *     - type: card link/button type (n/a or external or file) [ext, file]
+ *   - media: icon as embeded svg code
+ *     - src: image source file or URL for use as background image
+ *     - alt: image alt description
+ *   _ bgcolor: overlay color [none, blue, blue-dark, cyan, gray, green, magenta, mint, orange, red]
+ *   - classes: array of classes to add to component
+ */
+#}
+
+{% set attributes = card.attributes ?? create_attribute() %}
+
+{% set tag = 'div' %}
+{% set heading_tag = card.card_title_tag|default('h3') %}
+{% set unique_id = 'card-' ~ random() %}
+{% set style = card.style|default('cta') %}
+{% set icon_set = card.icon.set|default('fa') %}
+
+{% if (style == 'hover') or (card.is_clickable == TRUE) %}
+  {% if card.link.url %}
+    {% set attributes = attributes.setAttribute('href', card.link.url) %}
+    {% set attributes = attributes.setAttribute('aria-labelledby', unique_id) %}
+    {% set tag = 'a' %}
+  {% else %}
+    {% set style = 'cta' %}
+  {% endif %}
+{% endif %}
+
+{% set classes = [
+  'usa-card',
+  'usa-card--' ~ style,
+]|merge(card.classes|default([''])) %}
+
+<{{ tag }} {{ attributes.addClass(classes) }}>
+  <div class="usa-card__container">
+    <div class="usa-card__content">
+      <header class="usa-card__header">
+        {% if card.brow %}
+          <div class="usa-card__brow">
+            {% if 'cta-color' in style or 'media-full' in style or 'media-top' in style %}
+              <div class="usa-card__brow-color">{{ card.brow }}</div>
+            {% else %}
+              {{ card.brow }}
+            {% endif %}
+
+          {% if card.icon %}
+            <div class="usa-card__icon">
+              {% include "@atoms/icon/icon.twig" with {
+                icon: {
+                  name: card.icon.name,
+                  set: icon_set
+                }
+              } %}
+            </div>
+          {% endif %}
+
+          </div>
+        {% else %}
+          {% if card.icon %}
+            <div class="usa-card__brow">
+              <div class="usa-card__icon-no-brow">
+                {% include "@atoms/icon/icon.twig" with {
+                  icon: {
+                    name: card.icon.name,
+                    set: icon_set
+                  }
+                } %}
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+
+        <{{ heading_tag }} class="usa-card__heading{% if not card.title %} usa-sr-only{% endif %}" id="{{ unique_id }}">
+          {% if "borderless" in style and card.link.url and (card.is_clickable != TRUE) %}
+            <a href="{{ card.link.url }}">{{ card.title }}</a>
+          {% else %}
+            {% if card.title %}
+              {{ card.title }}
+            {% elseif card.brow %}
+              {{ card.brow }}
+            {% endif %}
+          {% endif %}
+        </{{ heading_tag }}>
+      </header>
+
+      {% if card.body %}
+        <div class="usa-card__body">
+          {{ card.body }}
+
+          {% if card.extra_content %}
+            {{ card.extra_content }}
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if ('cta' in style or 'media' in style) and card.link.url and (card.is_clickable != TRUE) %}
+        {% if card.link.text %}
+          <div class="usa-card__footer">
+            <a class="{{ card.link.type }}" href="{{ card.link.url }}">{{ card.link.text }}</a>
+          </div>
+        {% endif %}
+      {% endif %}
+    </div>
+
+    {% if card.media %}
+      <div class="usa-card__media">
+      {# check if an media item on the left exists as embeded into card.media rather than card.media.src
+         so that we do not break existing local theme usage #}
+      {% if not card.media.src %}
+        <span>{{ card.media }}</span>
+      {% else %}
+        <div class="jcc-card--overlay-color-{{ card.bgcolor|default('none') }}">
+          <img src="{{ card.media.src }}" alt="{{ card.media.alt }}"/>
+        </div>
+      {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</{{ tag }}>
