@@ -15518,10 +15518,6 @@ a.usa-link:visited,
   background-color: #f9f9f9 ;
 }
 
-.jcc-feedback[visible], .jcc-drawer__inner .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible] {
-  opacity: 1;
-}
-
 .jcc-feedback[open], .jcc-drawer__inner .jcc-chat[open], .jcc-drawer__inner .block--single .jcc-chat[open] {
   min-width: 0;
   max-width: 100%;
@@ -22181,6 +22177,20 @@ nav.jcc-primary-nav {
 
 .jcc-drawer__inner .block--single, .jcc-drawer__inner .block--single .block--single {
   width: 100% ;
+}
+
+.jcc-drawer__inner .jcc-feedback:not([visible]), .jcc-drawer__inner .block--single .jcc-feedback:not([visible]), .jcc-drawer__inner .jcc-chat:not([visible]), .jcc-drawer__inner .block--single .jcc-chat:not([visible]), .jcc-drawer__inner .block--single .jcc-chat:not([visible]), .jcc-drawer__inner .block--single .jcc-chat:not([visible]) {
+  opacity: 0;
+}
+
+.jcc-drawer__inner .jcc-feedback[visible], .jcc-drawer__inner .block--single .jcc-feedback[visible], .jcc-drawer__inner .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible] {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.jcc-drawer__inner .jcc-chat, .jcc-drawer__inner .block--single .jcc-chat {
+  opacity: 1 !important;
 }
 
 .jcc-drawer__inner .jcc-chat__trigger-container button, .jcc-drawer__inner .block--single .jcc-chat__trigger-container button {
