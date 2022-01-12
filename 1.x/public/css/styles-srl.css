@@ -20827,8 +20827,8 @@ nav.jcc-primary-nav {
   padding-bottom: 0 ;
   padding-top: 0 ;
   z-index: 99999;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
 }
 
 .jcc-drawer:not([visible]) {
@@ -20873,20 +20873,6 @@ nav.jcc-primary-nav {
 
 .jcc-drawer__inner .block--single, .jcc-drawer__inner .block--single .block--single {
   width: 100% ;
-}
-
-.jcc-drawer__inner .jcc-feedback:not([visible]), .jcc-drawer__inner .block--single .jcc-feedback:not([visible]), .jcc-drawer__inner .jcc-chat:not([visible]), .jcc-drawer__inner .block--single .jcc-chat:not([visible]), .jcc-drawer__inner .block--single .jcc-chat:not([visible]), .jcc-drawer__inner .block--single .jcc-chat:not([visible]) {
-  opacity: 0;
-}
-
-.jcc-drawer__inner .jcc-feedback[visible], .jcc-drawer__inner .block--single .jcc-feedback[visible], .jcc-drawer__inner .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible], .jcc-drawer__inner .block--single .jcc-chat[visible] {
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  opacity: 1;
-}
-
-.jcc-drawer__inner .jcc-chat, .jcc-drawer__inner .block--single .jcc-chat {
-  opacity: 1 !important;
 }
 
 .jcc-drawer__inner .jcc-chat__trigger-container button, .jcc-drawer__inner .block--single .jcc-chat__trigger-container button {
