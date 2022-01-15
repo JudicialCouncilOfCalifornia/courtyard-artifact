@@ -61,6 +61,7 @@ jobs:
           npm install
           npm run build
       - run: |
+          mkdir -p 2.x-dev/public 2.x-dev/source/_patterns
           rm -rf 2.x-dev/public/* 2.x-dev/source/_patterns/*
           cp -R courtyard/public/* 2.x-dev/public/
           cp -R courtyard/source/_patterns/* 2.x-dev/source/_patterns/
