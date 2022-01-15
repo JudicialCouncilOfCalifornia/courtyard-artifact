@@ -108,4 +108,4 @@ jobs:
           container_name: $web
           connection_string: ${{ secrets.ConnectionString }}
           extra_args: --destination 2.x-dev          
-            
+          sync: false  
