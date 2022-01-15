@@ -1,5 +1,7 @@
 name: build-artifact
-on: [ repository_dispatch, workflow_dispatch ]
+on: 
+  repository_dispatch:
+    types: [trigger-build]
 
 jobs:
   build:
