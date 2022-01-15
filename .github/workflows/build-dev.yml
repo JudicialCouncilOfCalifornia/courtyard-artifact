@@ -38,5 +38,4 @@ jobs:
           source_dir: 2.x-dev
           container_name: $web
           connection_string: ${{ secrets.ConnectionString }}
-          extra_args: --destination 2.xdev          
-          sync: false  
+          extra_args: --destination 2.x-dev
