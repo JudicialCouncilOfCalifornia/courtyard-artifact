@@ -21811,6 +21811,10 @@ nav.jcc-primary-nav {
   background-image: url("../images/graphics/text.svg");
 }
 
+.jcc-share #jcc-share__trigger--text {
+  display: inline-block ;
+}
+
 .jcc-steps-section {
   padding-top: 3rem ;
   padding-bottom: 3rem ;
@@ -35640,6 +35644,9 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   .jcc-steps-section__container .jcc-option {
     padding-left: 0 ;
   }
+  .jcc-share #jcc-share__trigger--text {
+    display: none ;
+  }
   .jcc-steps .jcc-step__item::before {
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 2.49rem;
@@ -37572,6 +37579,12 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .jcc-modal--overlay {
     position: absolute ;
+  }
+}
+
+@media only screen and (max-device-width: 1280px) and (orientation: landscape) {
+  .jcc-share #jcc-share__trigger--text {
+    display: inline-block ;
   }
 }
 
