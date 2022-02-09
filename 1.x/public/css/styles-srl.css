@@ -16605,8 +16605,6 @@ a.usa-link:visited,
   width: 2.5rem ;
   height: 2.5rem ;
   background-image: url(../images/graphics/switchboard-icon.svg);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 .jcc-tile--embellishment--arrow-left {
@@ -16638,12 +16636,23 @@ a.usa-link:visited,
 }
 
 .jcc-tile--hover:hover {
+  background-color: #eff6fb ;
   color: #2e2e2e ;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
   cursor: pointer;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.jcc-tile--hover:hover h3 {
+  text-decoration: underline ;
+  text-decoration-thickness: 2px;
+}
+
+.jcc-tile--hover:hover.jcc-tile--embellishment--icon-bottom-left .jcc-tile__embellishment {
+  right: 1rem ;
+  left: unset;
 }
 
 .jcc-tile__brow {
