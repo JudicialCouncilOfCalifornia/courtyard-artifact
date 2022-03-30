@@ -6890,7 +6890,7 @@ input[type="search"] {
   border-bottom-left-radius: 0.5rem !important;
 }
 
-.radius-pill {
+.radius-pill, .jcc-tags--pill .jcc-tag {
   border-radius: 99rem !important;
 }
 
@@ -13540,6 +13540,7 @@ input[type="search"] {
 .usa-button--outline, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .button, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .button {
   color: #1b1b1b ;
   font-weight: normal ;
+  color: #005ea2 ;
   background-color: transparent;
   -webkit-box-shadow: 0 0 0 2px #005ea2 inset;
           box-shadow: 0 0 0 2px #005ea2 inset;
@@ -17354,18 +17355,75 @@ a.usa-link:visited,
   font-size: 1.24rem;
 }
 
-.jcc-list-group li {
+.jcc-list-group .jcc-list-group__item {
   margin-bottom: 1rem  !important;
 }
 
-.jcc-list-group li p:first-of-type {
+.jcc-list-group .jcc-list-group__item p:first-of-type {
   margin-bottom: 0 ;
   padding-bottom: 1px ;
 }
 
-.jcc-list-group li strong {
+.jcc-list-group .jcc-list-group__item strong {
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.12rem;
+}
+
+.jcc-list-group--rich {
+  padding-left: 0 ;
+}
+
+.jcc-list-group--rich .jcc-list-group__item {
+  margin-left: auto ;
+  margin-right: auto ;
+  max-width: 64rem ;
+  padding-left: 1rem ;
+  padding-right: 1rem ;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  padding-bottom: 1rem ;
+}
+
+.jcc-list-group--rich .jcc-list-group__item:not(:last-child) {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #e6e6e6 ;
+}
+
+.jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  -ms-flex-wrap: wrap ;
+      flex-wrap: wrap ;
+}
+
+.jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto ;
+          flex: 0 1 auto ;
+  width: 100% ;
+}
+
+.jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--content__full {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto ;
+          flex: 0 1 auto ;
+  width: 100% ;
+}
+
+.jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions {
+  position: relative ;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto ;
+          flex: 0 1 auto ;
+  width: 100% ;
+}
+
+.jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .usa-button, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback__action-button--webform, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback__action-button--webform, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .ui-button, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .ui-button, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .button, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .button, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .button, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .button {
+  margin-bottom: 0.5rem ;
 }
 
 .jcc-location--full .jcc-location__content-first {
@@ -17861,6 +17919,37 @@ a.usa-link:visited,
 
 .jcc-step__excerpt {
   margin-bottom: 1rem ;
+}
+
+.jcc-tags {
+  margin-top: 0.5rem ;
+  padding-left: 0  !important;
+}
+
+.jcc-tags__item, .jcc-tags__label {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  display: inline-block ;
+  margin-bottom: 0  !important;
+}
+
+.jcc-tags__label {
+  margin-right: 0.3rem;
+}
+
+.jcc-tags__label .icon {
+  position: relative ;
+  top: 0.6rem;
+}
+
+.jcc-tags--pill .jcc-tag {
+  background-color: #fef0c8 ;
+  color: #1b1b1b ;
+  margin-right: 0.3rem;
+  font-size: 0.9rem;
+  text-transform: unset;
 }
 
 .jcc-tile {
@@ -31807,6 +31896,29 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     max-width: 100% ;
     min-width: 1px;
   }
+  .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto ;
+            flex: 0 1 auto ;
+    width: 58.33333% ;
+    padding-right: 2rem ;
+  }
+  .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto ;
+            flex: 0 1 auto ;
+    width: 41.66667% ;
+  }
+  .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-list-group__item--actions_container {
+    position: absolute ;
+    margin: 0 ;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .usa-button, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback__action-button--webform, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback__action-button--webform, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .ui-button, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .ui-button, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .button, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .button, .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .button, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions .button {
+    margin-bottom: 0 ;
+  }
   .jcc-postcard__tag {
     display: block ;
   }
@@ -35976,6 +36088,22 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 1.24rem;
   }
+  .jcc-list-group--rich .jcc-list-group__item {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+  }
+  .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto ;
+            flex: 0 1 auto ;
+    width: 66.66667% ;
+  }
+  .jcc-list-group--rich .jcc-list-group__item .jcc-list-group__container .jcc-list-group__item--actions {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto ;
+            flex: 0 1 auto ;
+    width: 33.33333% ;
+  }
   .jcc-location {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -38160,7 +38288,7 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
     font-size: 1.12rem;
   }
-  .jcc-list-group li strong {
+  .jcc-list-group .jcc-list-group__item strong {
     font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 0.99rem;
   }
