@@ -16123,6 +16123,15 @@ a.usa-link:visited,
   margin-bottom: 0.5rem ;
 }
 
+.jcc-list-group--content_block_cta .jcc-list-group__item--content a {
+  color: #1b1b1b ;
+  text-decoration: none ;
+}
+
+.jcc-list-group--content_block_cta .jcc-list-group__item--content a:hover .jcc-list-group__item--title {
+  text-decoration: underline ;
+}
+
 .jcc-location--full .jcc-location__content-first {
   max-width: 30rem ;
   margin-left: auto ;
