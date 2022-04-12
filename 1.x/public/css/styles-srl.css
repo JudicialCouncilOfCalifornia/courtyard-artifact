@@ -18189,6 +18189,10 @@ a.usa-link:visited,
   height: 0;
 }
 
+.jcc-header-base .jcc-nav-secondary__group .icon-search {
+  color: #005ea2 ;
+}
+
 .jcc-header-base .jcc-nav-secondary__menu {
   background-color: #1f303e ;
 }
@@ -18222,13 +18226,18 @@ a.usa-link:visited,
   background-image: url(../img/angle-arrow-up-white.svg);
 }
 
+.jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion__button[aria-expanded="true"] {
+  background-color: #0b4778 ;
+  color: white ;
+}
+
 .jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion ul .usa-nav__submenu-item a {
-  background-color: #ffbe2e ;
-  color: #1b1b1b ;
+  background-color: #0b4778 ;
+  color: white ;
 }
 
 .jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion ul .usa-nav__submenu-item a:hover {
-  background-color: #c2850c ;
+  background-color: #2378c3 ;
 }
 
 .jcc-header-base.jcc-header--inverted .usa-nav__primary .usa-current::after,
@@ -18241,8 +18250,14 @@ a.usa-link:visited,
   background-color: #0b4778 ;
 }
 
+.jcc-header-base.jcc-header--inverted .usa-nav__submenu .usa-nav__submenu-item .usa-nav__submenu-list a {
+  border-left-width: 1rem;
+  border-left-color: #112f4e ;
+  border-left-style: solid;
+}
+
 .jcc-header-base.jcc-header--inverted .usa-nav__submenu .usa-nav__submenu-item a {
-  background-color: #005ea2 ;
+  background-color: #0b4778 ;
 }
 
 .jcc-header-base.jcc-header--inverted .usa-nav__submenu.usa-megamenu:before, .jcc-header-base.jcc-header--inverted .usa-nav__submenu.usa-megamenu:after {
@@ -35123,11 +35138,18 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
     color: white ;
   }
   .jcc-header-base.jcc-header--inverted .usa-nav__primary button[aria-expanded="true"] {
-    background-color: #005ea2 ;
+    background-color: #0b4778 ;
   }
-  .jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion__button[aria-expanded="true"], .jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion__button:hover {
-    background-color: #ffbe2e ;
-    color: #1b1b1b ;
+  .jcc-header-base.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion__button:hover {
+    background-color: #2378c3 ;
+    color: white ;
+  }
+  .jcc-header-base.jcc-header--inverted .usa-nav__submenu .usa-nav__submenu-item .usa-nav__submenu_label {
+    background-color: #112f4e ;
+  }
+  .jcc-header-base.jcc-header--inverted .usa-nav__submenu .usa-nav__submenu-item a:hover {
+    background-color: #2378c3 ;
+    color: white ;
   }
   .jcc-header-base.jcc-header--inverted .usa-nav__submenu.usa-megamenu {
     background-color: #005ea2 ;
@@ -36498,6 +36520,10 @@ div[class^="jcc-"] + .jcc-text-section-aside-secondary__container .jcc-text-sect
   }
   .jcc-header__container--topbar.translate-disabled form .jcc-fieldset-search {
     float: right;
+  }
+  .jcc-header-base.jcc-header--inverted .usa-nav__primary button[aria-expanded="true"]:hover {
+    background-color: #2378c3 ;
+    color: white ;
   }
   .jcc-primary-nav__container {
     padding-left: 2rem ;
