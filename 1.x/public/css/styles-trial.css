@@ -21002,6 +21002,12 @@ nav.jcc-primary-nav {
   height: 0;
 }
 
+.jcc-header-base .jcc-nav-secondary__group .usa-nav__submenu .usa-nav__submenu-global-links a {
+  border-left-width: 1rem;
+  border-left-color: #1a4480 ;
+  border-left-style: solid;
+}
+
 .jcc-header-base.usa-header {
   z-index: unset;
 }
