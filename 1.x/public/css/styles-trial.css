@@ -18887,7 +18887,7 @@ a.usa-link:visited,
 }
 
 .jcc-read-more__trigger {
-  display: inline ;
+  display: inherit;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: subpixel-antialiased;
   color: #0d7ea2;
