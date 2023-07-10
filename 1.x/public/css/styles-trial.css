@@ -18307,6 +18307,10 @@ a.usa-link:visited,
   margin-bottom: 1rem ;
 }
 
+.usa-legend.jcc-form-group__title {
+  font-size: 1.06rem;
+}
+
 .jcc-contact-group label {
   margin: 0 ;
   margin-bottom: 0.5rem ;
