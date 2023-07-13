@@ -18307,8 +18307,13 @@ a.usa-link:visited,
   margin-bottom: 1rem ;
 }
 
-.usa-legend.jcc-form-group__title {
+.webform-submission-form .jcc-dropdown__Label {
   font-size: 1.06rem;
+}
+
+.webform-submission-form .usa-legend.jcc-form-group__title {
+  font-size: 1.06rem;
+  margin-bottom: 0 ;
 }
 
 .jcc-contact-group label {
