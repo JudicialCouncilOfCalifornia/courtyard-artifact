@@ -17005,12 +17005,15 @@ a.usa-link:visited,
 }
 
 .webform-submission-form .jcc-dropdown__Label {
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.06rem;
+  padding-top: 0 ;
+  padding-bottom: 0 ;
+  font-style: normal;
 }
 
 .webform-submission-form .usa-legend.jcc-form-group__title {
   font-size: 1.06rem;
-  margin-bottom: 0 ;
 }
 
 .jcc-contact-group label {
