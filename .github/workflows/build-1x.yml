@@ -43,7 +43,7 @@ jobs:
           git config user.name "Github Actions"
           git pull && git checkout master
           git add 1.x
-          git commit -m "Automated artifact build."
+          git commit -m "Automated artifact build for 1.x."
           git push origin master
       # Tag for release.
       - uses: actions/checkout@v2
