@@ -1,0 +1,68 @@
+name: build-artifact-1x
+on:
+  workflow_dispatch:
+  
+  repository_dispatch:
+    types: [trigger-build-1x]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Read .nvmrc
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+        id: nvm
+      - name: Use Node.js (.nvmrc)
+        uses: actions/setup-node@v2
+        with:
+          node-version: "12.22.7"
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.3'
+      # Build the 1.x artifact.
+      - uses: actions/checkout@v2
+        with:
+          repository: JudicialCouncilOfCalifornia/courtyard
+          path: courtyard
+          ref: 1.x
+      - run: |
+          cd courtyard
+          composer install
+          npm install
+          npm run build
+      - run: |
+          mkdir -p 1.x/public 1.x/source/_patterns 1.x/source/uswds
+          cp -R courtyard/public/* 1.x/public/.
+          cp -R courtyard/source/_patterns/* 1.x/source/_patterns/.
+          cp -R courtyard/node_modules/uswds/src/stylesheets/* 1.x/source/uswds/.
+          rm -rf courtyard  
+      # Commit changes.
+      - run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "Github Actions"
+          git pull && git checkout master
+          git add 1.x
+          git commit -m "Automated artifact build."
+          git push origin master
+      # Tag for release.
+      - uses: actions/checkout@v2
+      - run: |
+          git fetch --tags
+          git pull origin master
+          VERSION=`git tag -l --sort=v:refname | tail -1`
+          VERSION_BITS=(${VERSION//./ })
+          MAJOR=${VERSION_BITS[0]}
+          MINOR=${VERSION_BITS[1]}
+          PATCH=${VERSION_BITS[2]}
+          PATCH=$((PATCH+1))
+          NEW_TAG="$MAJOR.$MINOR.$PATCH"
+          git tag -a $NEW_TAG -m "Autotag $NEW_TAG created by github-actions for 1.x"
+          git push origin master --tags
+      # Push changes to azure demo.
+      - uses: bacongobbler/azure-blob-storage-upload@v1.2.0
+        with:
+          source_dir: 1.x
+          container_name: $web
+          connection_string: ${{ secrets.ConnectionString }}
+          extra_args: --destination 1.x
