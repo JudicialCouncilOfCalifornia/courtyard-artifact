@@ -1,5 +1,7 @@
 name: build-artifact
-on: 
+on:
+  workflow_dispatch:
+  
   repository_dispatch:
     types: [trigger-build]
 
@@ -59,7 +61,7 @@ jobs:
           git add 2.x
           git add 1.x
           git commit -m "Automated artifact build."
-          git push origin master
+          git push -f origin master
       # Tag for release.
       - uses: actions/checkout@v2
       - run: |
