@@ -57,11 +57,11 @@ jobs:
       - run: |
           git config user.email "github-actions@github.com"
           git config user.name "Github Actions"
-          git fetch && git checkout master
+          git pull && git checkout master
           git add 2.x
           git add 1.x
           git commit -m "Automated artifact build."
-          git push -f origin master
+          git push origin master
       # Tag for release.
       - uses: actions/checkout@v2
       - run: |
