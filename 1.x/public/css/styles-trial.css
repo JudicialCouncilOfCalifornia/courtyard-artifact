@@ -21105,6 +21105,30 @@ nav.jcc-primary-nav {
   background-color: #1a4480 ;
 }
 
+.usa-header--basic.jcc-header--inverted #extended-nav-section-two {
+  width: 16rem;
+}
+
+.usa-header--basic.jcc-header--inverted #extended-nav-section-two .usa-nav__submenu-item a,
+.usa-header--basic.jcc-header--inverted #extended-nav-section-two .usa-nav__submenu-item .usa-nav__submenu_label {
+  background-color: #1a4480 ;
+}
+
+.usa-header--basic.jcc-header--inverted #extended-nav-section-two .usa-nav__submenu-item a.usa-current,
+.usa-header--basic.jcc-header--inverted #extended-nav-section-two .usa-nav__submenu-item a:hover {
+  background-color: #2378c3 ;
+}
+
+.usa-header--basic.jcc-header--inverted #extended-nav-section-two .usa-nav__submenu-item .usa-nav__submenu-list a {
+  border-left-width: 1rem;
+  border-left-color: #005ea2 ;
+  border-left-style: solid;
+}
+
+.usa-header--basic.jcc-header--inverted .jcc-nav-secondary__group .usa-accordion__button[aria-expanded="true"] {
+  background-color: #1a4480 ;
+}
+
 .usa-js-mobile-nav--active .jcc-header-base .usa-nav__close {
   display: block ;
 }
