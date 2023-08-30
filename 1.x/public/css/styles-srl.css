@@ -22065,15 +22065,22 @@ nav.jcc-primary-nav {
   width: 4.1rem;
   background-repeat: no-repeat;
   background-position: top center;
+  padding: 50px 0 0 10px;
+  font-color: #2e2e2e;
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.06rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.06rem;
+  text-align: center;
+  color: buttonText;
 }
 
 .jcc-share__print {
   background-image: url("../images/graphics/print.svg");
+  margin-left: 10px;
 }
 
 .jcc-share__email {
-  position: relative;
-  top: 2px;
   background-image: url("../images/graphics/email.svg");
 }
 
