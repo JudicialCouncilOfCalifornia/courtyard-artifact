@@ -18117,6 +18117,11 @@ a.usa-link:visited,
   margin-top: 0.5rem ;
 }
 
+.srl-onramp .jcc-share__container {
+  position: relative ;
+  width: 100% ;
+}
+
 .jcc-header-base .usa-nav__primary a {
   padding: 1.25rem ;
 }
