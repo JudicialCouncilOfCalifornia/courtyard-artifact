@@ -23632,8 +23632,8 @@ html[dir="rtl"] .jcc-steps-section .jcc-steps-section--has-background-color--dar
 .jcc-steps-section--has-background-color--dark--primary .jcc-read-more__content {
   background-color: #005ea2 ;
   color: white ;
-  border-left-color: white ;
-  border-left-style: solid;
+  border-right-color: white ;
+  border-right-style: solid;
 }
 
 .jcc-steps-section--has-background-color--dark .jcc-read-more__content .jcc-header-group__title,
@@ -23860,6 +23860,16 @@ html[dir="rtl"] .jcc-steps-section .jcc-header-group {
 
 html[dir="rtl"] .jcc-steps-section .jcc-header-group__title:after {
   right: 0;
+}
+
+html[dir="rtl"] .jcc-read-more__content {
+  border-right-style: solid;
+  border-right-width: 0.25rem;
+  border-left-style: none;
+  border-left-color: white ;
+  border-left-style: solid;
+  border-right-color: #008480 ;
+  border-right-style: solid;
 }
 
 .jcc-switchboard {
