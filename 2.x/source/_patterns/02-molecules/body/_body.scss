@@ -19,7 +19,31 @@ $_config: map-merge-by-keys($_config_schemes, base, $_config_schemes, $scheme);
     @include grid-row();
     @include grid-gap(4);
   }
+ 
 }
+
+@media(max-width:30em){
+  .jcc-body__content.jcc-location-page{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+  .jcc-body__content.jcc-location-page .jcc-location__map{
+    display:none;
+  }
+  .jcc-section-heading__title--partial::before,.jcc-body__aside-bar::before{
+    height:0px !important;
+  }
+  .jcc-section-heading__title--partial::after{
+    height:0px !important;
+  }
+  aside.jcc-body__aside.jcc-location-page .jcc-body__aside-bar {
+    display:none;
+  }
+  .jcc-location-page .jcc-body__main + .jcc-body__aside {
+    margin-top: 0rem !important;
+}
+}
+
 
 .jcc-body__main {
   @include at-media(desktop) {
