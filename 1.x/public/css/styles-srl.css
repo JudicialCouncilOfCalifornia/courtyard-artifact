@@ -37879,6 +37879,10 @@ html[dir="rtl"] .jcc-steps-section .jcc-timeline-section--has-background-color--
   .jcc-header-base .usa-nav {
     width: 100% ;
     padding: 0 ;
+    -ms-flex-item-align: start;
+        align-self: start;
+    max-height: 100%;
+    overflow: scroll;
   }
   .jcc-header-base .usa-nav.is-visible {
     margin-top: 6.5rem;
