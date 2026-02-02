@@ -18165,7 +18165,7 @@ html[dir="rtl"] .jcc-steps-section .jcc-postcard--has-background-color--dark--se
 
 .jcc-timeline-dual-item__bottom::after {
   position: absolute ;
-  background-color: #e5a000 ;
+  background-color: #c05600 ;
   right: 0;
   content: "";
 }
@@ -18206,7 +18206,7 @@ html[dir="rtl"] .jcc-steps-section .jcc-postcard--has-background-color--dark--se
 }
 
 .jcc-timeline-dual-item__bottom .jcc-timeline-dual-item__number-inner {
-  background-color: #e5a000 ;
+  background-color: #c05600 ;
 }
 
 .jcc-timeline-dual-item__excerpt {
@@ -18241,7 +18241,7 @@ html[dir="rtl"] .jcc-steps-section .jcc-postcard--has-background-color--dark--se
 }
 
 .jcc-timeline-dual-item__bottom .jcc-timeline-dual-item__time {
-  background-color: #e5a000 ;
+  background-color: #c05600 ;
 }
 
 .jcc-timeline-dual-item__time::after {
@@ -25364,7 +25364,7 @@ html[dir="rtl"] .jcc-steps-section .jcc-text-section--has-background-color--dark
 }
 
 .jcc-timeline-dual__bottom-title {
-  color: #e5a000 ;
+  color: #c05600 ;
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.12rem;
   line-height: 1.3;
@@ -39359,7 +39359,7 @@ html[dir="rtl"] .jcc-steps-section .jcc-timeline-section--has-background-color--
     margin-left: 20px;
   }
   .jcc-timeline-dual-item__bottom .jcc-timeline-dual-item__number-inner::before {
-    background-color: #e5a000 ;
+    background-color: #c05600 ;
     right: -24px;
   }
   .jcc-timeline-dual-item__bottom .jcc-timeline-dual-item__time {
