@@ -16812,7 +16812,7 @@ html[dir="rtl"] .jcc-steps-section .jcc-postcard--has-background-color--dark--se
 .jcc-tile__title {
   font-size: 1.37rem;
   line-height: 1.4 ;
-  color: #0b4778 ;
+  color: #005ea2 ;
   font-weight: normal ;
 }
 
@@ -24076,7 +24076,7 @@ html[dir="rtl"] .jcc-steps-section .jcc-text-section--has-background-color--dark
 
 .jcc-timeline-dual__bottom-title::after {
   position: absolute ;
-  background-color: #e5a000 ;
+  background-color: #c05600 ;
   right: 0;
   content: "";
 }
