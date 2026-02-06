@@ -23906,6 +23906,34 @@ html[dir="rtl"] .jcc-read-more__content {
   font-size: 1.49rem;
 }
 
+.jcc-switchboard .jcc-switchboard__body {
+  margin-bottom: 2rem ;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.jcc-switchboard .jcc-switchboard__image-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+.jcc-switchboard .jcc-switchboard__image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.jcc-switchboard .jcc-switchboard__text-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .jcc-switchboard--has-background-color--light,
 .jcc-switchboard--has-background-color--dark,
 .jcc-switchboard--has-background-color--light--primary,
@@ -39431,6 +39459,12 @@ html[dir="rtl"] .jcc-steps-section .jcc-timeline-section--has-background-color--
 @media only screen and (max-device-width: 1280px) and (orientation: landscape) {
   .jcc-share #jcc-share__trigger--text {
     display: inline-block ;
+  }
+}
+
+@media (max-width: 600px) {
+  .jcc-switchboard .jcc-switchboard__image-container {
+    display: none;
   }
 }
 
