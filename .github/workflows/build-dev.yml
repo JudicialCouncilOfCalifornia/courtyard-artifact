@@ -35,9 +35,9 @@ jobs:
           cp -R courtyard/public/* 2.x-dev/public/
           cp -R courtyard/source/_patterns/* 2.x-dev/source/_patterns/
           rm -rf courtyard
-      - uses: bacongobbler/azure-blob-storage-upload@v1.2.0
-        with:
-          source_dir: 2.x-dev
-          container_name: $web
-          connection_string: ${{ secrets.ConnectionString }}
-          extra_args: --destination 2.x-dev
+      # - uses: bacongobbler/azure-blob-storage-upload@v1.2.0
+      #   with:
+      #     source_dir: 2.x-dev
+      #     container_name: $web
+      #     connection_string: ${{ secrets.ConnectionString }}
+      #     extra_args: --destination 2.x-dev
