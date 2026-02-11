@@ -60,9 +60,9 @@ jobs:
           git tag -a $NEW_TAG -m "Autotag $NEW_TAG created by github-actions for 1.x"
           git push origin master --tags
       # Push changes to azure demo.
-      - uses: bacongobbler/azure-blob-storage-upload@v1.2.0
-        with:
-          source_dir: 1.x
-          container_name: $web
-          connection_string: ${{ secrets.ConnectionString }}
-          extra_args: --destination 1.x
+      # - uses: bacongobbler/azure-blob-storage-upload@v1.2.0
+      #   with:
+      #     source_dir: 1.x
+      #     container_name: $web
+      #     connection_string: ${{ secrets.ConnectionString }}
+      #     extra_args: --destination 1.x
