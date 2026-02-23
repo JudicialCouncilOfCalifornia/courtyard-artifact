@@ -38136,6 +38136,12 @@ html[dir="rtl"] .jcc-steps-section .jcc-timeline-section--has-background-color--
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .jcc-switchboard .jcc-switchboard__body .media-library--image {
+    display: none;
+  }
+}
+
 @media (max-width: 550px) {
   [role="tablist"] li,
   [role="tablist"] a {
