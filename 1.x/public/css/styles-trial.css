@@ -13762,10 +13762,14 @@ a.mailto span[class*="fa"] {
 
 .jcc-background--dark a:hover {
   color: white ;
+  text-decoration: underline;
 }
 
 .jcc-background--dark a:active, .jcc-background--dark a:focus {
   color: white ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-shadow {
@@ -16572,11 +16576,15 @@ html[dir="rtl"] .jcc-steps-section .jcc-drawer__inner .block--single .jcc-chat .
 }
 
 .jcc-feedback .jcc-feedback__dialog-header a:hover, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-header a:hover, .jcc-drawer__inner .block--single .jcc-chat .jcc-feedback__dialog-header a:hover, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset a:hover, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form .jcc-drawer__inner .jcc-chat fieldset a:hover, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-feedback .jcc-feedback__dialog-header a:active, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-header a:active, .jcc-drawer__inner .block--single .jcc-chat .jcc-feedback__dialog-header a:active, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset a:active, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form .jcc-drawer__inner .jcc-chat fieldset a:active, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset a:active, .jcc-feedback .jcc-feedback__dialog-header a:focus, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-header a:focus, .jcc-drawer__inner .block--single .jcc-chat .jcc-feedback__dialog-header a:focus, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset a:focus, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form .jcc-drawer__inner .jcc-chat fieldset a:focus, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-feedback .jcc-feedback__dialog-header .icon-like-dislike, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-header .icon-like-dislike, .jcc-drawer__inner .block--single .jcc-chat .jcc-feedback__dialog-header .icon-like-dislike, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .icon-like-dislike, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form .jcc-drawer__inner .jcc-chat fieldset .icon-like-dislike, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .icon-like-dislike, .jcc-feedback .jcc-feedback__dialog-header .jcc-drawer__inner .jcc-chat__trigger-container .icon-chat, .jcc-drawer__inner .jcc-chat__trigger-container .jcc-feedback .jcc-feedback__dialog-header .icon-chat, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-header .jcc-chat__trigger-container .icon-chat, .jcc-drawer__inner .jcc-chat__trigger-container .jcc-chat .jcc-feedback__dialog-header .icon-chat, .jcc-drawer__inner .jcc-chat__trigger-container .block--single .jcc-chat .jcc-feedback__dialog-header .icon-chat, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-drawer__inner .jcc-chat__trigger-container .icon-chat, .jcc-drawer__inner .jcc-chat__trigger-container .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .icon-chat, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form .jcc-drawer__inner .jcc-chat fieldset .jcc-chat__trigger-container .icon-chat, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form .jcc-drawer__inner .jcc-chat__trigger-container .jcc-chat fieldset .icon-chat, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-chat__trigger-container .icon-chat, .jcc-drawer__inner .jcc-chat__trigger-container .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .icon-chat, .jcc-feedback .jcc-feedback__dialog-header .jcc-drawer__inner .block--single .jcc-chat__trigger-container .icon-chat, .jcc-drawer__inner .block--single .jcc-chat__trigger-container .jcc-feedback .jcc-feedback__dialog-header .icon-chat, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-header .block--single .jcc-chat__trigger-container .icon-chat, .jcc-drawer__inner .block--single .jcc-chat .jcc-feedback__dialog-header .jcc-chat__trigger-container .icon-chat, .jcc-drawer__inner .block--single .jcc-chat__trigger-container .jcc-chat .jcc-feedback__dialog-header .icon-chat {
@@ -16946,11 +16954,15 @@ html[dir="rtl"] .jcc-steps-section .jcc-hero--has-background-image .jcc-header-g
 }
 
 .jcc-hero--has-background-color--dark a:hover, .jcc-hero--has-background-image a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-hero--has-background-color--dark a:active, .jcc-hero--has-background-image a:active, .jcc-hero--has-background-color--dark a:focus, .jcc-hero--has-background-image a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-hero--has-background-color--dark a, .jcc-hero--has-background-image a,
@@ -17082,7 +17094,8 @@ html[dir="rtl"] .jcc-steps-section .jcc-hero--has-background-image .jcc-header-g
 .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-hero--has-background-image .jcc_hero__breadcrumbs-wrapper a.usa-button--back.usa-button--unstyled.button:visited:hover,
 .jcc-hero--has-background-color--dark .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled:hover,
 .jcc-hero--has-background-image .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-hero--has-background-color--dark a:active, .jcc-hero--has-background-image a:active, .jcc-hero--has-background-color--dark a:focus, .jcc-hero--has-background-image a:focus,
@@ -17210,7 +17223,10 @@ html[dir="rtl"] .jcc-steps-section .jcc-hero--has-background-image .jcc-header-g
 .jcc-hero--has-background-image .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled:active,
 .jcc-hero--has-background-color--dark .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled:focus,
 .jcc-hero--has-background-image .jcc-hero__content .jcc_hero__content-top .jcc_hero__case-type-wrapper .usa-button--unstyled:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-hero--has-background-color--dark .jcc-hero__title, .jcc-hero--has-background-image .jcc-hero__title {
@@ -17901,13 +17917,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-postcard--has-background-color--dark--se
 
 .jcc-postcard--has-background-color--dark a:hover,
 .jcc-postcard--has-background-color--dark--secondary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-postcard--has-background-color--dark a:active, .jcc-postcard--has-background-color--dark a:focus,
 .jcc-postcard--has-background-color--dark--secondary a:active,
 .jcc-postcard--has-background-color--dark--secondary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-postcard__media {
@@ -21576,10 +21596,14 @@ nav.jcc-primary-nav {
 
 .jcc-scheme-simple.jcc-cards.jcc-cards-background--dark a:hover {
   color: #ffbe2e ;
+  text-decoration: underline;
 }
 
 .jcc-scheme-simple.jcc-cards.jcc-cards-background--dark a:active, .jcc-scheme-simple.jcc-cards.jcc-cards-background--dark a:focus {
   color: #ffbe2e ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-scheme-simple.jcc-cards.jcc-cards-background--dark .jcc-header-group__title {
@@ -21682,10 +21706,14 @@ nav.jcc-primary-nav {
 
 .jcc-scheme-professional.jcc-cards.jcc-cards-background--dark a:hover {
   color: #ffbe2e ;
+  text-decoration: underline;
 }
 
 .jcc-scheme-professional.jcc-cards.jcc-cards-background--dark a:active, .jcc-scheme-professional.jcc-cards.jcc-cards-background--dark a:focus {
   color: #ffbe2e ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-scheme-professional.jcc-cards.jcc-cards-background--dark .jcc-header-group__title {
@@ -21760,10 +21788,14 @@ nav.jcc-primary-nav {
 
 .jcc-cards.jcc-cards-background--dark a:hover {
   color: white ;
+  text-decoration: underline;
 }
 
 .jcc-cards.jcc-cards-background--dark a:active, .jcc-cards.jcc-cards-background--dark a:focus {
   color: white ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-cards.jcc-cards-background--dark .jcc-cards__row {
@@ -21962,13 +21994,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-cards-section--has-background-color--dar
 
 .jcc-cards-section--has-background-color--dark a:hover,
 .jcc-cards-section--has-background-color--dark--secondary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-cards-section--has-background-color--dark a:active, .jcc-cards-section--has-background-color--dark a:focus,
 .jcc-cards-section--has-background-color--dark--secondary a:active,
 .jcc-cards-section--has-background-color--dark--secondary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-cards-section--has-background-color--dark .jcc-card,
@@ -22754,10 +22790,14 @@ html[dir="rtl"] .jcc-steps-section .jcc-cards-section--has-background-color--dar
 
 .jcc-hero-icon-nav__nav .usa-card__container a:hover {
   color: white ;
+  text-decoration: underline;
 }
 
 .jcc-hero-icon-nav__nav .usa-card__container a:active, .jcc-hero-icon-nav__nav .usa-card__container a:focus {
   color: white ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-hero-icon-nav__nav .usa-card__media {
@@ -23115,13 +23155,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-locate-section--has-background-color--da
 
 .jcc-locate-section--has-background-color--dark a:hover,
 .jcc-locate-section--has-background-color--dark--primary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-locate-section--has-background-color--dark a:active, .jcc-locate-section--has-background-color--dark a:focus,
 .jcc-locate-section--has-background-color--dark--primary a:active,
 .jcc-locate-section--has-background-color--dark--primary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-locate-section--has-background-color--dark a,
@@ -23132,12 +23176,16 @@ html[dir="rtl"] .jcc-steps-section .jcc-locate-section--has-background-color--da
 .jcc-locate-section--has-background-color--dark a:hover,
 .jcc-locate-section--has-background-color--dark--primary a:hover {
   color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-locate-section--has-background-color--dark a:active, .jcc-locate-section--has-background-color--dark a:focus,
 .jcc-locate-section--has-background-color--dark--primary a:active,
 .jcc-locate-section--has-background-color--dark--primary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-locate-section__footer {
@@ -23617,13 +23665,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-steps-section--has-background-color--dar
 
 .jcc-steps-section--has-background-color--dark a:hover,
 .jcc-steps-section--has-background-color--dark--primary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-steps-section--has-background-color--dark a:active, .jcc-steps-section--has-background-color--dark a:focus,
 .jcc-steps-section--has-background-color--dark--primary a:active,
 .jcc-steps-section--has-background-color--dark--primary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-steps-section--has-background-color--dark .jcc-step__title,
@@ -23638,13 +23690,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-steps-section--has-background-color--dar
 
 .jcc-steps-section--has-background-color--dark .jcc-read-more__trigger:hover,
 .jcc-steps-section--has-background-color--dark--primary .jcc-read-more__trigger:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-steps-section--has-background-color--dark .jcc-read-more__trigger:active, .jcc-steps-section--has-background-color--dark .jcc-read-more__trigger:focus,
 .jcc-steps-section--has-background-color--dark--primary .jcc-read-more__trigger:active,
 .jcc-steps-section--has-background-color--dark--primary .jcc-read-more__trigger:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-steps-section--has-background-color--dark .jcc-read-more__content,
@@ -23697,13 +23753,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-steps-section--has-background-color--dar
 
 .jcc-steps-section--has-background-color--dark .jcc-read-more__content a:hover,
 .jcc-steps-section--has-background-color--dark--primary .jcc-read-more__content a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-steps-section--has-background-color--dark .jcc-read-more__content a:active, .jcc-steps-section--has-background-color--dark .jcc-read-more__content a:focus,
 .jcc-steps-section--has-background-color--dark--primary .jcc-read-more__content a:active,
 .jcc-steps-section--has-background-color--dark--primary .jcc-read-more__content a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-step__block {
@@ -24083,13 +24143,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-switchboard--has-background-color--dark-
 
 .jcc-switchboard--has-background-color--dark a:hover,
 .jcc-switchboard--has-background-color--dark--primary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-switchboard--has-background-color--dark a:active, .jcc-switchboard--has-background-color--dark a:focus,
 .jcc-switchboard--has-background-color--dark--primary a:active,
 .jcc-switchboard--has-background-color--dark--primary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-switchboard--has-background-color--dark .jcc-breadcrumb__item,
@@ -24520,13 +24584,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-text-section-location--has-background-co
 
 .jcc-text-section-location--has-background-color--dark a:hover,
 .jcc-text-section-location--has-background-color--dark--secondary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-text-section-location--has-background-color--dark a:active, .jcc-text-section-location--has-background-color--dark a:focus,
 .jcc-text-section-location--has-background-color--dark--secondary a:active,
 .jcc-text-section-location--has-background-color--dark--secondary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-text-section-location--has-background-color--dark a,
@@ -24537,12 +24605,16 @@ html[dir="rtl"] .jcc-steps-section .jcc-text-section-location--has-background-co
 .jcc-text-section-location--has-background-color--dark a:hover,
 .jcc-text-section-location--has-background-color--dark--secondary a:hover {
   color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-text-section-location--has-background-color--dark a:active, .jcc-text-section-location--has-background-color--dark a:focus,
 .jcc-text-section-location--has-background-color--dark--secondary a:active,
 .jcc-text-section-location--has-background-color--dark--secondary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-text-section-location__container {
@@ -24748,13 +24820,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-text-section-location--has-background-co
 
 .jcc-text-section-location--has-background-color--dark a:hover,
 .jcc-text-section-location--has-background-color--dark--secondary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-text-section-location--has-background-color--dark a:active, .jcc-text-section-location--has-background-color--dark a:focus,
 .jcc-text-section-location--has-background-color--dark--secondary a:active,
 .jcc-text-section-location--has-background-color--dark--secondary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-text-section-location--has-background-color--dark a,
@@ -24765,12 +24841,16 @@ html[dir="rtl"] .jcc-steps-section .jcc-text-section-location--has-background-co
 .jcc-text-section-location--has-background-color--dark a:hover,
 .jcc-text-section-location--has-background-color--dark--secondary a:hover {
   color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-text-section-location--has-background-color--dark a:active, .jcc-text-section-location--has-background-color--dark a:focus,
 .jcc-text-section-location--has-background-color--dark--secondary a:active,
 .jcc-text-section-location--has-background-color--dark--secondary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-text-section-location__container {
@@ -25021,13 +25101,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-text-section--has-background-color--dark
 
 .jcc-text-section--has-background-color--dark a:hover,
 .jcc-text-section--has-background-color--dark--secondary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-text-section--has-background-color--dark a:active, .jcc-text-section--has-background-color--dark a:focus,
 .jcc-text-section--has-background-color--dark--secondary a:active,
 .jcc-text-section--has-background-color--dark--secondary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-text-section--has-background-color--dark a,
@@ -25038,12 +25122,16 @@ html[dir="rtl"] .jcc-steps-section .jcc-text-section--has-background-color--dark
 .jcc-text-section--has-background-color--dark a:hover,
 .jcc-text-section--has-background-color--dark--secondary a:hover {
   color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-text-section--has-background-color--dark a:active, .jcc-text-section--has-background-color--dark a:focus,
 .jcc-text-section--has-background-color--dark--secondary a:active,
 .jcc-text-section--has-background-color--dark--secondary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-tiles-section {
@@ -25742,13 +25830,17 @@ html[dir="rtl"] .jcc-steps-section .jcc-timeline-section--has-background-color--
 
 .jcc-timeline-section--has-background-color--dark a:hover,
 .jcc-timeline-section--has-background-color--dark--primary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-timeline-section--has-background-color--dark a:active, .jcc-timeline-section--has-background-color--dark a:focus,
 .jcc-timeline-section--has-background-color--dark--primary a:active,
 .jcc-timeline-section--has-background-color--dark--primary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-timeline-section--has-background-color--dark .jcc-timeline .jcc-timeline-item__media,
@@ -25802,7 +25894,8 @@ html[dir="rtl"] .jcc-steps-section .jcc-timeline-section--has-background-color--
 .jcc-timeline-section--has-background-color--dark--primary .jcc-modal__trigger:hover,
 .jcc-timeline-section--has-background-color--dark--primary .jcc-timeline-item__trigger:hover,
 .jcc-timeline-section--has-background-color--dark--primary a:hover {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
 }
 
 .jcc-timeline-section--has-background-color--dark .jcc-modal__trigger:active, .jcc-timeline-section--has-background-color--dark .jcc-modal__trigger:focus,
@@ -25816,7 +25909,10 @@ html[dir="rtl"] .jcc-steps-section .jcc-timeline-section--has-background-color--
 .jcc-timeline-section--has-background-color--dark--primary .jcc-timeline-item__trigger:focus,
 .jcc-timeline-section--has-background-color--dark--primary a:active,
 .jcc-timeline-section--has-background-color--dark--primary a:focus {
-  color: #ffbe2e ;
+  color: #fef0c8 ;
+  text-decoration: underline;
+  outline: 0.25rem solid currentColor;
+  outline-offset: 2px;
 }
 
 .jcc-timeline-section__container {
