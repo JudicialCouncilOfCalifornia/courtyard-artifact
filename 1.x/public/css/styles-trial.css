@@ -17233,6 +17233,10 @@ html[dir="rtl"] .jcc-steps-section .jcc-hero--has-background-image .jcc-header-g
   color: white ;
 }
 
+.jcc-hero--has-background-color--dark .social-sharing-buttons, .jcc-hero--has-background-image .social-sharing-buttons {
+  --color6: #fff;
+}
+
 .jcc-hero--has-background-image .jcc-hero__media {
   display: none ;
 }
