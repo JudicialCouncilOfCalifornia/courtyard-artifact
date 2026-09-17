@@ -18134,7 +18134,7 @@ html[dir="rtl"] .jcc-steps-section .jcc-postcard--has-background-color--dark--se
   transition: all 0.4s;
 }
 
-.jcc-tile--hover:hover h3 {
+.jcc-tile--hover:hover .jcc-tile__title {
   text-decoration: underline ;
   text-decoration-thickness: 2px;
 }
