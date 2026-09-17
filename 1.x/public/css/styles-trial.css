@@ -20508,6 +20508,50 @@ nav.jcc-primary-nav {
   padding-left: 5rem;
 }
 
+[data-side-nav-collapsible] .jcc-sidenav__link-row {
+  position: relative;
+  min-height: 2.75rem;
+}
+
+[data-side-nav-collapsible] .jcc-sidenav__link-row > a {
+  padding-right: 3.25rem;
+}
+
+[data-side-nav-collapsible] .jcc-sidenav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.75rem;
+  height: 100%;
+  min-height: 2.75rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+[data-side-nav-collapsible] .jcc-sidenav__toggle:focus {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
+
+[data-side-nav-collapsible] .jcc-sidenav__toggle .icon {
+  position: static;
+  float: none;
+}
+
+[data-side-nav-collapsible] .jcc-sidenav__toggle[aria-expanded="true"] .jcc-sidenav__toggle-expand,
+[data-side-nav-collapsible] .jcc-sidenav__toggle[aria-expanded="false"] .jcc-sidenav__toggle-collapse {
+  display: none;
+}
+
+[data-side-nav-collapsible] [hidden] {
+  display: none !important;
+}
+
 .step-indicator-base-scheme-sans .usa-step-indicator__header h2 {
   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
