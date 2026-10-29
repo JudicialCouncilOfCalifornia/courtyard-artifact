@@ -12559,6 +12559,11 @@ a.mailto span[class*="fa"] {
   background-color: #168092 ;
 }
 
+.usa-checkbox__input:focus + .usa-checkbox__label::before,
+input[type="checkbox"]:focus {
+  outline-offset: 2px;
+}
+
 .jcc-dropbutton .usa-accordion__button {
   color: #005ea2 ;
 }
@@ -12688,6 +12693,11 @@ a.mailto span[class*="fa"] {
 
 .jcc-radio--button .usa-radio__label::before {
   display: none;
+}
+
+.usa-radio__input:focus + .usa-radio__label::before,
+input[type="radio"]:focus {
+  outline-offset: 2px;
 }
 
 .jcc-fieldset-search {
@@ -17925,6 +17935,10 @@ html[dir="rtl"] .jcc-steps-section .jcc-postcard--has-background-color--dark--se
   color: white ;
   font-style: normal ;
   font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+.jcc-global-bar [href]:focus {
+  outline-color: #face00;
 }
 
 .slicknav_btn {

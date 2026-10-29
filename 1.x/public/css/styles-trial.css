@@ -564,21 +564,21 @@ input:not([disabled]):focus,
 select:not([disabled]):focus,
 textarea:not([disabled]):focus,
 button:not([disabled]):focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 iframe:focus,
 [href]:focus,
 [tabindex]:focus,
 [contentEditable="true"]:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-focus, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-visual-focus, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-visual-focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 html {
@@ -796,8 +796,8 @@ body {
 }
 
 .usa-button--outline.usa-button--inverse.usa-button--unstyled:focus, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .usa-button--inverse.usa-button--unstyled.jcc-feedback__action-button--webform:focus, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .usa-button--inverse.usa-button--unstyled.jcc-feedback__action-button--webform:focus, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .usa-button--inverse.usa-button--unstyled.ui-button:focus, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .usa-button--inverse.usa-button--unstyled.ui-button:focus, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .usa-button--inverse.usa-button--unstyled.button:focus, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .usa-button--inverse.usa-button--unstyled.button:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-button--outline.usa-button--inverse.usa-button--unstyled:visited, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .usa-button--inverse.usa-button--unstyled.jcc-feedback__action-button--webform:visited, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .usa-button--inverse.usa-button--unstyled.jcc-feedback__action-button--webform:visited, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .usa-button--inverse.usa-button--unstyled.ui-button:visited, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .usa-button--inverse.usa-button--unstyled.ui-button:visited, .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .usa-button--inverse.usa-button--unstyled.button:visited, .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .usa-button--inverse.usa-button--unstyled.button:visited {
@@ -1042,8 +1042,8 @@ body {
 }
 
 .usa-button--unstyled:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-button--unstyled:visited {
@@ -1272,7 +1272,7 @@ img {
 }
 
 .usa-radio__input:focus + .usa-radio__label::before {
-  outline: 0.25rem solid #face00;
+  outline: 0.25rem solid #2c608a;
   outline-offset: 0.25rem;
 }
 
@@ -1283,8 +1283,8 @@ img {
 }
 
 .usa-checkbox__input:focus + .usa-checkbox__label::before {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-checkbox__input:disabled + .usa-checkbox__label::before,
@@ -1418,8 +1418,8 @@ img {
 }
 
 .usa-file-input__choose:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-file-input__choose:visited {
@@ -1614,18 +1614,18 @@ img {
 
 .usa-range:focus::-webkit-slider-thumb {
   background-color: white;
-  -webkit-box-shadow: 0 0 0 2px #face00;
-          box-shadow: 0 0 0 2px #face00;
+  -webkit-box-shadow: 0 0 0 2px #2c608a;
+          box-shadow: 0 0 0 2px #2c608a;
 }
 
 .usa-range:focus::-moz-range-thumb {
   background-color: white;
-  box-shadow: 0 0 0 2px #face00;
+  box-shadow: 0 0 0 2px #2c608a;
 }
 
 .usa-range:focus::-ms-thumb {
   background-color: white;
-  box-shadow: 0 0 0 2px #face00;
+  box-shadow: 0 0 0 2px #2c608a;
 }
 
 .usa-range::-webkit-slider-runnable-track {
@@ -2910,8 +2910,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-link:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-link:visited {
@@ -2998,8 +2998,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-prose > a:focus, .jcc-callout > a:focus, .jcc-card__excerpt > a:focus, .jcc-step__excerpt > a:focus, .jcc-timeline-item__excerpt > a:focus, .jcc-read-more__content > a:focus, .jcc-header-group__lead > a:focus, .jcc-header-group__body > a:focus, .jcc-cards-with-button__container > ul > li > .jcc-cards-with-button__read_more > a:focus, .jcc-cards-with-list__container > ul > li > .jcc-cards-with-list__read_more > a:focus, .jcc-modal .jcc-modal__dialog .jcc-modal__content > a:focus, .jcc-text-section-aside .jcc-text-section-aside__content .jcc-card__excerpt > a:focus, .jcc-text-section-location__content > a:focus, .jcc-text-section-location__column-left > a:focus, .jcc-text-section-location__column-right > a:focus, .jcc-text-section__column-left > a:focus, .jcc-text-section__column-right > a:focus, .jcc-wayfinder-section__content > a:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-prose > a:visited, .jcc-callout > a:visited, .jcc-card__excerpt > a:visited, .jcc-step__excerpt > a:visited, .jcc-timeline-item__excerpt > a:visited, .jcc-read-more__content > a:visited, .jcc-header-group__lead > a:visited, .jcc-header-group__body > a:visited, .jcc-cards-with-button__container > ul > li > .jcc-cards-with-button__read_more > a:visited, .jcc-cards-with-list__container > ul > li > .jcc-cards-with-list__read_more > a:visited, .jcc-modal .jcc-modal__dialog .jcc-modal__content > a:visited, .jcc-text-section-aside .jcc-text-section-aside__content .jcc-card__excerpt > a:visited, .jcc-text-section-location__content > a:visited, .jcc-text-section-location__column-left > a:visited, .jcc-text-section-location__column-right > a:visited, .jcc-text-section__column-left > a:visited, .jcc-text-section__column-right > a:visited, .jcc-wayfinder-section__content > a:visited {
@@ -3197,8 +3197,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-accordion__button:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-accordion__button:visited {
@@ -3303,8 +3303,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-alert__text a:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-alert__text a:visited {
@@ -3613,8 +3613,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-banner__button:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-banner__button:visited {
@@ -3981,8 +3981,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-footer__return-to-top a:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-footer__return-to-top a:visited {
@@ -4077,8 +4077,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-footer__secondary-link a:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-footer__secondary-link a:visited {
@@ -4352,8 +4352,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-form a:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-form a:visited {
@@ -4478,8 +4478,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-menu-btn:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-menu-btn:visited {
@@ -4691,8 +4691,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-nav__primary button:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-nav__primary button:visited {
@@ -4819,8 +4819,8 @@ button.usa-combo-box__clear-input:focus {
 }
 
 .usa-nav__close:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-nav__close:visited {
@@ -5076,8 +5076,8 @@ input[type="search"] {
 }
 
 .usa-skipnav:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .usa-skipnav:visited {
@@ -13839,6 +13839,11 @@ a.mailto span[class*="fa"] {
   background-color: #008480 ;
 }
 
+.usa-checkbox__input:focus + .usa-checkbox__label::before,
+input[type="checkbox"]:focus {
+  outline-offset: 2px;
+}
+
 .jcc-dropbutton .usa-accordion__button {
   color: #005ea2 ;
 }
@@ -13968,6 +13973,11 @@ a.mailto span[class*="fa"] {
 
 .jcc-radio--button .usa-radio__label::before {
   display: none;
+}
+
+.usa-radio__input:focus + .usa-radio__label::before,
+input[type="radio"]:focus {
+  outline-offset: 2px;
 }
 
 .jcc-fieldset-search {
@@ -19025,8 +19035,8 @@ html[dir="rtl"] .jcc-steps-section .jcc-postcard--has-background-color--dark--se
 }
 
 .jcc-read-more__trigger:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .jcc-read-more__trigger:visited {
@@ -19229,6 +19239,10 @@ html[dir="rtl"] .jcc-steps-section .jcc-postcard--has-background-color--dark--se
   color: white ;
   font-style: normal ;
   font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+.jcc-global-bar [href]:focus {
+  outline-color: #face00;
 }
 
 .slicknav_btn {
@@ -23393,8 +23407,8 @@ html[dir="rtl"] .jcc-steps-section .jcc-locate-section--has-background-color--da
 }
 
 .jcc-modal__trigger:focus {
-  outline: 0.25rem solid #face00;
-  outline-offset: 0;
+  outline: 0.25rem solid #2c608a;
+  outline-offset: 0.25rem;
 }
 
 .jcc-modal__trigger:visited {
