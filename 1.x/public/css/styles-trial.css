@@ -20752,6 +20752,53 @@ nav.jcc-primary-nav {
   padding-top: 0.5rem ;
 }
 
+.usa-nav__submenu a:focus,
+.usa-nav__primary .usa-accordion__button[aria-expanded="true"]:focus,
+.jcc-translate .usa-accordion__button[aria-expanded="true"]:focus,
+.jcc-header--inverted .usa-nav a:focus,
+.jcc-header--inverted .usa-nav button:focus,
+.jcc-header--inverted .usa-nav input:focus,
+.jcc-header--inverted .usa-navbar a:focus,
+.jcc-header--inverted .usa-navbar button:focus,
+.jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .usa-button:focus,
+.jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform:focus,
+.jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .jcc-feedback__action-button--webform:focus,
+.jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform:focus,
+.jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .jcc-feedback__action-button--webform:focus,
+.jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button:focus,
+.jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .ui-button:focus,
+.jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button:focus,
+.jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .ui-button:focus,
+.jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .button:focus,
+.jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .button:focus,
+.jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .button:focus,
+.jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-switchboard--has-background-color--dark .jcc-switchboard__footer .button:focus,
+.jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .usa-button:focus,
+.jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform:focus,
+.jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .jcc-feedback__action-button--webform:focus,
+.jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-feedback__action-button--webform:focus,
+.jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .jcc-feedback__action-button--webform:focus,
+.jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button:focus,
+.jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .ui-button:focus,
+.jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .ui-button:focus,
+.jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .js-webform-webform-buttons .jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .ui-button:focus,
+.jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .button:focus,
+.jcc-feedback .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .button:focus,
+.jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .button:focus,
+.jcc-drawer__inner .jcc-chat .jcc-feedback__dialog-body .webform-submission-form fieldset .jcc-switchboard--has-background-color--dark--primary .jcc-switchboard__footer .button:focus,
+.jcc-timeline-section--has-background-color--dark .jcc-timeline:focus,
+.jcc-timeline-section--has-background-color--dark .jcc-timeline__scroller--left:focus,
+.jcc-timeline-section--has-background-color--dark .jcc-timeline__scroller--right:focus,
+.jcc-timeline-section--has-background-color--dark--primary .jcc-timeline:focus,
+.jcc-timeline-section--has-background-color--dark--primary .jcc-timeline__scroller--left:focus,
+.jcc-timeline-section--has-background-color--dark--primary .jcc-timeline__scroller--right:focus,
+.jcc-footer a:focus,
+.jcc-footer-tall__container a:focus,
+.jcc-footer-base.jcc-footer--inverted a:focus {
+  outline-color: #face00;
+  outline-offset: 0;
+}
+
 .jcc-footer-base .jcc-footer-global-wrapper .jcc-footer-global-copyright,
 .jcc-footer-base .jcc-footer-global-wrapper .jcc-global__menu {
   display: inline-block;
